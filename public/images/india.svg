@@ -25,7 +25,6 @@
     </rdf:RDF>
   </metadata>
       <style type="text/css">
-      
       .presence{
          fill: #F39200;
          stroke: #ffffff;
