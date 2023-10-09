@@ -30,6 +30,7 @@
          fill: #F39200;
          stroke: #ffffff;
          transition: 1s ease-in-out;
+         cursor: pointer;
       }
       .presence:hover{
             transform: scale(0.9);
