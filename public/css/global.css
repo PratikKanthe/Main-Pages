@@ -86,3 +86,8 @@ img {
 1025px — 1200px: Desktops, large screens */
 
 
+
+.presence:hover{
+  transform: scale(1.6);
+  z-index: 1000;
+}
