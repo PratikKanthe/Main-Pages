@@ -10,7 +10,9 @@
    id="svg2"
    height="695.70178"
    width="611.85999"
-   mapsvg:geoViewBox="100.184010 100.084109 100.418146 100.753659"
+   mapsvg:geoViewBox="0 0 1024 400"
+   xml:space="preserve"
+   style="enable-background:new 0 0 1024 400;"
 >
   <metadata
      id="metadata44">
@@ -32,7 +34,7 @@
          cursor: pointer;
       }
       .presence:hover{
-            transform: scale(0.9);
+            transform: scale(1.2);
             z-index: 1000;
             transform-box: fill-box;
       }

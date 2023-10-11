@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Map</title>
-    <style>
-        .bg{
-            height: 130vh;
-            background: url('/public/images/india.svg') no-repeat;
-            background-position: center;
-            object-fit: cover;
-        }
-        p{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-    </style>
-</head>
-<body>
-    
-    <div class="bg">
-        <h1>Bharat</h1>
-        <p>Mumbai</p>
+    <link rel="stylesheet" href="page.css">
+  </head>
+  <body>
+    <section class="map">
+      <div class="flex">
+        <div class="map1">
+            <h1>Our Presence in India</h1>
+            <img src="/public/images/map1.svg" alt="" class="india"/>
+            </div>
+      <div class="map2">
+        <h1>Worldwide Presence</h1>
+        <p class="plane"> <span class="banner">OurSys is also being used outside India</span><img src="/public/images/plane-2.svg" alt="" height="75" width="75"></p>
+        <div class="world">
+            <div class="grid2">
+                <div class="country">
+                    <img src="/public/images/USA.svg" alt="USA" width="35" height="35" class="show">
+                    <h2>Texas, USA</h2>
+                </div>
+                <div class="country">
+                    <img src="/public/images/tanzania.svg" alt="Tanzania" width="35" height="35" class="show">
+                    <h2>Tanga, Tanzania</h2>
+                </div>
+                <div class="country">
+                    <img src="/public/images/UAE.svg" alt="UAE" width="35" height="35" class="show">
+                    <h2>Dubai, UAE</h2>
+                </div>
+                <div class="country">
+                    <img src="/public/images/bahrain.svg" alt="Bahrain" width="35" height="35" class="show">
+                    <h2>Bahrain</h2>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
-
-</body>
+    </section>
+  </body>
 </html>
