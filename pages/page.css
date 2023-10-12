@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .cols2 {
@@ -100,6 +101,7 @@ h1 {
 
 .content h1 {
   font-size: var(--font-page-tile);
+  letter-spacing: 0.05em;
   margin-bottom: 1rem;
 }
 .article {
@@ -109,7 +111,7 @@ h1 {
 }
 .content p {
   text-align: left;
-  font-size: var(--font-content);
+  font-size: var(--font-primary);
 }
 
 .tag {

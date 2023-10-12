@@ -20,7 +20,7 @@
   --clr-orange: #FF9900;
   --clr-orange-dark: #E69138;
   --clr-green:#6AA84F;
-  --clr-purple: #B4A7D6;
+  --clr-purple: #7E57C2;
   --clr-btn-action: #B45F06;
   --clr-on-body: #1f1f1f;
   --clr-body: #FFFFFF;
@@ -91,3 +91,4 @@ img {
   transform: scale(1.6);
   z-index: 1000;
 }
+
