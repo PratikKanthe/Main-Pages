@@ -12,13 +12,15 @@
   /* colors */
   --clr-primary: #f39200;
   --clr-secondry: #f3f3f3;
-  --clr-blue: #6fa8dc;
-  --clr-yellow: #fada5e;
+  --clr-blue: #1E92FA;
+  --clr-yellow: #f9c87e;
   --clr-pink: #cfbcab;
   --clr-orange: #ff9900;
   --clr-orange-dark: #e69138;
-  --clr-green: #6aa84f;
+  --clr-green: #aedd92;
   --clr-purple: #9575cd;
+  --clr-001: #FB6359;
+  --clr-002: #D0DCFF;
   --clr-btn-action: #b45f06;
   --clr-on-body: #1f1f1f;
   --clr-body: #ffffff;
@@ -96,6 +98,12 @@ img {
   justify-content: center;
   align-items: center;
 }
+.slide-2{
+    background-color: var(--clr-002);
+}
+.slide-3{
+    background-color: var(--clr-001);
+}
 
 .part-1 h1{
     /* letter-spacing: 0.05rem; */
@@ -119,6 +127,20 @@ img {
     top: 40%;
     left: 6%;
 }
+.helicopter2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 142%;
+    left: 6%;
+}
+.helicopter3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 242%;
+    left: 6%;
+}
 
 .tank{
     position: absolute;
@@ -134,12 +156,40 @@ img {
     bottom: 6%;
     left: 25%;
 }
+.tank2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 172%;
+    left: 30%;
+}
+.tank3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 272%;
+    left: 30%;
+}
 
 .drone{
     position: absolute;
     width: 75px;
     height: 75px;
     bottom: 40%;
+    left: 38%;
+}
+.drone2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 147%;
+    left: 38%;
+}
+.drone3{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 247%;
     left: 38%;
 }
 .atomic1{
@@ -175,6 +225,23 @@ img {
     rotate: 324deg;
 }
 
+.atomic12{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 110%;
+    left: 6%;
+    rotate: 324deg;
+}
+.atomic13{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 210%;
+    left: 6%;
+    rotate: 324deg;
+}
+
 .slide-plane{
     position: absolute;
     width: 100px;
@@ -191,6 +258,34 @@ img {
     left: 43.5%;
     letter-spacing: 0.09rem;
 }
+.slide-plane2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 105%;
+    left: 35%;
+}
+
+.gas2{
+    position: absolute;
+    top: 111.5%;
+    left: 43.5%;
+    letter-spacing: 0.09rem;
+}
+.slide-plane3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 205%;
+    left: 35%;
+}
+
+.gas3{
+    position: absolute;
+    top: 211.5%;
+    left: 43.5%;
+    letter-spacing: 0.09rem;
+}
 
 
 .part-1 p{
@@ -201,6 +296,14 @@ img {
 .bottom{ 
   position: absolute;
   bottom: 2%;
+}
+.bottom2{ 
+  position: absolute;
+  top: 185%;
+}
+.bottom3{ 
+  position: absolute;
+  top: 285%;
 }
 
 .part-2 {
