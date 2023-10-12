@@ -117,7 +117,26 @@ img {
     font-size: 1rem;
     font-weight: 500;
     line-height: 150%;
-    /* width: 20vw; */
+    width: 20vw;
+}
+.change::before{
+    content: "Formulation Secrecy";
+    animation: animate ease-in-out infinite 10s;
+}
+
+@keyframes animate { 
+  
+    25% { 
+        content: "Batch size wise compound formulation";
+    } 
+
+    50% { 
+        content: "Batch wise consumption of compound during production"; 
+    } 
+
+    75% { 
+        content: "Efficiency monitoring based on Active Cavities"; 
+    } 
 }
 
 
@@ -324,7 +343,7 @@ img {
 .main-box h1 {
   font-size: 3rem;
   text-transform: capitalize;
-  line-height: 150%;
+  line-height: 180%;
 }
 
 .list-box {
