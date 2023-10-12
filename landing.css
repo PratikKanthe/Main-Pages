@@ -44,6 +44,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: var(--font-size);
+  scroll-behavior: smooth;
 }
 
 audio,
@@ -146,7 +147,14 @@ img {
     height: 75px;
     top: 40%;
     left: 6%;
+    /* animation: helicopter 2s linear forwards;
+    animation-timeline: view();
+    animation-range: 50% cover 50%;
+    transform: translateX(-100%); */
 }
+.helicopter-show {
+    animation: helicopter 0.5s linear forwards;
+  }
 .helicopter2{
     position: absolute;
     width: 75px;
@@ -154,6 +162,9 @@ img {
     top: 142%;
     left: 6%;
 }
+.helicopter2-show {
+    animation: helicopter 0.5s linear forwards;
+  }
 .helicopter3{
     position: absolute;
     width: 75px;
@@ -161,6 +172,19 @@ img {
     top: 242%;
     left: 6%;
 }
+.helicopter3-show {
+    animation: helicopter 0.5s linear forwards;
+  }
+
+@keyframes helicopter {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 
 .tank{
     position: absolute;
@@ -168,7 +192,20 @@ img {
     height: 75px;
     bottom: 15%;
     left: 30%;
+    /* animation: tank 0.5s linear forwards; */
 }
+.tank-show {
+    animation: tank 0.5s linear forwards;
+  }
+@keyframes tank {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 .road{
     position: absolute;
     width: 75px;
@@ -183,6 +220,9 @@ img {
     top: 172%;
     left: 30%;
 }
+.tank2-show {
+    animation: tank 0.5s linear forwards;
+  }
 .tank3{
     position: absolute;
     width: 75px;
@@ -190,6 +230,9 @@ img {
     top: 272%;
     left: 30%;
 }
+.tank3-show {
+    animation: tank 0.5s linear forwards;
+  }
 
 .drone{
     position: absolute;
@@ -198,6 +241,18 @@ img {
     bottom: 40%;
     left: 38%;
 }
+
+.drone-show {
+    animation: drone 0.5s linear forwards;
+  }
+@keyframes drone {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 .drone2{
     position: absolute;
     width: 75px;
@@ -205,6 +260,9 @@ img {
     top: 147%;
     left: 38%;
 }
+.drone2-show {
+    animation: drone 0.5s linear forwards;
+  }
 .drone3{
     position: absolute;
     width: 75px;
@@ -212,6 +270,25 @@ img {
     top: 247%;
     left: 38%;
 }
+.drone3-show {
+    animation: drone 0.5s linear forwards;
+  }
+
+  .atomic{
+    animation: none;
+  }
+  .atomic-show{
+    animation: atomic 0.5s linear forwards;
+  }
+  @keyframes atomic {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 .atomic1{
     position: absolute;
     width: 25px;
@@ -268,6 +345,22 @@ img {
     height: 100px;
     top: 8%;
     left: 35%;
+}
+.slide-plane-hide{
+    animation: none;
+}
+
+.slide-plane-show{
+    animation: plane 0.5s linear forwards;
+}
+
+@keyframes plane {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 .gas{
@@ -339,6 +432,44 @@ img {
   font-weight: 300;
   line-height: 210%;
 }
+.fade-content-hide{
+    animation: none;
+}
+
+.fade-content-show{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+    }
+    @keyframes fadeInUp {
+    from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+    }
 
 .main-box h1 {
   font-size: 3rem;
@@ -387,6 +518,11 @@ img {
   padding: 1em 3em;
   background-color: var(--clr-btn-action);
   color: var(--clr-body);
+}
+.btn-load:hover {
+  background-color: var(--clr-orange-dark);
+  scale: 1.1;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 a.scroll-down {

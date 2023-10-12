@@ -57,7 +57,7 @@ body {
   gap: 1rem;
 }
 
-@keyframes show {
+/* @keyframes show {
   0% {
     transform: translateX(100%);
     opacity: 0;
@@ -69,7 +69,7 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 .content {
   width: 70vw;
@@ -78,22 +78,50 @@ body {
 
 p,
 h1 {
-  animation: move 0.7s linear both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-@keyframes move {
+@-webkit-keyframes fadeInUp {
+  from {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  to {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  }
+  @keyframes fadeInUp {
+  from {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  to {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  }
+  }
+
+
+/* @keyframes move {
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
-  /* 90%{
-    opacity: 0.5;
-  } */
   100% {
     transform: translateY(0);
     opacity: 1;
   }
-}
+} */
 .presence:hover {
   transform: scale(1.6);
   z-index: 1000;
