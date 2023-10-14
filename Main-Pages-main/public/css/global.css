@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  /* colors */
+  --clr-primary: #F39200;
+  --clr-secondry: #F3F3F3;
+  --clr-blue: #6FA8DC;
+  --clr-yellow: #FADA5E;
+  --clr-pink:#CFBCAB;
+  --clr-orange: #FF9900;
+  --clr-orange-dark: #E69138;
+  --clr-green:#6AA84F;
+  --clr-purple: #B4A7D6;
+  --clr-btn-action: #B45F06;
+  --clr-on-body: #1f1f1f;
+  --clr-body: #FFFFFF;
+  /* font-sizes */
+  --font-slider-title: 4.3rem;
+    --font-page-tile: 3.5rem;
+    --font-subtitle: 2.5rem;
+    --font-content: 1.3rem;
+    --font-primary: 1rem;
+    --font-sm: .75rem;
+    --font-btn: 1.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.425;
+  background-color: var(--clr-body);
+  color: var(--clr-on-body);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size);
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-on-body);
+}
+
+a:hover {
+  color: var(--clr-primary);
+}
+
+
+
+
+
+/* media query breakpoints */
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens */
+
+
