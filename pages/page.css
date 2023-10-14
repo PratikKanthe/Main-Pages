@@ -230,13 +230,14 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 3rem;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
 .reason {
   display: flex;
   gap: 1rem;
+  align-items: start;
 }
 
 .sub {
@@ -246,7 +247,7 @@ header {
 
 .avtar {
   display: flex;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 
@@ -490,3 +491,8 @@ header {
   
 }
 
+
+/* media query for tablets */
+@media only screen and (max-width: 991px){
+
+}
