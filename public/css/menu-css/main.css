@@ -1,6 +1,4 @@
-/*
-font-family: 'Calibre';
-*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 *,
 *::after,
@@ -61,7 +59,7 @@ html {
 }
 
 body {
-    font-family: 'Calibre';
+    font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
     transition: all .8s;
     overflow-x: hidden;
@@ -234,7 +232,7 @@ a.button {
 .header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .10);
     padding: 1rem 0;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -245,7 +243,7 @@ a.button {
 a.logo img {
     margin-left: 5rem;
     margin-top: 1rem;
-    height: 7rem;
+    height: 5rem;
 }
 
 .header-nav-wrap {
@@ -419,7 +417,7 @@ img.fs-menu-character {
 }*/
 
 .fs-nav-wrap ul li h3 {
-    font-size: 5.5rem;
+    font-size: 3rem;
     font-weight: 600;
     margin: 0;
 }
@@ -536,7 +534,7 @@ img.fs-menu-character {
 }
 
 .fs-addres p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #6C6C6C;
 }
 
@@ -729,6 +727,8 @@ span.parrentOrg {
     /* span.parrentOrg {
         letter-spacing: .3px;
     } */
+    
+
 }
 
 @media only screen and (max-width: 768px) { 
@@ -748,3 +748,555 @@ span.parrentOrg {
         font-size: 10px;
     }
 }
+
+
+.col-2 {
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+  .clr1 {
+    background-color: var(--clr-purple);
+  }
+  
+  .clr2 {
+    background-color: var(--clr-002);
+  }
+  .clr3 {
+    background-color: var(--clr-001);
+  }
+  .white{
+    background-color: #DA0C81;
+  }
+  .part-1 {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .part-1 h1 {
+    /* letter-spacing: 0.05rem; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 150%;
+    width: 35vw;
+  }
+  
+  .slide-title h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .change::before {
+    content: "Formulation Secrecy";
+    animation: animate ease-in-out infinite 10s;
+  }
+  
+  @keyframes animate {
+    25% {
+      content: "Batch size wise compound formulation";
+    }
+  
+    50% {
+      content: "Batch wise consumption of compound during production";
+    }
+  
+    75% {
+      content: "Efficiency monitoring based on Active Cavities";
+    }
+  }
+  
+  .helicopter {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 30%;
+    left: 6%;
+    rotate: -377deg;
+    animation: helicopter 5s linear infinite;
+  }
+  
+  
+  @keyframes helicopter {
+    0% {
+      transform: translateX(-100%) translateY(-30px) rotate(0deg);
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(600px) translateY(100px)  rotate(40deg);
+      opacity: 0;
+    }
+  }
+  
+  .tank {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 10%;
+    left: 30%;
+    animation: tank 5s linear infinite;
+  }
+  
+  @keyframes tank {
+    0% {
+      transform: translateX(-500%);
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(270px);
+      opacity: 0;
+    }
+  }
+  
+  .road {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 85.2%;
+    left: 2%;
+  }
+  /* .tank2 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 172%;
+    left: 30%;
+    animation: tank 3s linear infinite;
+  }
+  
+  .tank3 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 272%;
+    left: 30%;
+    animation: tank 3s linear infinite;
+  }
+   */
+  .drone {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 30%;
+    left: 38%;
+    animation: drone 3s alternate infinite;
+  }
+  
+  
+  @keyframes drone {
+    0% {
+      transform: translateX(50px) translateY(-40px) rotate(-30deg);
+    }
+    100% {
+      transform: translateX(-50px) translateY(-40px)  rotate(25deg);
+    }
+  }
+  
+  .atomic {
+    animation: atomic 5s linear infinite;
+  }
+  @keyframes atomic {
+    0%{
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(400px) rotate(30deg);
+      opacity: 0;
+    }
+  }
+  
+  .atomic1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15%;
+    left: 6%;
+    rotate: 324deg;
+  }
+  .atomic2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 18%;
+    left: 8%;
+    rotate: 324deg;
+  }
+  .atomic3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 21%;
+    left: 10%;
+    rotate: 324deg;
+  }
+  .atomic4 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 16%;
+    left: 10%;
+    rotate: 324deg;
+  }
+  
+  .atomic12 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 110%;
+    left: 6%;
+    rotate: 324deg;
+  }
+  .atomic13 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 210%;
+    left: 6%;
+    rotate: 324deg;
+  }
+  
+  .slide-plane {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    left: 35%;
+    animation: plane 5s linear infinite;
+  }
+  
+  @keyframes plane {
+    from {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-700px);
+      opacity: 0;
+    }
+  }
+  
+  .gas {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 14.3%;
+    left: 43.5%;
+    letter-spacing: 0.09rem;
+  }
+
+  
+  .gas2 {
+    position: absolute;
+    top: 111.5%;
+    left: 43.5%;
+    letter-spacing: 0.09rem;
+  }
+
+
+  .slide-subtitle{
+    font-size: 7rem;
+  }
+  
+  .gas3 {
+    position: absolute;
+    top: 211.5%;
+    left: 43.5%;
+    letter-spacing: 0.09rem;
+  }
+  
+  .part-1 p {
+    text-align: center;
+    color: var(--clr-on-body);
+  }
+  
+  .bottom {
+    position: absolute;
+    bottom: 2%;
+  }
+  .bottom2 {
+    position: absolute;
+    top: 185%;
+  }
+  .bottom3 {
+    position: absolute;
+    top: 285%;
+  }
+  
+  .part-2 {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .main-box {
+    margin-top: 7rem;
+    background-color: #EEEEEE;
+    padding: 6rem;
+    border-radius: 8rem;
+    width: 45vw;
+  }
+
+  .main-box h1 {
+    font-size: 7rem;
+    text-transform: capitalize;
+    line-height: 110%;
+  }
+  
+  .main-box p {
+    font-size: 2rem;
+    color: #1f1f1f;
+    font-weight: 300;
+    line-height: 110%;
+  }
+  .fade-content-hide {
+    animation: none;
+  }
+  
+  .fade-content-show {
+    -webkit-animation-name: fadeInUp 1s linear forwards;
+    animation: fadeInUp 1s linear forwards;
+  }
+  
+  @-webkit-keyframes fadeInUp {
+    0% {
+      -webkit-transform: translate3d(0, 100%, 0);
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      -webkit-transform: translateZ(0);
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      -webkit-transform: translate3d(0, 100%, 0);
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      -webkit-transform: translateZ(0);
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  
+
+  
+  .list-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .list {
+    color: var(--clr-on-body);
+    background-color: var(--clr-orange-dark);
+    height: 18vh;
+    width: 9vw;
+    border-radius: 3rem;
+  }
+  .list1{background-color: #FADA5E;}
+  .list2{background-color: #CFBCAB;}
+  .list3{background-color: #DF917C;}
+  .list4{background-color: #FADA5E;}
+  
+  .list p {
+    font-size: 2rem;
+    color: var(--clr-on-body);
+  }
+  .load-more {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .load-more a {
+    font-size: 2rem;
+    color: #1f1f1f;
+    font-weight: 300;
+  }
+  
+  .load-more a:hover {
+    color: var(--clr-on-body);
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-load {
+    text-align: center;
+    padding: 1em 3em;
+    background-color: var(--clr-btn-action);
+    color: var(--clr-body);
+  }
+  .btn-load:hover {
+    background-color: var(--clr-orange-dark);
+    scale: 1.1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  a.scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    bottom: 0.2rem;
+    width: 2rem;
+    text-decoration: none;
+  }
+  a.scroll-down img {
+    margin: 5px 7px 0px;
+    max-height: 2rem;
+  }
+  
+  .tagline {
+    position: fixed;
+    top: 70%;
+    letter-spacing: 0.02em;
+    left: 1%;
+    font-size: 1.5rem;
+    color: var(--clr-on-body);
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left;
+    z-index: 1;
+  }
+  .tagline2{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+  
+  .page {
+    height: 100vh;
+  }
+  
+  .article-content {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .article-content h1 {
+    font-size: 7rem;
+    text-transform: capitalize;
+    line-height: 180%;
+  }
+  .article-content p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .posts {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding:0 2rem;
+    /* animation: move 10s ease-out infinite; */
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(60%);
+    }
+    100% {
+      transform: translateX(20%);
+    }
+  }
+  
+  
+  .post h1 {
+    font-size: 1.2rem;
+  }
+  
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 667px){
+    .col2{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .clr1{
+      background-color: white;
+    }
+    .part-1{
+      height: 50vh;
+      width: 100%;
+    }
+    .part-2{
+      height: 50vh;
+      width: 100%;
+      background-color: white;
+    }
+  }
+
+  @media only screen and (max-width:992px){
+    .col-2{
+        
+    }
+    .part-1 {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+      }
+      .part-2{
+        display: none;
+      }
+      .slide-title h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 150%;
+        width: 70vw;
+      }
+    
+     .drone {
+        position: absolute;
+        bottom: 20%;
+        left: 70%;
+        animation: drone 3s alternate infinite;
+      }
+    
+  }
