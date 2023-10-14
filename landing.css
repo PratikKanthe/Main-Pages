@@ -87,7 +87,6 @@ img {
 1025px — 1200px: Desktops, large screens */
 
 .col-2 {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
 }
@@ -105,6 +104,7 @@ img {
   background-color: #DA0C81;
 }
 .part-1 {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -424,6 +424,7 @@ img {
 }
 
 .part-2 {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -617,4 +618,103 @@ a.scroll-down img {
   font-size: 1.2rem;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* media query for tablets */
+@media only screen and (max-width: 991px){
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* part1 */
+  .part-1{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+  }
+
+  .helicopter {
+    left: -20%;
+  }
+
+  .tank {
+    left: 100%;
+  }
+  @keyframes tank {
+    0% {
+      transform: translateX(-700%);
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+  }
+  .drone {
+    left: 90%;
+  }
+  .atomic1 {
+    left: -20%;
+  }
+  .atomic2 {
+    left: -18%;
+  }
+  .atomic3 {
+    left: -16%;
+  }
+  .atomic4 {
+    left: -16%;
+  }
+  /* part2 */
+  .part-2{
+    height: 100vh;
+    width: 50%;
+  }
+  .main-box {
+    opacity: 0.9;
+    background-color: #FACBEA;
+
+    border-radius: 2rem;
+  }
+  .main-box p {
+    line-height: 180%;
+  }
+  .main-box h1 {
+    font-size: 2rem;
+    line-height: 180%;
+  }
+  .list-box {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 1rem;
+  }
+  .card {
+    color: var(--clr-on-body);
+    background-color: var(--clr-orange-dark);
+    padding: 0.3em;
+    text-align: center;
+  }
+  .btn-load {
+    text-align: center;
+    padding: 1em 1.5em;
+    background-color: var(--clr-btn-action);
+    color: var(--clr-body);
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
