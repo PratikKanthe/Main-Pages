@@ -574,10 +574,22 @@
      }
  }
 
+ @media only screen and (max-width: 767px) { 
+    span.parrentOrg {
+        font-size: 11px;
+       margin-left: 0.1rem;
+    }
+}
  @media only screen and (max-width: 767px) {
      ul.oc-footer-logo li {
          margin: 0 4rem;
      }
+
+     p.copyText {
+        font-size: 1.7rem;
+        display: flex;
+        margin-left: 11rem;
+    }
 
      .media-boxes-drop-down-menu {
          right: 11px;
@@ -585,16 +597,26 @@
 
      ul.header-nav li:not(:last-child) {
          /*margin-bottom: 2rem;*/
+       
      }
 
      .fs-nav-wrap {
          margin-left: 0;
          max-width: 60rem;
          width: 100%;
+        
+     }
+
+     #fs-menu-svg{
+       display: none;
+       
+        
      }
 
      img.fs-menu-character {
-         max-width: 45%;
+       margin-bottom: -3.2rem;
+        margin-right: -3.5rem;
+         max-width: 100%;
      }
 
      .fs-nav-wrap ul li h3 {
@@ -611,11 +633,13 @@
      }
 
      a.logo img {
-         height: 6rem;
+        margin-left: -1rem;
+         height: 4rem;
      }
 
      ul.header-nav li a {
-         font-size: 1.8rem;
+        
+         font-size: 2rem;
      }
 
      .titleWrap h1 {
