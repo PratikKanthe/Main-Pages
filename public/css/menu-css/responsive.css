@@ -368,6 +368,43 @@
      .animatedSvg svg {
          max-height: 40vh;
      }
+     .fs-nav-wrap{
+        margin-left: 0;
+     }
+     .blob3{
+        display: none;
+     }
+     .fs-address-wrap {
+        display: block;
+     }
+     #fs-menu-svg{
+        display: none;
+     }
+     .fs-nav-wrap ul li h3 {
+        font-size: 4rem;
+    }
+
+    .fs-address-wrap {
+        display: none;
+    }
+
+    .bannerText h1 {
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    a.logo img {
+       margin-left: -1rem;
+        height: 4rem;
+    }
+
+    ul.header-nav li a {
+       
+        font-size: 2rem;
+    }
+    .headline h1{
+        font-size: 2rem;
+    }
  }
 
  /* Small Devices, Tablets */
@@ -568,6 +605,29 @@
      img.letterImg {
          height: 30vh;
      }
+     .sec-2 h1{
+        font-size: 4rem;
+      }
+     .our-socials{
+        margin-top: 20rem;
+     }
+     .footer {
+        margin-top: 30rem;
+    }
+    .sec-1{
+        display: none;
+    }
+    .sec-2{
+        width: 100%;
+    }
+
+    .sec-2 .article p{
+        padding: 15px;
+        width: 90vw;
+      }
+     .posts {
+        grid-template-columns: repeat(2,1fr);
+      }
 
      .banner-box-text {
          margin: 6rem auto 5rem;
@@ -620,12 +680,15 @@
      }
 
      .fs-nav-wrap ul li h3 {
-         font-size: 6rem;
+         font-size: 3rem;
      }
 
      .fs-address-wrap {
          display: none;
      }
+     .fs-address-wrap {
+        display: none;
+    }
 
      .bannerText h1 {
          font-size: 5rem;
@@ -955,9 +1018,26 @@
          padding: 5rem 0 10rem; */
          padding: 5rem 0 5rem;
      }
+     .our-socials{
+        margin-top: 35rem;
+     }
+     .container h1 {
+        font-size: 4rem;
+        font-weight: normal;
+        text-align: left;
+      }
+     .footer {
+        margin-top: 20rem;
+    }
 
      .contact-us-container {
          background-image: none !important;
+     }
+     .article-content h1{
+        font-size: 4rem;
+     }
+     .headline h1{
+        font-size: 2rem;
      }
 
      .footer a#gotop {
@@ -1015,11 +1095,23 @@
      }
  }
 
+ @media only screen and (max-width: 302px){
+    .our-socials{
+        margin-top: 100rem;
+     }
+ }
+
+
  /* Custom, iPhone Retina */
+
 
  @media only screen and (max-width: 360px) {
      .fs-nav-wrap {
          margin-top: 5rem;
+     }
+
+     .our-socials{
+        margin-top: 55rem;
      }
 
      .fs-nav-wrap ul li:not(:last-child) {

@@ -73,8 +73,6 @@
 
 .content{
   width: 70vw;
-  /* animation: show 1s ease-in backwards; */
-  /* animation: move 0.5s ease-in forwards; */
 }
 .content h1{
   display: flex;

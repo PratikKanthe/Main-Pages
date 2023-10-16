@@ -5,7 +5,7 @@ function observeElements(elements, className) {
       });
     }, {
       // Add your options here if needed
-    //   threshold: 1,
+      // threshold: 1,
     });
   
     elements.forEach((element) => {
