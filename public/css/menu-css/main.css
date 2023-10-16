@@ -807,28 +807,201 @@ span.parrentOrg {
     line-height: 150%;
     width: 35vw;
   }
+
+  .slide-title{
+    text-align: center;
+  }
   
   .slide-title h1 {
     font-size: 5rem;
     font-weight: 500;
     line-height: 150%;
   }
+ 
   .change::before {
-    content: "Formulation Secrecy";
-    animation: animate ease-in-out infinite 10s;
+    font-size: 3rem;
+    content: "Material Traceability";
+    animation: animate ease-in-out infinite 15s, blink 1s both;
+  }
+  
+  @keyframes animate {
+    10% {
+      content: "Certificate of Conformance";
+    }
+    20% {
+      content: "Risk Management";
+    }
+    30% {
+      content: "Compliance Assurance & Audit friendliness";
+    }
+    40% {
+      content: "Corrective Action Preventive Action";
+    }
+    50% {
+      content: " New Product Development";
+    }
+    60% {
+      content: "First Article Inspection Report ";
+    }
+    70% {
+      content: " Inspection plan";
+    }
+    80% {
+      content: " Calibration of Instruments & Gauges";
+    }
+  }
+
+  .change-slide-2::before {
+    font-size: 3rem;
+    content: "Cost Reduction & Improve Profits";
+    animation: animate ease-in-out infinite 15s, blink 1s both;
+  }
+  
+  @keyframes animate {
+    10% {
+      content: "Material Traceability";
+    }
+    20% {
+      content: "Certificate of Conformance";
+    }
+    30% {
+      content: "Risk Management";
+    }
+    40% {
+      content: "Corrective Action Preventive Action";
+    }
+    50% {
+      content: " New Product Development";
+    }
+    60% {
+      content: "First Article Inspection Report ";
+    }
+    70% {
+      content: " Calibration of Instruments & Gauges";
+    }
+    80% {
+      content: "Inspection plan";
+    }
+  
+    90% {
+      content: "Compliance Assurance & Audit friendliness";
+      opacity: 1;
+    }
+  }
+
+  .change-slide-3::before {
+    font-size: 3rem;
+    content: "Cost Reduction & Improve Profits";
+    animation: animate ease-in-out infinite 15s, blink 1s both;
+  }
+  
+  @keyframes animate {
+    10% {
+      content: "Material Traceability";
+    }
+    20% {
+      content: "Certificate of Conformance";
+    }
+    30% {
+      content: "Risk Management";
+    }
+    40% {
+      content: "Corrective Action Preventive Action";
+    }
+    50% {
+      content: "New Product Development";
+    }
+    60% {
+      content: "First Article Inspection Report";
+    }
+    70% {
+      content: "Calibration of Instruments & Gauges";
+    }
+    80% {
+      content: "Inspection plan";
+    }
+    90% {
+      content: "Compliance Assurance & Audit friendliness";
+    }
+  }
+
+  .change-slide-4::before {
+    font-size: 3rem;
+    content: "Material Test Certificate";
+    animation: animate ease-in-out infinite 15s, blink 1s both;
+  }
+  
+  @keyframes animate {
+    10% {
+      content: "Compliance Assurance & Audit friendliness";
+    }
+    20% {
+      content: "Reduce Delivery Lead time … Deliver Earlier";
+    }
+    30% {
+      content: "Material Traceability";
+    }
+    40% {
+      content: "Order wise Purchase Budget Control";
+    }
+    50% {
+      content: "Supplier Interface";
+    }
+    60% {
+      content: "Effective Component Expediting";
+    }
+    70% {
+      content: "Inspection Call Letters & Offer Letters for TPI";
+    }
+    80% {
+      content: "Calibration of Instruments & Gauges";
+    }
+    90% {
+      content: "Serialisation of Valves";
+    }
+  }
+  .change-slide-5::before {
+    font-size: 3rem;
+    content: "Compound Formulation Secrecy";
+    animation: animate ease-in-out infinite 15s, blink 1s both;
   }
   
   @keyframes animate {
     25% {
       content: "Batch size wise compound formulation";
     }
-  
     50% {
-      content: "Batch wise consumption of compound during production";
+      content: "Batch wise consumption of compound";
     }
-  
     75% {
-      content: "Efficiency monitoring based on Active Cavities";
+      content: "Production Efficiency monitoring";
+    }
+    100% {
+      content: "Die Management";
+    }
+  }
+
+  .change-slide-6::before {
+    font-size: 3rem;
+    content: "Material Test Certificate";
+    animation: animate ease-in-out infinite 15s, blink 1s both;
+  }
+  
+  @keyframes animate {
+    20% {
+      content: "Auto Item & Code Generation";
+    }
+    40% {
+      content: "Auto BOM creator; Auto weight Calculator";
+    }
+    60% {
+      content: "Production Clubbing by Dia-Pitch";
+    }
+    80% {
+      content: "Inspection Call Letters & Offer Letters for TPI";
+    }
+    100% {
+      content: "Calibration of Instruments & Gauges";
     }
   }
   
@@ -925,7 +1098,7 @@ span.parrentOrg {
   }
   
   .atomic {
-    animation: atomic 5s linear infinite;
+    animation: atomic 3s linear infinite;
   }
   @keyframes atomic {
     0%{
@@ -936,7 +1109,7 @@ span.parrentOrg {
       opacity: 1;
     }
     100% {
-      transform: translateY(400px) rotate(30deg);
+      transform: translateY(700px);
       opacity: 0;
     }
   }
@@ -1074,7 +1247,7 @@ span.parrentOrg {
   .main-box {
     margin-top: 7rem;
     background-color: #EEEEEE;
-    padding: 6rem;
+    padding: 5rem;
     border-radius: 8rem;
     width: 45vw;
   }
@@ -1129,6 +1302,11 @@ span.parrentOrg {
   }
   
 
+  .box-tpbar{
+    text-align: left;
+    line-height: 110%;
+    margin-bottom: 3rem;
+  }
   
   .list-box {
     display: grid;
@@ -1149,12 +1327,14 @@ span.parrentOrg {
   .list4{background-color: #FADA5E;}
   
   .list p {
+    text-align: center;
+    line-height: 110%;
     font-size: 2rem;
     color: var(--clr-on-body);
   }
   .load-more {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   .load-more a {
     font-size: 2rem;
