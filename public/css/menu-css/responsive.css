@@ -969,7 +969,9 @@
          margin: 0 auto;
          max-height: 3rem;
      }
-
+     .fs-navigation img{
+        display: none;
+     }
      /*.allLogos ul li img {
          max-height: 6rem;
      }*/
@@ -996,7 +998,7 @@
      }
 
      .fs-nav-wrap ul li h3 {
-         font-size: 4rem;
+         font-size: 3rem;
      }
 
      .bannerText h1 {
@@ -1025,7 +1027,7 @@
      }
 
      .fs-nav-wrap ul li h3 {
-         font-size: 4rem;
+         font-size: 1.5rem;
      }
 
      .titleWrap h1 {

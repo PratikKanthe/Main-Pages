@@ -7,6 +7,28 @@
     padding: 0;
     box-sizing: inherit;
     backface-visibility: hidden;
+    --clr-primary: #f39200;
+    --clr-secondry: #f3f3f3;
+    --clr-blue: #1e92fa;
+    --clr-yellow: #f9c87e;
+    --clr-pink: #cfbcab;
+    --clr-orange: #ff9900;
+    --clr-orange-dark: #e69138;
+    --clr-green: #aedd92;
+    --clr-purple: #9575cd;
+    --clr-001: #fb6359;
+    --clr-002: #d0dcff;
+    --clr-btn-action: #b45f06;
+    --clr-on-body: #1f1f1f;
+    --clr-body: #ffffff;
+    /* font-sizes */
+    --font-slider-title: 4.3rem;
+    --font-page-tile: 3.5rem;
+    --font-subtitle: 2.5rem;
+    --font-content: 1.3rem;
+    --font-primary: 1rem;
+    --font-sm: 0.75rem;
+    --font-btn: 1.2rem;
 }
 
 .load-more-btn {
@@ -575,7 +597,7 @@ ul.fs-social-nav li a {
     float: left;
     background: #F5F5F5;
     padding: 4rem 0 1rem;
-    margin-top: 100rem;
+    /* margin-top: 100rem; */
 }
 
 .footer-box{
@@ -841,7 +863,7 @@ span.parrentOrg {
     height: 75px;
     bottom: 10%;
     left: 30%;
-    animation: tank 5s linear infinite;
+    animation: tank 25s linear infinite;
   }
   
   @keyframes tank {
@@ -854,7 +876,7 @@ span.parrentOrg {
     }
     100% {
       transform: translateX(270px);
-      opacity: 0;
+      opacity: 1;
     }
   }
   
@@ -1298,5 +1320,51 @@ span.parrentOrg {
         left: 70%;
         animation: drone 3s alternate infinite;
       }
-    
+      .atomic1 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 15%;
+        left: 6%;
+        rotate: 324deg;
+      }
+      .atomic2 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 19%;
+        left: 8%;
+        rotate: 324deg;
+      }
+      .atomic3 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 23%;
+        left: 10%;
+        rotate: 324deg;
+      }
+      .atomic4 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 18%;
+        left: 11%;
+        rotate: 324deg;
+      }
+      @keyframes atomic {
+        0%{
+          transform: translateY(-100%);
+          opacity: 1;
+        }
+        90%{
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(400px) rotate(40deg);
+          opacity: 0;
+        }
+      }
   }
+
+  

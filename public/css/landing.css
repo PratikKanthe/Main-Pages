@@ -270,7 +270,7 @@ img {
 .atomic {
   animation: atomic 3s linear infinite;
 }
-@keyframes atomic {
+/* @keyframes atomic {
   0%{
     transform: translateY(-100%);
     opacity: 1;
@@ -282,7 +282,7 @@ img {
     transform: translateY(100px) rotate(15deg);
     opacity: 0;
   }
-}
+} */
 
 .atomic1 {
   position: absolute;
