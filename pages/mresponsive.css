@@ -1,6 +1,3 @@
- /*==========  Mobile First Method  ==========*/
- /* Custom, iPhone Retina */
-
  @media only screen and (min-width: 320px) {}
 
  /* Extra Small Devices, Phones */
@@ -55,7 +52,7 @@
 
  @media only screen and (min-width: 2560px) {
      .animatedSvg {
-         /*margin: 15rem 0;*/
+         /* /margin: 15rem 0;/ */
      }
 
      .bannerText h1 {
@@ -121,7 +118,7 @@
      }
 
      a.logo img {
-         /*height: 10rem;*/
+         /* /height: 10rem;/ */
      }
 
      ul.header-nav li a {
@@ -134,7 +131,7 @@
      }
  }
 
- /*==========  Non-Mobile First Method  ==========*/
+ /* /==========  Non-Mobile First Method  ==========/ */
  /* Large Devices, Wide Screens */
 
  @media only screen and (max-width: 1600px) {
@@ -143,7 +140,7 @@
      }
 
      .award-logo {
-         /*bottom: -15rem;*/
+         /* /bottom: -15rem;/ */
      }
 
      .services-content h3 {
@@ -151,7 +148,7 @@
      }
 
      .animatedSvg {
-         /*margin: 5rem 0;*/
+         /* /margin: 5rem 0;/ */
      }
 
      img.fs-menu-character {
@@ -188,7 +185,7 @@
      }
 
      img.letterImg {
-         height: 45rem; /*56rem*/
+         height: 45rem; 
      }
 
      .lettersInner img.wLetterN {
@@ -240,7 +237,7 @@
      }
 
     .bannerText h1 {
-         /*font-size: 5rem;*/
+         /* /font-size: 5rem;/ */
          font-size: 3.5rem;
          margin: 0;
      }
@@ -296,9 +293,7 @@
      img.fs-menu-character {
          max-width: 36%;
      }
-     .blob-Story{
-        display: none;
-     }
+
      .letters {
          top: 40%;
      }
@@ -330,6 +325,9 @@
      .bannerText h1 {
          font-size: 5rem;
      }
+     .blob-Story{
+        display: none;
+     }
  }
 
  @media only screen and (max-width: 1024px) and (orientation: portrait) {
@@ -338,7 +336,7 @@
      }
 
      .lettersInner img.wLetterN {
-         /*height: 50rem;*/
+         /* /height: 50rem;/ */
      }
  }
 
@@ -360,8 +358,9 @@
      }
 
      img.letterImg {
-         /*height: 55rem;*/
+         /* /height: 55rem;/ */
      }
+    
  }
 
  /* Medium Devices, Desktops */
@@ -370,43 +369,6 @@
      .animatedSvg svg {
          max-height: 40vh;
      }
-     .fs-nav-wrap{
-        margin-left: 0;
-     }
-     .blob3{
-        display: none;
-     }
-     .fs-address-wrap {
-        display: block;
-     }
-     #fs-menu-svg{
-        display: none;
-     }
-     .fs-nav-wrap ul li h3 {
-        font-size: 4rem;
-    }
-
-    .fs-address-wrap {
-        display: none;
-    }
-
-    .bannerText h1 {
-        font-size: 5rem;
-        margin: 0;
-    }
-
-    a.logo img {
-       margin-left: -1rem;
-        height: 4rem;
-    }
-
-    ul.header-nav li a {
-       
-        font-size: 2rem;
-    }
-    .headline h1{
-        font-size: 2rem;
-    }
  }
 
  /* Small Devices, Tablets */
@@ -510,7 +472,7 @@
          width: 100%;
      }
 
-     /*wat letter with boxes one below other*/
+     /* /wat letter with boxes one below other/ */
      .letters {
          -webkit-transform: translateY(0) translateX(0);
          -moz-transform: translateY(0) translateX(0);
@@ -607,29 +569,6 @@
      img.letterImg {
          height: 30vh;
      }
-     .sec-2 h1{
-        font-size: 4rem;
-      }
-     .our-socials{
-        margin-top: 20rem;
-     }
-     .footer {
-        margin-top: 30rem;
-    }
-    .sec-1{
-        display: none;
-    }
-    .sec-2{
-        width: 100%;
-    }
-
-    .sec-2 .article p{
-        padding: 15px;
-        width: 90vw;
-      }
-     .posts {
-        grid-template-columns: repeat(2,1fr);
-      }
 
      .banner-box-text {
          margin: 6rem auto 5rem;
@@ -644,7 +583,7 @@
 }
  @media only screen and (max-width: 767px) {
      ul.oc-footer-logo li {
-         margin: 0 4rem;
+         margin: 0 0rem;
      }
 
      p.copyText {
@@ -658,7 +597,7 @@
      }
 
      ul.header-nav li:not(:last-child) {
-         /*margin-bottom: 2rem;*/
+         /* /margin-bottom: 2rem;/ */
        
      }
 
@@ -682,20 +621,17 @@
      }
 
      .fs-nav-wrap ul li h3 {
-         font-size: 3rem;
+         font-size: 6rem;
      }
 
      .fs-address-wrap {
          display: none;
      }
-     .fs-address-wrap {
-        display: none;
-    }
 
-     .bannerText h1 {
+     /* .bannerText h1 {
          font-size: 5rem;
          margin: 0;
-     }
+     } */
 
      a.logo img {
         margin-left: -1rem;
@@ -841,13 +777,13 @@
 
      .lettersInner img.wLetterN {
          margin: 0 auto;
-         /*max-width: 80%;*/
+         /* /max-width: 80%;/ */
      }
 
      img.letterImg {
          height: auto;
          margin: 0 auto;
-         /*max-width: 80%;*/
+         /* /max-width: 80%;/ */
      }
 
      .banner-inner {
@@ -950,7 +886,7 @@
      }
 
      .titleWrap h1 span.main-heading br {
-         /*display: none;*/
+         /* /display: none;/ */
      }
 
      img.uvcv-creative {
@@ -1020,26 +956,9 @@
          padding: 5rem 0 10rem; */
          padding: 5rem 0 5rem;
      }
-     .our-socials{
-        margin-top: 35rem;
-     }
-     .container h1 {
-        font-size: 4rem;
-        font-weight: normal;
-        text-align: left;
-      }
-     .footer {
-        margin-top: 20rem;
-    }
 
      .contact-us-container {
          background-image: none !important;
-     }
-     .article-content h1{
-        font-size: 4rem;
-     }
-     .headline h1{
-        font-size: 2rem;
      }
 
      .footer a#gotop {
@@ -1058,7 +977,7 @@
          max-height: 6rem;
      }*/
      .award-logo {
-         /*bottom: -16rem;*/
+         /* /bottom: -16rem;/ */
      }
 
      .banner-box-text {
@@ -1095,29 +1014,15 @@
      .allLogos ul li {
          max-width: calc(100%/3);
      }
- }
 
- @media only screen and (max-width: 302px){
-    .our-socials{
-        margin-top: 100rem;
-     }
+   
  }
-
 
  /* Custom, iPhone Retina */
-
 
  @media only screen and (max-width: 360px) {
      .fs-nav-wrap {
          margin-top: 5rem;
-     }
-     .cols2{
-        flex-direction: column;
-        margin-top: 15rem;
-      }
-
-     .our-socials{
-        margin-top: 55rem;
      }
 
      .fs-nav-wrap ul li:not(:last-child) {
@@ -1139,6 +1044,11 @@
      ul.oc-footer-logo li {
          margin: 0 2rem;
      }
+
+     .cols2{
+        flex-direction: column;
+        margin-top: 15rem;
+      }
  }
 
  @media only screen and (max-width: 320px) {
@@ -1153,7 +1063,7 @@
 
  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
      .animatedSvg {
-         /*margin: 36.2rem 0 10.2rem 0;*/
+         /* /margin: 36.2rem 0 10.2rem 0;/ */
      }
 
      /*.fs-nav-wrap {
@@ -1195,6 +1105,8 @@
      .wtp-wrap div {
          max-height: 200px;
      }
+
+     
  }
 
  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -1203,15 +1115,15 @@
      }
 
      .animatedSvg {
-         /*margin: 20.2rem 0;*/
+         /* margin: 20.2rem 0; */
      }
 
      .award-logo {
-         /*bottom: -18rem;*/
+         /* bottom: -18rem; */
      }
 
      .letters {
-         /*top: 55%;*/
+         /* top: 55%; */
      }
 
      .wtp-wrap div {
@@ -1236,4 +1148,3 @@
          font-size: 1.8rem;
      }
  }
- 

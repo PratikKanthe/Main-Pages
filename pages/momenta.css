@@ -579,133 +579,6 @@ ul.fs-social-nav li a {
     color: #000;
 }
 
-/* our inspiration */
-.our-inspiration{
-  display: flex;
-  min-height: 100vh;
-}
-
-.sec-1{
-  width: 30%;
-}
-.sec-2{
-  width: 70%;
-}
-
-.sec-2 h1{
-  text-align: center;
-  line-height: 210%;
-  font-size: 7rem;
-}
-
-.article p{
-  width: 50vw;
-  font-size: 2rem;
-}
-
-/* our specialization */
-.page {
-  height: 100vh;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-}
-
-.container h1 {
-  font-size: 7rem;
-  font-weight: normal;
-}
-/* .text{
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-} */
-.text p {
-  font-size: 2rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 3rem;
-  align-items: start;
-  justify-content: center;
-}
-
-.reason {
-  display: flex;
-  gap: 1rem;
-  align-items: start;
-}
-
-.sub {
-  font-size: var(--font-content);
-  font-weight: 700;
-}
-
-.avtar {
-  display: flex;
-  justify-content: top;
-  align-items: center;
-}
-
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45px;
-  width: 45px;
-  font-size: 1rem;
-  border-radius: 50%;
-  background-color: var(--clr-secondry);
-  font-size: 2rem;
-}
-
-.circle2 {
-  background-color: var(--clr-blue);
-}
-.circle3 {
-  background-color: var(--clr-green);
-}
-.circle4 {
-  background-color: var(--clr-pink);
-}
-.circle5 {
-  background-color: var(--clr-yellow);
-}
-.circle6 {
-  background-color: var(--clr-purple);
-}
-
-/* media query */
-
-@media only screen and (max-width: 992px) {
-
-  /* h1,p{
-    animation: fade linear both;
-    animation-timeline: scroll();
-  } */
-
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  .grid-3 {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 2rem;
-  }
-}
-
 
 
 
@@ -720,16 +593,15 @@ ul.fs-social-nav li a {
 /* /footer starts/ */
 
 .footer {
-  position: absolute;
     width: 100%;
     float: left;
     background: #F5F5F5;
     padding: 4rem 0 1rem;
-    margin-top: 2rem;
+    margin-top: 30rem;  
 }
 
 .footer-box{
-    display: grid;
+    display: grid; 
     /* background: #ebe5e6; */
     margin-bottom: 2rem;
     border: 2px solid black
@@ -747,7 +619,21 @@ ul.fs-social-nav li a {
 
 
 
+.footer a#gotop {
+    position: absolute;
+    right: 0;
+    top: -5.6rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
 
+.footer a#gotop:after {
+    content: "Top";
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #000;
+}
 
 .footer-content h3 {
     font-size: 1.8rem;
@@ -920,201 +806,28 @@ span.parrentOrg {
     line-height: 150%;
     width: 35vw;
   }
-
-  .slide-title{
-    text-align: center;
-  }
   
   .slide-title h1 {
     font-size: 5rem;
     font-weight: 500;
     line-height: 150%;
   }
- 
   .change::before {
-    font-size: 3rem;
-    content: "Material Traceability";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
-  }
-  
-  @keyframes animate {
-    10% {
-      content: "Certificate of Conformance";
-    }
-    20% {
-      content: "Risk Management";
-    }
-    30% {
-      content: "Compliance Assurance & Audit friendliness";
-    }
-    40% {
-      content: "Corrective Action Preventive Action";
-    }
-    50% {
-      content: " New Product Development";
-    }
-    60% {
-      content: "First Article Inspection Report ";
-    }
-    70% {
-      content: " Inspection plan";
-    }
-    80% {
-      content: " Calibration of Instruments & Gauges";
-    }
-  }
-
-  .change-slide-2::before {
-    font-size: 3rem;
-    content: "Cost Reduction & Improve Profits";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
-  }
-  
-  @keyframes animate {
-    10% {
-      content: "Material Traceability";
-    }
-    20% {
-      content: "Certificate of Conformance";
-    }
-    30% {
-      content: "Risk Management";
-    }
-    40% {
-      content: "Corrective Action Preventive Action";
-    }
-    50% {
-      content: " New Product Development";
-    }
-    60% {
-      content: "First Article Inspection Report ";
-    }
-    70% {
-      content: " Calibration of Instruments & Gauges";
-    }
-    80% {
-      content: "Inspection plan";
-    }
-  
-    90% {
-      content: "Compliance Assurance & Audit friendliness";
-      opacity: 1;
-    }
-  }
-
-  .change-slide-3::before {
-    font-size: 3rem;
-    content: "Cost Reduction & Improve Profits";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
-  }
-  
-  @keyframes animate {
-    10% {
-      content: "Material Traceability";
-    }
-    20% {
-      content: "Certificate of Conformance";
-    }
-    30% {
-      content: "Risk Management";
-    }
-    40% {
-      content: "Corrective Action Preventive Action";
-    }
-    50% {
-      content: "New Product Development";
-    }
-    60% {
-      content: "First Article Inspection Report";
-    }
-    70% {
-      content: "Calibration of Instruments & Gauges";
-    }
-    80% {
-      content: "Inspection plan";
-    }
-    90% {
-      content: "Compliance Assurance & Audit friendliness";
-    }
-  }
-
-  .change-slide-4::before {
-    font-size: 3rem;
-    content: "Material Test Certificate";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
-  }
-  
-  @keyframes animate {
-    10% {
-      content: "Compliance Assurance & Audit friendliness";
-    }
-    20% {
-      content: "Reduce Delivery Lead time … Deliver Earlier";
-    }
-    30% {
-      content: "Material Traceability";
-    }
-    40% {
-      content: "Order wise Purchase Budget Control";
-    }
-    50% {
-      content: "Supplier Interface";
-    }
-    60% {
-      content: "Effective Component Expediting";
-    }
-    70% {
-      content: "Inspection Call Letters & Offer Letters for TPI";
-    }
-    80% {
-      content: "Calibration of Instruments & Gauges";
-    }
-    90% {
-      content: "Serialisation of Valves";
-    }
-  }
-  .change-slide-5::before {
-    font-size: 3rem;
-    content: "Compound Formulation Secrecy";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    content: "Formulation Secrecy";
+    animation: animate ease-in-out infinite 10s;
   }
   
   @keyframes animate {
     25% {
       content: "Batch size wise compound formulation";
     }
-    50% {
-      content: "Batch wise consumption of compound";
-    }
-    75% {
-      content: "Production Efficiency monitoring";
-    }
-    100% {
-      content: "Die Management";
-    }
-  }
-
-  .change-slide-6::before {
-    font-size: 3rem;
-    content: "Material Test Certificate";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
-  }
   
-  @keyframes animate {
-    20% {
-      content: "Auto Item & Code Generation";
+    50% {
+      content: "Batch wise consumption of compound during production";
     }
-    40% {
-      content: "Auto BOM creator; Auto weight Calculator";
-    }
-    60% {
-      content: "Production Clubbing by Dia-Pitch";
-    }
-    80% {
-      content: "Inspection Call Letters & Offer Letters for TPI";
-    }
-    100% {
-      content: "Calibration of Instruments & Gauges";
+  
+    75% {
+      content: "Efficiency monitoring based on Active Cavities";
     }
   }
   
@@ -1211,7 +924,7 @@ span.parrentOrg {
   }
   
   .atomic {
-    animation: atomic 3s linear infinite;
+    animation: atomic 5s linear infinite;
   }
   @keyframes atomic {
     0%{
@@ -1222,7 +935,7 @@ span.parrentOrg {
       opacity: 1;
     }
     100% {
-      transform: translateY(500px);
+      transform: translateY(400px) rotate(30deg);
       opacity: 0;
     }
   }
@@ -1360,7 +1073,7 @@ span.parrentOrg {
   .main-box {
     margin-top: 7rem;
     background-color: #EEEEEE;
-    padding: 5rem;
+    padding: 6rem;
     border-radius: 8rem;
     width: 45vw;
   }
@@ -1415,11 +1128,6 @@ span.parrentOrg {
   }
   
 
-  .box-tpbar{
-    text-align: left;
-    line-height: 110%;
-    margin-bottom: 3rem;
-  }
   
   .list-box {
     display: grid;
@@ -1440,14 +1148,12 @@ span.parrentOrg {
   .list4{background-color: #FADA5E;}
   
   .list p {
-    text-align: center;
-    line-height: 110%;
     font-size: 2rem;
     color: var(--clr-on-body);
   }
   .load-more {
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .load-more a {
     font-size: 2rem;
@@ -1466,7 +1172,7 @@ span.parrentOrg {
   }
   .btn-load {
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 1em 3em;
     background-color: var(--clr-btn-action);
     color: var(--clr-body);
   }
@@ -1513,6 +1219,7 @@ span.parrentOrg {
   }
   
   .article-content {
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1530,13 +1237,11 @@ span.parrentOrg {
   }
   
   .posts {
-    display: grid;
+    display: flex;
     gap: 2rem;
-    grid-template-columns: repeat(4,1fr);
     overflow-x: auto;
     overscroll-behavior-x: contain;
     padding:0 2rem;
-    margin-bottom: 2rem;
     /* animation: move 10s ease-out infinite; */
   }
   .post {
@@ -1587,15 +1292,6 @@ span.parrentOrg {
       width: 100%;
       background-color: white;
     }
-  }
-
-  .headline h1{
-    font-size: 2rem;
-  }
-
-  .sub{
-    font-size: 2rem;
-    font-weight: normal;
   }
 
   @media only screen and (max-width:992px){
@@ -1655,32 +1351,6 @@ span.parrentOrg {
         left: 11%;
         rotate: 324deg;
       }
-      @keyframes helicopter {
-        0% {
-          transform: translateX(-100%) translateY(-30px) rotate(0deg);
-          opacity: 1;
-        }
-        90%{
-          opacity: 1;
-        }
-        100% {
-          transform: translateX(300px) translateY(100px)  rotate(40deg);
-          opacity: 0;
-        }
-      }
-      @keyframes tank {
-        0% {
-          transform: translateX(-100%);
-          opacity: 1;
-        }
-        90%{
-          opacity: 1;
-        }
-        100% {
-          transform: translateX(200px);
-          opacity: 1;
-        }
-      }
       @keyframes atomic {
         0%{
           transform: translateY(-100%);
@@ -1690,14 +1360,508 @@ span.parrentOrg {
           opacity: 1;
         }
         100% {
-          transform: translateY(400px);
+          transform: translateY(400px) rotate(40deg);
           opacity: 0;
         }
       }
   }
 
+
+  /* our stroy start here */
+
+  .cols2{
+    display: flex;
+    min-height: 100vh;
+  }
   
+  .cols3{
+    display: flex;
+    min-height: 100vh;
+    /* margin-top: 5rem; */
+  }
+  
+  /* Our Story Start Here */
+  
+  .part1{
+    width: 35%;
+    display: grid;
+    align-content: center;
+  }
+  
+.blob-Story{
+max-width: 60rem;  
+}
+  
+  .part2{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 1rem;
+    
+  }
+  
+  /* @keyframes move {
+    0%{
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
+  
+  
+  
+  .content{
+    width: 70vw;
+    /* animation: show 1s ease-in backwards; */
+    /* animation: move 0.5s ease-in forwards; */
+  }
+  .content h1{
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    /* margin-bottom: 1rem; */
+  }
+  .article{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* margin-top: 2rem; */
+  }
+  .article p{
+    text-align: left;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60vw;
+    /* padding: 1rem; */
+    
+  }
+  
+  .tagline {
+    position: fixed;
+    top: 70%;
+    letter-spacing: 0.02em;
+    left: 1%;
+    font-size: 1.5rem;
+    color: var(--clr-on-body);
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left;
+    z-index: 1;
+  }
+
+  
+  /* .Cards{
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(6,1fr);
+  }
+  .card img{
+  filter: grayscale(2);
+  transition: 0.5s ease-in;
+  
+  
+  }
+  
+  .card img:hover{
+    filter: grayscale(0);
+    } */
+  
+  
+  
+  
+  /* Our Customers Start Here */
+  
+  
+  .container{
+    height: 100vh;
+    margin: 1rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+  }
+  
+  .logos{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    gap: 3.2rem;
+    /* mix-blend-mode: color-burn; */
+    height: 2px;
+    animation: move 15s linear infinite;
+    margin: 1rem;
+    margin-top: 5rem;
+   
+  }
+  
+  
+  
+  .Customers-logo{
+    filter: grayscale(100%);
+    max-width: 50vw;
+       
+  
+  }
+  
+  
+  
+  .Customers-logo img{
+   object-fit: contain;
+   height: 8vh;
+   width: 8vw; 
+   
+  }
+  .Customers-logo:hover{
+    filter: grayscale(0%);
+  }
+  
+  .logos:hover{
+   animation-play-state: paused;
+   cursor: pointer; 
+   
+  }
+  
+  .text{
+    margin-top: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 7rem;
+   font-family: 'Open Sans';  
+   
+  }
+  
+  @keyframes move {
+    from{
+        transform: translateX(15%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+  }
+  
+  
+  
+  
+  
+  /* map Starts here */
+  
+  
+  
+  .map{
+    height: 100vh;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  .map1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 50vw;
+    border-style: 5px solid var(--clr-on-body);
+    
+    /* background: url("/public/images/map1.svg") no-repeat;
+    background-position: center;
+    object-fit: cover; */
+  }
+  
+  .flex h1{
+    text-align: center;
+    font-size: 7rem;
+    font-weight: normal;
+  }
+  
+  .map2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 48vw;
+  
+    /* background: url("/public/images/map1.svg") no-repeat;
+    background-position: center;
+    object-fit: cover; */
+  }
+  
+  .map2 h1{
+    margin-top:14rem;
+    font-size: 7rem;
+  }
+  
+  .world{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 30vw;
+  }
+  
+  .grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .country{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .country h2{
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  .show{
+    animation: jump 1s ease-in infinite;
+  }
+  
+  @keyframes jump {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5%);
+    }
+  }
+  
+  
+  
+  @keyframes spin {
+    from{
+      transform: rotate(0deg) ;
+    }
+    to{
+      transform: rotate(360deg) ;
+    }
+  }
+  
+  
+  .plane{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    animation: fly 3s linear infinite;
+  }
+  
+  .banner{
+    font-size: 3rem;
+    color: #464455;
+  }
+  
+  @keyframes fly {
+    from{
+      transform: translateX(-110px);
+    }
+    to{
+      transform: translateX(155px);
+    }
+  }
 
 
-  /* pages css  */
+
+
+/* TEAMS */
+
+.people{
+  height: 110vh;
+  margin: 1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.ourpeople{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 2.1rem;
+  margin: 3rem;
+
+  
+}
+
+.Our-people{
+   height: 40vh;
+   width: 15vw;
+   
+}
+
+.Our-people img{
+ height: 40vh;
+ width: 15.1vw;
+background: red;
+
+}
+
+
+
+.ourpeople p{
+  font-size: 2rem;
+}
+/* openings */
+
+
+
+
+
+  /* Our Story */
+
+  @media only screen and (max-width: 767px){
+    .cols2{
+      flex-direction: column;
+    }
+  
+    .cols3{
+      flex-direction: column;
+    }
+    .part1{
+      display: none;
+    }
+    .box{
+      width: 80vw;
+      height: 50vh;
+      background-color: var(--clr-green);
+      margin-left: 10%;
+      margin-bottom: 1rem;
+    }
+  
+    .part2{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      gap: 1rem;
+    }
+    .tagline{
+      position: absolute;
+      rotate: -90deg;
+      top: 50%;
+      left: -20%;
+      font-size: var(--font-sm);
+      display: none;
+    }
+    .content h1{
+      font-size: 7rem;
+      margin-bottom: 1rem;
+    }
+    .article p{
+      text-align: left;
+      font-size: 3rem;
+    display: flex;
+    }
+  }
+  
+  /* Our customers*/
+  
+  @media only screen and (max-width: 767px) {
+  
+    .text{
+     display: flex;
+     justify-content: center;
+     font-size: 6rem;
+      
+    }
+    
+    .logos{
+     margin-top: 4.5rem;
+     grid-template-columns: repeat(20,1r);
+    }
+    
+    .Customers-logo{
+     width: 30vw;
+    }
+    .Customers-logo img{ 
+     
+     width: 30vw; 
+     object-fit: contain;
+     
+    }
+    }
+  
+  
+  /* Our Presence(map) */
+  
+  @media only screen and (max-width: 767px){
+    .flex{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .map1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+    }
+    .india{
+      height: 800px;
+      width: 400px;
+    }
+    .world{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      width: 30vw;
+    }
+    .map2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      width: 100%;
+      row-gap: 5rem;
+      margin-top: -40rem;
+     
+    }
+    .grid2{
+      display: grid;
+      grid-template-columns: 200px 200px;
+      align-items: start;
+    }
+  
+    .country{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+      padding: 1em;
+      aspect-ratio: 3/1;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .country h2{
+      font-size: 3rem;
+      font-weight: normal;
+    }
+    .show{
+      animation: jump 1s ease-in infinite;
+    }
+  
+    .plane{
+      display: none;
+    }
+    
+    .banner{
+      font-size: var(--font-content);
+      color: #464455;
+      display: none;
+    }
+    
+  }
   
