@@ -719,15 +719,17 @@ ul.fs-social-nav li a {
     width: 100%;
     float: left;
     background: #F5F5F5;
-    padding: 4rem 0 1rem;
-    margin-top: 2rem;
+    padding: 0 0 1rem;
+    margin-top: 10rem;
 }
 
 .footer-box{
+  padding: 15px;
+  padding-left: 5vw;
     display: grid;
     /* background: #ebe5e6; */
-    margin-bottom: 2rem;
-    border: 2px solid black
+    margin-bottom: 4rem;
+    background-color: #FADA5E;
 }
 
 .footer-h2{
@@ -1112,6 +1114,10 @@ span.parrentOrg {
       content: "Calibration of Instruments & Gauges";
     }
   }
+
+  .landing-icons{
+    overflow-x: hidden;
+  }
   
   .helicopter {
     position: absolute;
@@ -1145,6 +1151,7 @@ span.parrentOrg {
     bottom: 10%;
     left: 30%;
     animation: tank 25s linear infinite;
+    overflow-x: hidden;
   }
   
   @keyframes tank {
@@ -1305,6 +1312,7 @@ span.parrentOrg {
   left: 30%;
   transform: rotateY(-30deg); 
   animation: tank 3s linear infinite;
+  overflow-x: hidden;
 }
 
 
@@ -1315,6 +1323,7 @@ span.parrentOrg {
   width: 75px;
   height: 75px;
   animation: plane 10s linear infinite;
+  overflow-x: hidden;
 }
 
 .bike{
@@ -1324,6 +1333,7 @@ span.parrentOrg {
   width: 75px;
   height: 75px;
   animation: bike 3s linear infinite;
+  overflow-x: hidden;
 }
 
 @keyframes bike {
@@ -1349,10 +1359,10 @@ span.parrentOrg {
 /* slide 3 */
  .fan{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   bottom: 10%;
-  left: 40%;
+  left: 43%;
   transform: rotateY(-30deg);
 }
 
@@ -1371,7 +1381,7 @@ span.parrentOrg {
   left: 5%;
   width: 75px;
   height: 75px;
-  animation: machine2 3s ease-in infinite;
+  animation: machine2 3s infinite alternate;
 }
 
 @keyframes machine {
@@ -1397,62 +1407,64 @@ span.parrentOrg {
   left: 5%;
   width: 75px;
   height: 75px;
-  animation: machine 3s linear infinite;
+  animation: machine 3s infinite alternate;
 }
 
 
 /* slide 4 */
-.fan{
+.pip-meter{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   bottom: 10%;
-  left: 40%;
-  transform: rotateY(-30deg);
+  left: 43%;
+  animation: machine 3s alternate infinite;
 }
 
 
-.nut{
+.valve{
   position: absolute;
   top: 23%;
   left: 45%;
   width: 45px;
   height: 45px;
+  animation: machine2 3s alternate infinite;
 }
 
-.machine2{
+.pipe-2{
   position: absolute;
   bottom: 10%;
   left: 5%;
-  width: 75px;
-  height: 75px;
-  animation: machine2 3s ease-in infinite;
+  width: 55px;
+  height: 55px;
+  animation: rotate-pipe 5s alternate infinite;
 }
 
-@keyframes machine {
+@keyframes rotate-pipe {
   0%{
-    scale: 1;
+    transform: rotate(0deg);
   }
   100%{
-    scale: 0.5;
+    transform: rotate(90deg);
   }
 }
-@keyframes machine2 {
+@keyframes rotate-pipe-rev {
   0%{
-    scale: 0.5;
+    transform: rotate(90deg);
   }
   100%{
-    scale: 1;
+    transform: rotate(0deg);
   }
 }
 
-.machine{
+
+.pipe{
   position: absolute;
   top: 23%;
   left: 5%;
-  width: 75px;
-  height: 75px;
-  animation: machine 3s linear infinite;
+  width: 55px;
+  height: 55px;
+  animation: rotate-pipe-rev 5s alternate infinite;
 }
 
   /* part 2 */
@@ -1646,7 +1658,7 @@ span.parrentOrg {
     grid-template-columns: repeat(4,1fr);
     overflow-x: auto;
     overscroll-behavior-x: contain;
-    padding:0 2rem;
+    padding:0 3rem;
     margin-bottom: 2rem;
     /* animation: move 10s ease-out infinite; */
   }
@@ -1656,14 +1668,14 @@ span.parrentOrg {
   
   }
   
-  @keyframes move {
+  /* @keyframes move {
     0% {
       transform: translateX(60%);
     }
     100% {
       transform: translateX(20%);
     }
-  }
+  } */
   
   
   .post h1 {
@@ -1677,6 +1689,46 @@ span.parrentOrg {
     flex-direction: column;
   }
   
+/* social btn */
+.social-btn {
+  margin-top: 4rem;
+  --b: 3px; 
+  --s: .45em; 
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 2.5rem;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.social-btn:hover,
+.social-btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.social-btn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+
+
   @media only screen and (max-width: 667px){
     .col2{
       height: 100vh;
@@ -1710,9 +1762,7 @@ span.parrentOrg {
   }
 
   @media only screen and (max-width:992px){
-    .col-2{
-        
-    }
+    
     .part-1 {
         height: 100vh;
         width: 100%;
@@ -1727,12 +1777,14 @@ span.parrentOrg {
         line-height: 150%;
         width: 70vw;
       }
+      
     
      .drone {
         position: absolute;
         bottom: 20%;
         left: 70%;
         animation: drone 3s alternate infinite;
+        overflow-x: hidden;
       }
       .atomic1 {
         position: absolute;
@@ -1788,7 +1840,7 @@ span.parrentOrg {
           opacity: 1;
         }
         100% {
-          transform: translateX(200px);
+          transform: translateX(800px);
           opacity: 1;
         }
       }
@@ -1805,9 +1857,124 @@ span.parrentOrg {
           opacity: 0;
         }
       }
+
+      .bulb{
+        display: none;
+      }
+
+      .scooter{
+        position: absolute;
+        left: 90%;
+      }
+
+      .bike{
+        position: absolute;
+        left: 90%;
+        overflow-x: hidden;
+      }
+
+      @keyframes bike {
+        0%{
+          transform: translateX(0) rotate(0deg);
+        }
+        25%{
+          transform: translateY(-20px) rotate(30deg);
+        }
+        100%{
+          transform: translateX(-900px);
+        }
+      }
+
+      @keyframes plane {
+        from {
+          transform: translateX(100%);
+        }
+        90%{
+          opacity: 1;
+        }
+        to {
+          transform: translateX(-900px);
+        }
+      }
+      .fan{
+        position: absolute;
+        left: 90%;
+        overflow-x: hidden;
+      }
+      .nut{
+        left: 90%;
+        overflow-x: hidden;
+      }
+      .valve{
+        left: 90%;
+        overflow-x: hidden;
+      }
+      .pip-meter{
+        left: 90%;
+        overflow-x: hidden;
+      }
   }
 
-  
+  @media only screen and (max-width:768px){
+    .bike{
+      position: absolute;
+      left: 80%;
+      overflow-x: hidden;
+    }
+    .fan{
+      position: absolute;
+      left: 80%;
+    }
+    .nut{
+      left: 80%;
+    }
+    .valve{
+      left: 80%;
+    }
+    .pip-meter{
+      left: 80%;
+    }
+  }
+
+  @media only screen and (max-width:480px){
+    .bike{
+      animation: bike 3s linear infinite;
+      overflow-x: hidden;
+    }
+    @keyframes bike {
+      0%{
+        transform: translateX(0) rotate(0deg);
+      }
+      25%{
+        transform: translateY(-20px) rotate(30deg);
+      }
+      100%{
+        transform: translateX(-500px);
+      }
+    }
+    .car{
+      animation: tank 5s linear infinite;
+      overflow-x: hidden;
+    }
+    .bike{
+      position: absolute;
+      left: 70%;
+      overflow-x: hidden;
+    }
+    .fan{
+      position: absolute;
+      left: 70%;
+    }
+    .nut{
+      left: 70%;
+    }
+    .valve{
+      left: 70%;
+    }
+    .pip-meter{
+      left: 70%;
+    }
+  }
 
 
   /* pages css  */

@@ -290,10 +290,25 @@
      .explorer {
          font-size: 16px;
      }
+     .list {
+        color: var(--clr-on-body);
+        height: 16vh;
+        padding: 2rem;
+        width: 9vw;
+        border-radius: 3rem;
+      }
+      .list p{
+        font-size: 1.5rem;
+      }
  }
 
  @media only screen and (max-width: 1024px) {
-     img.fs-menu-character {
+    .map2 h1{
+        margin-top: 10%;
+
+    }
+    
+    img.fs-menu-character {
          max-width: 36%;
      }
      .blob-Story{
@@ -362,6 +377,42 @@
      img.letterImg {
          /*height: 55rem;*/
      }
+     .list {
+        color: var(--clr-on-body);
+        height: 16vh;
+        padding: 2rem;
+        width: 9vw;
+        border-radius: 3rem;
+      }
+      .list p{
+        font-size: 1.5rem;
+      }
+ }
+
+
+ @media only screen and (max-width: 1030px) {
+    #fs-menu-svg{
+        display: none;
+    }
+    .blob3{
+        display: none;
+    }
+    .fs-nav-wrap{
+        margin-left: 10%;
+    }
+    .fs-address-wrap{
+        margin-right: 15%;
+    }
+    .list {
+        color: var(--clr-on-body);
+        height: 16vh;
+        padding: 2rem;
+        width: 9vw;
+        border-radius: 3rem;
+      }
+      .list p{
+        font-size: 1.5rem;
+      }
  }
 
  /* Medium Devices, Desktops */
@@ -406,6 +457,24 @@
     }
     .headline h1{
         font-size: 2rem;
+    }
+    .cols2 .content h1{
+        margin-top: 10%;
+    }
+    .part2{
+        width: 100%;
+    }
+    .part2 .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .map2 h1{
+        margin-top: 0;
+    }
+    .cols3{
+        margin-bottom: 5rem;
     }
  }
 
@@ -510,7 +579,7 @@
          width: 100%;
      }
 
-     /*wat letter with boxes one below other*/
+     /* letter with boxes one below other*/
      .letters {
          -webkit-transform: translateY(0) translateX(0);
          -moz-transform: translateY(0) translateX(0);
@@ -614,13 +683,16 @@
         margin-top: 20rem;
      }
      .footer {
-        margin-top: 30rem;
+        margin-top: 50rem;
     }
     .sec-1{
         display: none;
     }
     .sec-2{
         width: 100%;
+    }
+    .footer-box{
+        padding-left: 2vw;
     }
 
     .sec-2 .article p{
@@ -634,6 +706,17 @@
      .banner-box-text {
          margin: 6rem auto 5rem;
      }
+     .grid2{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+     }
+     .country{
+        padding: 2rem;
+        width: 40vw;
+        height: auto;
+     }
  }
 
  @media only screen and (max-width: 767px) { 
@@ -641,6 +724,13 @@
         font-size: 11px;
        margin-left: 0.1rem;
     }
+    
+  .part2 .content h1{
+    margin-top: 10rem;
+ }
+ .content .article p{
+    font-size: 2rem;
+ }
 }
  @media only screen and (max-width: 767px) {
      ul.oc-footer-logo li {
@@ -659,7 +749,6 @@
 
      ul.header-nav li:not(:last-child) {
          /*margin-bottom: 2rem;*/
-       
      }
 
      .fs-nav-wrap {
@@ -1012,9 +1101,28 @@
 
  }
 
+ @media only screen and (max-width: 600px){
+    .cols2 .content{
+        margin-top: 0%;
+        /* margin-bottom: -40%; */
+    }
+ }
+
  /* Extra Small Devices, Phones */
 
  @media only screen and (max-width: 480px) {
+    .cols2 .content{
+        margin-top: 30%;
+        
+    }
+
+    .Customers-container{
+        margin-top: 20%;
+    }
+
+    .map2{
+        margin-top: 6%;
+    }
      .sub-containers {
          /* padding: 14rem 0 4rem;
          padding: 5rem 0 10rem; */
@@ -1029,7 +1137,7 @@
         text-align: left;
       }
      .footer {
-        margin-top: 20rem;
+        margin-top: 35rem;
     }
 
      .contact-us-container {
@@ -1103,6 +1211,20 @@
      }
  }
 
+ @media only screen and (max-width: 450px) {
+    .cols2 .content h1{
+        margin-top: 40%;
+        
+    }
+
+    .Customers-container{
+        margin-top: 35%;
+    }
+
+    .map2{
+        margin-top: 6%;
+    }
+}
 
  /* Custom, iPhone Retina */
 
@@ -1111,10 +1233,17 @@
      .fs-nav-wrap {
          margin-top: 5rem;
      }
+     .Customers-container h1{
+        margin-top: 20%;
+        font-size: 5rem
+     }
      .cols2{
         flex-direction: column;
         margin-top: 15rem;
       }
+      .map2{
+        margin-top: 12%;
+    }
 
      .our-socials{
         margin-top: 55rem;
@@ -1144,6 +1273,9 @@
  @media only screen and (max-width: 320px) {
      img.fs-menu-character {
          display: none;
+     }
+     .footer{
+        margin-top: 50rem;
      }
 
      ul.oc-footer-logo li img {
