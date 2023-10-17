@@ -1168,24 +1168,6 @@ span.parrentOrg {
     top: 85.2%;
     left: 2%;
   }
-  /* .tank2 {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 172%;
-    left: 30%;
-    animation: tank 3s linear infinite;
-  }
-  
-  .tank3 {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 272%;
-    left: 30%;
-    animation: tank 3s linear infinite;
-  }
-   */
   .drone {
     position: absolute;
     width: 75px;
@@ -1255,22 +1237,6 @@ span.parrentOrg {
     rotate: 324deg;
   }
   
-  .atomic12 {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    top: 110%;
-    left: 6%;
-    rotate: 324deg;
-  }
-  .atomic13 {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    top: 210%;
-    left: 6%;
-    rotate: 324deg;
-  }
   
   .slide-plane {
     position: absolute;
@@ -1329,18 +1295,6 @@ span.parrentOrg {
     color: var(--clr-on-body);
   }
   
-  .bottom {
-    position: absolute;
-    bottom: 2%;
-  }
-  .bottom2 {
-    position: absolute;
-    top: 185%;
-  }
-  .bottom3 {
-    position: absolute;
-    top: 285%;
-  }
   
   .part-2 {
     height: 100vh;
