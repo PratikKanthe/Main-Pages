@@ -2,16 +2,16 @@
 <svg fill="#000000" height="800px" width="800px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
   <style type="text/css">
     .glow {
-      fill: #fde047; /* Start with the glowing yellow color */
-      animation: glow 1.5s ease-in-out infinite alternate; /* Adjusted animation duration and timing function */
+      fill: #fde047;
+      animation: glow 5s ease-in-out infinite alternate;
     }
 
     @keyframes glow {
       0% {
-        fill: #fde047; /* Start with glowing yellow */
+        fill: #fde047;
       }
       100% {
-        fill: #d1d5db; /* Transition back to the original color */
+        fill: #d1d5db;
       }
     }
   </style>

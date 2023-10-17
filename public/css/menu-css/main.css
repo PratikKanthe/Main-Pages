@@ -1303,26 +1303,47 @@ span.parrentOrg {
   height: 150px;
   bottom: 10%;
   left: 30%;
-  animation: plane 5s linear infinite;
+  transform: rotateY(-30deg); 
+  animation: tank 3s linear infinite;
 }
 
 
 .scooter{
+  position: absolute;
+  top: 20%;
+  left: 45%;
   width: 75px;
   height: 75px;
+  animation: plane 10s linear infinite;
 }
 
 .bike{
+  position: absolute;
+  top: 55%;
+  left: 45%;
   width: 75px;
   height: 75px;
+  animation: bike 3s linear infinite;
+}
+
+@keyframes bike {
+  0%{
+    transform: translateX(0) rotate(0deg);
+  }
+  25%{
+    transform: translateY(-20px) rotate(30deg);
+  }
+  100%{
+    transform: translateX(-700px);
+  }
 }
 
 .bulb{
   position: absolute;
-  top: 20%;
-  left: 3%;
-  width: 75px;
-  height: 75px;
+  top: 10%;
+  left: 1%;
+  width: 55px;
+  height: 55px;
 }
 
   /* part 2 */
@@ -1411,6 +1432,7 @@ span.parrentOrg {
     color: var(--clr-on-body);
     background-color: var(--clr-orange-dark);
     height: 18vh;
+    padding: 2rem;
     width: 9vw;
     border-radius: 3rem;
   }
