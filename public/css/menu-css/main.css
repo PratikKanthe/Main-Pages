@@ -1347,8 +1347,62 @@ span.parrentOrg {
 }
 
 /* slide 3 */
- /* slide 2 */
  .fan{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 10%;
+  left: 40%;
+  transform: rotateY(-30deg);
+}
+
+
+.nut{
+  position: absolute;
+  top: 23%;
+  left: 45%;
+  width: 45px;
+  height: 45px;
+}
+
+.machine2{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 75px;
+  height: 75px;
+  animation: machine2 3s ease-in infinite;
+}
+
+@keyframes machine {
+  0%{
+    scale: 1;
+  }
+  100%{
+    scale: 0.5;
+  }
+}
+@keyframes machine2 {
+  0%{
+    scale: 0.5;
+  }
+  100%{
+    scale: 1;
+  }
+}
+
+.machine{
+  position: absolute;
+  top: 23%;
+  left: 5%;
+  width: 75px;
+  height: 75px;
+  animation: machine 3s linear infinite;
+}
+
+
+/* slide 4 */
+.fan{
   position: absolute;
   width: 150px;
   height: 150px;
