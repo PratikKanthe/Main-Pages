@@ -1295,6 +1295,47 @@ span.parrentOrg {
     color: var(--clr-on-body);
   }
   
+
+  /* slide 2 */
+.car{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  bottom: 10%;
+  left: 30%;
+  animation: tank 25s linear infinite;
+}
+
+@keyframes tank {
+  0% {
+    transform: translateX(-500%);
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(270px);
+    opacity: 1;
+  }
+}
+
+.scooter{
+  width: 75px;
+  height: 75px;
+}
+
+.bike{
+  width: 75px;
+  height: 75px;
+}
+
+.bulb{
+  width: 75px;
+  height: 75px;
+}
+
+  /* part 2 */
   
   .part-2 {
     height: 100vh;
