@@ -592,144 +592,6 @@ ul.fs-social-nav li a {
 
 /* /footer starts/ */
 
-.footer {
-    width: 100%;
-    float: left;
-    background: #F5F5F5;
-    padding: 4rem 0 1rem;
-    margin-top: 30rem;  
-}
-
-.footer-box{
-    display: grid; 
-    /* background: #ebe5e6; */
-    margin-bottom: 2rem;
-    border: 2px solid black
-}
-
-.footer-h2{
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
-.footer p{
-    margin-left: 1rem;
-}
-
-
-
-
-.footer a#gotop {
-    position: absolute;
-    right: 0;
-    top: -5.6rem;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-}
-
-.footer a#gotop:after {
-    content: "Top";
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #000;
-}
-
-.footer-content h3 {
-    font-size: 1.8rem;
-    color: #919191;
-    margin: 0 0 1rem;
-    line-height: 1.5;
-}
-
-ul.footer-nav {
-    padding: 0;
-    list-style-type: none;
-}
-
-ul.footer-nav li:not(:last-child) {
-    margin-bottom: 1rem;
-}
-
-ul.footer-nav li a {
-    text-decoration: none;
-    color: #000000;
-    padding: 10px 0;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-ul.footer-nav li ul li a {
-    font-weight: 400;
-}
-
-ul.footer-nav li.active a {
-    color: #00B2E9;
-}
-
-ul.footer-nav li a i {
-    display: inline-block;
-    width: 2.4rem;
-    text-align: left;
-}
-
-ul.footer-nav li ul {
-    list-style-type: none;
-    margin: .5rem 0 0;
-}
-
-.address {}
-
-.address h5 {
-    font-size: 1.8rem;
-    margin: .4rem 0;
-}
-
-.address p {
-    font-size: 1.8rem;
-}
-
-p.copyText {
-    font-size: 1.4rem;
-    color: #919191;
-    margin: 1rem 0;
-    line-height: 1.5;
-    margin-left: 58rem;
-}
-
-p.copyText a {
-    color: #919191;
-    text-decoration: none;
-}
-
-/* 
-/footer ends/
-
-
-/Banner Starts/
-
-
-
-/Recogn Instagram Page Ends/ */
-
-
-.mainBannerCenter {
-    max-width: 100%;
-}
-
-ul.header-nav {
-    justify-content: end;
-}
-
-span.parrentOrg {
-    font-size: 14px;
-    font-weight: 500;
-    display: block;
-    text-align: justify;
-    letter-spacing: .1px;
-    margin-left: 0.1rem;
-}
 
 @media only screen and (max-width:1600px) { 
     span.parrentOrg {
@@ -1865,3 +1727,52 @@ background: red;
     
   }
   
+
+
+  /* 1024 */
+  @media only screen and (max-width: 1024px){
+    .cols2{
+      flex-direction: column;
+    }
+  
+    .cols3{
+      flex-direction: column;
+    }
+    .part1{
+      display: none;
+    }
+    .box{
+      width: 80vw;
+      height: 50vh;
+      background-color: var(--clr-green);
+      margin-left: 10%;
+      margin-bottom: 1rem;
+    }
+  
+    .part2{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      gap: 1rem;
+    }
+    .tagline{
+      position: absolute;
+      rotate: -90deg;
+      top: 50%;
+      left: -20%;
+      font-size: var(--font-sm);
+      display: none;
+    }
+    .content h1{
+      font-size: 7rem;
+      margin-bottom: 1rem;
+    }
+    .article p{
+      text-align: left;
+      font-size: 3rem;
+    display: flex;
+    }
+  }
