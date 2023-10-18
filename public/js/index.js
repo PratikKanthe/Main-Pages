@@ -125,3 +125,18 @@ function observeElements(elements, className) {
 
 
 })
+
+const linksContainer = document.querySelector('.menu__box');
+
+linksContainer.addEventListener('click', (e) => {
+  if (e.target.matches('.menu__item')) {
+    e.preventDefault();
+    closeSideMenu();
+   window.location.href = e.target.href;
+  }
+});
+
+function  closeSideMenu() {
+  const sideMenuToggle = document.querySelector('#dmshow');
+  sideMenuToggle.click();
+}
