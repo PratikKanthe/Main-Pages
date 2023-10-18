@@ -1488,7 +1488,7 @@ span.parrentOrg {
   }
 
   .cons-tool{
-    position: absolute;
+  position: absolute;
   bottom: 10%;
   left: 5%;
   width: 75px;
@@ -1949,9 +1949,6 @@ span.parrentOrg {
       left: 80%;
     }
     .nut{
-      left: 80%;
-    }
-    .cons-tool{
       left: 80%;
     }
     .valve{
