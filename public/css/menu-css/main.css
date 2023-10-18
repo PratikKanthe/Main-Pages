@@ -964,7 +964,7 @@ span.parrentOrg {
     }
   }
 
-  .text-change::before {
+  .slide-change-2::before {
     font-size: 3rem;
     content: "Cost Reduction & Improve Profits";
     animation: text-animate-2 ease-in-out infinite 15s, blink 1s both;
