@@ -932,10 +932,10 @@ span.parrentOrg {
   .change::before {
     font-size: 3rem;
     content: "Material Traceability";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    animation: text-animate-1 ease-in-out infinite 15s, blink 1s both;
   }
   
-  @keyframes animate {
+  @keyframes text-animate-1 {
     10% {
       content: "Certificate of Conformance";
     }
@@ -943,32 +943,32 @@ span.parrentOrg {
       content: "Risk Management";
     }
     30% {
-      content: "Compliance Assurance & Audit friendliness";
-    }
-    40% {
       content: "Corrective Action Preventive Action";
     }
+    40% {
+      content: "New Product Development";
+    }
     50% {
-      content: " New Product Development";
+      content: "First Article Inspection Report";
     }
     60% {
-      content: "First Article Inspection Report ";
+      content: "Calibration of Instruments & Gauges";
     }
     70% {
       content: " Inspection plan";
     }
     80% {
-      content: " Calibration of Instruments & Gauges";
+      content: "Compliance Assurance & Audit friendliness";
     }
   }
 
-  .change-slide-2::before {
+  .text-change::before {
     font-size: 3rem;
     content: "Cost Reduction & Improve Profits";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    animation: text-animate-2 ease-in-out infinite 15s, blink 1s both;
   }
   
-  @keyframes animate {
+  @keyframes text-animate-2 {
     10% {
       content: "Material Traceability";
     }
@@ -982,31 +982,29 @@ span.parrentOrg {
       content: "Corrective Action Preventive Action";
     }
     50% {
-      content: " New Product Development";
+      content: "New Product Development";
     }
     60% {
-      content: "First Article Inspection Report ";
+      content: "First Article Inspection Report";
     }
     70% {
-      content: " Calibration of Instruments & Gauges";
+      content: "Calibration of Instruments & Gauges";
     }
     80% {
       content: "Inspection plan";
     }
-  
     90% {
       content: "Compliance Assurance & Audit friendliness";
-      opacity: 1;
     }
   }
 
   .change-slide-3::before {
     font-size: 3rem;
     content: "Cost Reduction & Improve Profits";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    animation: text-animate-3 ease-in-out infinite 15s, blink 1s both;
   }
   
-  @keyframes animate {
+  @keyframes text-animate-3 {
     10% {
       content: "Material Traceability";
     }
@@ -1039,10 +1037,10 @@ span.parrentOrg {
   .change-slide-4::before {
     font-size: 3rem;
     content: "Material Test Certificate";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    animation: text-animate-4 ease-in-out infinite 15s, blink 1s both;
   }
   
-  @keyframes animate {
+  @keyframes text-animate-4 {
     10% {
       content: "Compliance Assurance & Audit friendliness";
     }
@@ -1074,10 +1072,10 @@ span.parrentOrg {
   .change-slide-5::before {
     font-size: 3rem;
     content: "Compound Formulation Secrecy";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    animation: text-animate-5 ease-in-out infinite 15s, blink 1s both;
   }
   
-  @keyframes animate {
+  @keyframes text-animate-5 {
     25% {
       content: "Batch size wise compound formulation";
     }
@@ -1095,15 +1093,18 @@ span.parrentOrg {
   .change-slide-6::before {
     font-size: 3rem;
     content: "Material Test Certificate";
-    animation: animate ease-in-out infinite 15s, blink 1s both;
+    animation: text-animate-6 ease-in-out infinite 15s, blink 1s both;
   }
   
-  @keyframes animate {
+  @keyframes text-animate-6 {
     20% {
       content: "Auto Item & Code Generation";
     }
     40% {
-      content: "Auto BOM creator; Auto weight Calculator";
+      content: "Auto BOM creator";
+    }
+    40% {
+      content: "Auto weight Calculator";
     }
     60% {
       content: "Production Clubbing by Dia-Pitch";
