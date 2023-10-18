@@ -1244,6 +1244,12 @@
      .allLogos ul li {
          max-width: calc(100%/3);
      }
+     .tagline2{
+        top: 10%;
+     }
+     .fs-navigation{
+        margin-top: -15rem;
+     }
  }
 
  @media only screen and (max-width: 302px){
