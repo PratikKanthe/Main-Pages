@@ -1327,6 +1327,9 @@
  }
 
  @media only screen and (max-width: 320px) {
+    .tagline2{
+        top: 10%;
+     }
      img.fs-menu-character {
          display: none;
      }
