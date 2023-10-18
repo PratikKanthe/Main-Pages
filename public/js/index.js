@@ -55,3 +55,73 @@ function observeElements(elements, className) {
   const fadeInUp = document.querySelectorAll(".fade-content-hide");
   observeElements(fadeInUp, "fade-content-show");
   
+
+  $(document).ready(function(){
+
+
+
+    $('.dmshow').click(function(){
+
+        if($(this).find('i').hasClass('fa-bars1'))
+
+        {
+
+            $('#menuContainer').fadeIn();
+
+            $('#headNav .ssh:not(:last)').removeClass('animated fadeIn faster').addClass('animated fadeOut faster');
+
+            $('#headNav-mob .ssh:not(:last)').removeClass('animated fadeIn faster').addClass('animated fadeOut faster');
+
+            $(this).find('i').removeClass('fa-bars1').addClass('fa-times1');
+
+            $(this).find('span').text('Close');
+
+        }
+
+        else
+
+        {
+
+            $('#menuContainer').fadeOut();
+
+            $('#headNav .ssh:not(:last)').removeClass('animated fadeOut faster').addClass('animated fadeIn faster');
+
+            $('#headNav-mob .ssh:not(:last)').removeClass('animated fadeOut faster').addClass('animated fadeIn faster');
+
+            $(this).find('i').removeClass('fa-times1').addClass('fa-bars1');
+
+            $(this).find('span').text('Menu');
+
+        }
+
+    });
+
+
+
+    $('.dmsearch').click(function(){
+
+        $('.fs-searchpanel').removeClass('animated faster fadeOutUp').addClass('animated faster fadeInDown').show();
+
+        $('.searchClose').show();
+
+        $('.ssh').hide();
+
+
+
+    });
+
+
+
+    $('.searchClose').click(function(){
+
+        $('.ssh').show();
+
+        $('.fs-searchpanel').removeClass('animated faster fadeInDown').addClass('animated faster fadeOutUp').show();
+
+        $('.searchClose').hide();
+
+    });
+
+
+
+})
