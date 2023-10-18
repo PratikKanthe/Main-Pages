@@ -85,6 +85,7 @@ body {
     box-sizing: border-box;
     transition: all .8s;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .myContainer {
@@ -1149,22 +1150,17 @@ span.parrentOrg {
     width: 75px;
     height: 75px;
     bottom: 10%;
-    left: 30%;
+    left: 5%;
     animation: tank 25s linear infinite;
     overflow-x: hidden;
   }
   
   @keyframes tank {
     0% {
-      transform: translateX(-500%);
-      opacity: 1;
-    }
-    90%{
-      opacity: 1;
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(270px);
-      opacity: 1;
+      transform: translateX(500px);
     }
   }
   
@@ -1252,11 +1248,12 @@ span.parrentOrg {
     top: 15%;
     left: 35%;
     animation: plane 5s linear infinite;
+    overflow-x: hidden;
   }
   
   @keyframes plane {
     from {
-      transform: translateX(100%);
+      transform: translateX(0);
       opacity: 1;
     }
     90%{
@@ -1309,7 +1306,7 @@ span.parrentOrg {
   width: 150px;
   height: 150px;
   bottom: 10%;
-  left: 30%;
+  left: 5%;
   transform: rotateY(-30deg); 
   animation: tank 3s linear infinite;
   overflow-x: hidden;
@@ -1371,8 +1368,8 @@ span.parrentOrg {
   position: absolute;
   top: 23%;
   left: 45%;
-  width: 45px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
 }
 
 .machine2{
@@ -1466,6 +1463,37 @@ span.parrentOrg {
   height: 55px;
   animation: rotate-pipe-rev 5s alternate infinite;
 }
+
+/* slide 5 */
+.tyre{
+    transform-origin: center;
+    transform-box: fill-box;
+		animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+  transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(360deg);
+  }
+  }
+
+  .tool{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 10%;
+    left: 43%;
+  }
+
+  .cons-tool{
+    position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 75px;
+  height: 75px;
+  }
 
   /* part 2 */
   
@@ -1833,15 +1861,10 @@ span.parrentOrg {
       }
       @keyframes tank {
         0% {
-          transform: translateX(-100%);
-          opacity: 1;
-        }
-        90%{
-          opacity: 1;
+          transform: translateX(0);
         }
         100% {
-          transform: translateX(800px);
-          opacity: 1;
+          transform: translateX(600px);
         }
       }
       @keyframes atomic {
@@ -1928,11 +1951,33 @@ span.parrentOrg {
     .nut{
       left: 80%;
     }
+    .cons-tool{
+      left: 80%;
+    }
     .valve{
       left: 80%;
     }
     .pip-meter{
       left: 80%;
+    }
+    .tool{
+      left: 80%;
+    }
+    @keyframes tank {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(300px);
+      }
+    }
+    @keyframes plane {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-280px);
+      }
     }
   }
 
@@ -1949,17 +1994,78 @@ span.parrentOrg {
         transform: translateY(-20px) rotate(30deg);
       }
       100%{
-        transform: translateX(-500px);
+        transform: translateX(-350px);
       }
     }
+    .scooter{
+      left: 70%;
+      /* animation: none; */
+    }
+    @keyframes plane {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-280px);
+      }
+    }
+    .tank{
+      /* animation: none; */
+    }
+    @keyframes tank {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(300px);
+      }}
+    .helicopter{
+      animation: helicopter 5s linear infinite;
+    }
+    @keyframes helicopter {
+      0% {
+        transform: translateX(-100%) translateY(-30px) rotate(0deg);
+        opacity: 1;
+      }
+      90%{
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(260px) translateY(100px)  rotate(40deg);
+        opacity: 0;
+      }
+    }
+    .change::before,.change-slide-2::before,.change-slide-3::before,.change-slide-4::before,.change-slide-5::before,.change-slide-6::before{
+      font-size: 2.5rem;
+    }
     .car{
+      /* animation: none; */
       animation: tank 5s linear infinite;
       overflow-x: hidden;
+    }
+    .ssh span{
+      top: 1%;
+      position: fixed;
+      right: 10%;
+    }
+    .parrentOrg{
+      top: 3.5%;
+      position: fixed;
+      right: 10%;
+    }
+    @keyframes tank {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
     }
     .bike{
       position: absolute;
       left: 70%;
       overflow-x: hidden;
+      /* animation: none; */
     }
     .fan{
       position: absolute;
@@ -1976,6 +2082,11 @@ span.parrentOrg {
     }
   }
 
+
+  .blob{
+    display: flex;
+    gap: 2rem;
+  }
 
   /* pages css  */
   
