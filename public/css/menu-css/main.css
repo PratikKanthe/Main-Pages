@@ -1002,37 +1002,34 @@ span.parrentOrg {
 
   .change-slide-3::before {
     font-size: 3rem;
-    content: "Cost Reduction & Improve Profits";
+    content: "Reduce Delivery Lead time";
     animation: text-animate-3 ease-in-out infinite 15s, blink 1s both;
   }
   
   @keyframes text-animate-3 {
     10% {
-      content: "Material Traceability";
+      content: "Quick Purchasing";
     }
     20% {
-      content: "Certificate of Conformance";
+      content: "Quick Material Swapping";
     }
     30% {
-      content: "Risk Management";
+      content: "Purchase Budget Control";
     }
     40% {
-      content: "Corrective Action Preventive Action";
+      content: "Supplier Interface";
     }
     50% {
-      content: "New Product Development";
+      content: "Effective Component Expediting";
     }
     60% {
-      content: "First Article Inspection Report";
+      content: "Department wise Order Execution Instructions";
     }
     70% {
-      content: "Calibration of Instruments & Gauges";
+      content: "Serialisation of Machines / Equipment";
     }
     80% {
-      content: "Inspection plan";
-    }
-    90% {
-      content: "Compliance Assurance & Audit friendliness";
+      content: "Special Bill of Material for Machine builders";
     }
   }
 
@@ -1099,22 +1096,22 @@ span.parrentOrg {
   }
   
   @keyframes text-animate-6 {
-    20% {
+    10% {
       content: "Auto Item & Code Generation";
     }
-    40% {
+    20% {
       content: "Auto BOM creator";
     }
-    40% {
+    30% {
       content: "Auto weight Calculator";
     }
-    60% {
+    40% {
       content: "Production Clubbing by Dia-Pitch";
     }
-    80% {
+    50% {
       content: "Inspection Call Letters & Offer Letters for TPI";
     }
-    100% {
+    60% {
       content: "Calibration of Instruments & Gauges";
     }
   }
