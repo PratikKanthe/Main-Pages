@@ -1272,7 +1272,7 @@
 
  @media only screen and (max-width: 360px) {
      .fs-nav-wrap {
-         /* margin-top: 5rem; */
+         margin-top: 5rem;
      }
      .tagline2{
         top: 10%;
