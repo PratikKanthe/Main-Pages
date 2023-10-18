@@ -662,25 +662,26 @@ ul.fs-social-nav li a {
   height: 45px;
   width: 45px;
   font-size: 1rem;
-  border-radius: 50%;
-  background-color: var(--clr-secondry);
+  /* border-radius: 50%;
+  background-color: var(--clr-secondry); */
   font-size: 2rem;
+  background: url("/public/images/blobanimation.svg");
 }
 
 .circle2 {
-  background-color: var(--clr-blue);
+  background: url("/public/images/blobanimation (1).svg");
 }
 .circle3 {
-  background-color: var(--clr-green);
+  background: url("/public/images/blobanimation (2).svg");
 }
 .circle4 {
-  background-color: var(--clr-pink);
+  background: url("/public/images/blobanimation (1).svg");
 }
 .circle5 {
-  background-color: var(--clr-yellow);
+  background: url("/public/images/blobanimation (2).svg");
 }
 .circle6 {
-  background-color: var(--clr-purple);
+  background: url("/public/images/blobanimation.svg");
 }
 
 /* media query */
@@ -1984,6 +1985,14 @@ span.parrentOrg {
       animation: bike 3s linear infinite;
       overflow-x: hidden;
     }
+    @keyframes drone {
+      0% {
+        transform: translateX(30px) translateY(-20px) rotate(-30deg);
+      }
+      100% {
+        transform: translateX(-30px) translateY(-20px)  rotate(25deg);
+      }
+    }
     @keyframes bike {
       0%{
         transform: translateX(0) rotate(0deg);
@@ -2004,7 +2013,7 @@ span.parrentOrg {
         transform: translateX(0);
       }
       to {
-        transform: translateX(-280px);
+        transform: translateX(-100px);
       }
     }
     .tank{
@@ -2015,14 +2024,14 @@ span.parrentOrg {
         transform: translateX(0);
       }
       100% {
-        transform: translateX(300px);
+        transform: translateX(200px);
       }}
     .helicopter{
       animation: helicopter 5s linear infinite;
     }
     @keyframes helicopter {
       0% {
-        transform: translateX(-100%) translateY(-30px) rotate(0deg);
+        transform: translateX(0) translateY(-30px) rotate(0deg);
         opacity: 1;
       }
       90%{
