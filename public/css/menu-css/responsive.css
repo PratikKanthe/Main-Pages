@@ -1283,9 +1283,9 @@
      .tagline2{
         top: 10%;
      }
-     /* .fs-navigation{
-        margin-top: -15rem;
-     } */
+     .fs-navigation{
+        margin-top: -10rem;
+     }
      .Customers-container h1{
         margin-top: 20%;
         font-size: 5rem
