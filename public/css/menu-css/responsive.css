@@ -1150,19 +1150,18 @@
  }
 
  @media only screen and (max-width: 600px){
-    .cols2 .content{
+    /* .cols2 .content{
         margin-top: 0%;
-        /* margin-bottom: -40%; */
-    }
+    } */
  }
 
  /* Extra Small Devices, Phones */
 
  @media only screen and (max-width: 480px) {
-    .cols2 .content{
-        margin-top: 30%;
-        
-    }
+    /* .cols2 .content{
+        margin-top: 30%; 
+    } */
+
 
     .Customers-container{
         margin-top: 20%;
@@ -1294,12 +1293,19 @@
         margin-top: -7rem;
      } */
      .Customers-container h1{
-        margin-top: 20%;
-        font-size: 5rem
+        margin-top: 40%;
+        font-size: 4rem
      }
-     .cols2{
+     .cols2 .content h1{
         flex-direction: column;
-        margin-top: 15rem;
+        margin-top: 40rem;
+        font-size: 4rem;
+      }
+      .text{
+        font-size: 4rem;
+      }
+      .contact h1{
+        font-size: 4rem;
       }
       .map2{
         margin-top: 12%;
@@ -1317,6 +1323,9 @@
          font-size: 3rem;
      }
 
+     .flex h1 {
+        font-size: 4rem;
+      }
      .titleWrap h1 {
          font-size: 5rem;
      }
