@@ -1710,21 +1710,12 @@ a.scroll-down img {
   overscroll-behavior-x: contain;
   padding: 0 3rem;
   margin-bottom: 2rem;
-  /* animation: move 10s ease-out infinite; */
 }
 .post {
   display: flex;
   flex-direction: column;
 }
 
-/* @keyframes move {
-    0% {
-      transform: translateX(60%);
-    }
-    100% {
-      transform: translateX(20%);
-    }
-  } */
 
 .post h1 {
   font-size: 1.2rem;
