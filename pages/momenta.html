@@ -70,278 +70,296 @@
 
   <body>
     <p class="tagline">A product of Momenta Informatics LLP</p>
-    <div class="header">
-      <div class="col-md-10 myContainer">
-        <div class="header-nav-wrap">
-          <a class="logo" href="/index.html">
-            <img src="/public/images/Oursys_logo_new_black.svg" alt="Oursys" />
-          </a>
-          <div class="hidden-xs1">
-            <ul class="header-nav" id="headNav" style="margin-right: 3rem">
-              <!--<li class="ssh"><a href="#" class="dmsearch">Search</a></li>-->
-              <li class="ssh">
-                <a class="dmshow" id="dmshow"
-                  ><i class="fas fa-bars1"></i> <span>Menu</span></a
-                >
+        <!-- header -->
+        <div class="header">
+          <div class="col-md-10 myContainer">
+            <div class="header-nav-wrap">
+              <a class="logo" href="/index.html">
+                <img src="/public/images/Oursys_logo_new_black.svg" alt="Oursys" />
+              </a>
+              <div class="hidden-xs1">
+                <ul class="header-nav" id="headNav" style="margin-right: 3rem">
+                  <!--<li class="ssh"><a href="#" class="dmsearch">Search</a></li>-->
+                  <li class="ssh">
+                    <a class="dmshow" id="dmshow"
+                      ><i class="fas fa-bars1"></i> <span>Menu</span></a
+                    >
+                  </li>
+                  <li class="sss">
+                    <a class="searchClose" style="display: none"
+                      ><i class="fas fa-times"></i> <span>Close</span></a
+                    >
+                  </li>
+                </ul>
+                <span class="parrentOrg">since 2001</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- search panel starts -->
+        <div class="fs-searchpanel" style="display: none">
+          <div class="col-md-10 myContainer">
+            <form class="searchField">
+              <input type="search" placeholder="SEARCH" class="inputField" />
+              <input type="submit" class="searchBtn" />
+            </form>
+          </div>
+        </div>
+        <!-- search panel ends -->
+    
+        <!-- full-screen menu starts -->
+        <div class="fs-navigation" id="menuContainer" style="display: none">
+          <img
+            src="/public/images/blob3.svg"
+            class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm blob3"
+            id="fs-menu-char"
+            alt="Oursys"
+          />
+          <img
+            src="/public/images/drone.svg"
+            class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+            id="fs-menu-svg"
+            style="position: absolute; width: 5vw; top: 60%; left: 42rem"
+          />
+    
+          <img
+            src="/public/images/helicopter.svg"
+            class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+            id="fs-menu-svg"
+            style="position: absolute; width: 5vw; top: 50%; left: 10rem"
+          />
+    
+          <img
+            src="/public/images/slide-plane.svg"
+            class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+            id="fs-menu-svg"
+            style="position: absolute; width: 7vw; top: 35%; left: 18%"
+          />
+    
+          <img
+            src="/public/images/tank.svg"
+            class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+            id="fs-menu-svg"
+            style="position: absolute; width: 4vw; top: 80%; left: 30rem"
+          />
+    
+          <!-- <img src="https://www.watconsult.com/wp-content/themes/watconsult/images/fs-menu-charcters-newest-mob.png"
+              class="fs-menu-character animated fadeInUp faster delay-p3 visible-xs visible-sm" id="fs-menu-char"
+              alt="Work Culture Background Mobile Version- WATConsult"> -->
+    
+          <div class="fs-nav-wrap" id="fs-menu-center">
+            <ul class="menu__box">
+              <li class="animated fadeInDown faster delay-p1">
+                <h3 class=" "><a href="/momenta.html">Momenta</a></h3>
+                <div class="anchors">
+                  <a href="/momenta.html#OurStory" class="menu__item"
+                    >Our Story</a
+                  >
+                  <a href="/momenta.html#Customers" class="menu__item"
+                    >Our Customers</a
+                  >
+    
+                  <a href="./pages/momenta.html#Presence" class="menu__item"
+                    >Our Presence</a
+                  >
+                </div>
               </li>
-              <li class="sss">
-                <a class="searchClose" style="display: none"
-                  ><i class="fas fa-times"></i> <span>Close</span></a
-                >
+              <li class="animated fadeInDown faster delay-p2">
+                <h3 class=" "><a href="../index.html">OurSys ERP</a></h3>
+                <div class="anchors">
+                  <a href="../index.html#our-inspiration" class="menu__item">Our Inspiration</a>
+    
+                  <a href="../index.html#our-specialization" class="menu__item">Our Specalisation</a>
+    
+                  <a href="#" class="menu__item">Our Products</a>
+                </div>
+              </li>
+              <li class="animated fadeInDown faster delay-p3">
+                <h3 class=" "><a href="#">Team</a></h3>
+                <div class="anchors">
+                  <a href="#" class="">Our Culture</a>
+    
+                  <a href="#" class="">Our People</a>
+    
+                  <a href="#" class="">Current Openings</a>
+                </div>
+              </li>
+              <li class="animated fadeInDown faster delay-p4">
+                <h3 class=" "><a href="#">Contact Us</a></h3>
+                <div class="anchors">
+                  <a href="#" class=""> Enquiry</a>
+    
+                  <a href="#" class="">Join Us</a>
+                </div>
+              </li>
+              <li class="animated fadeInDown faster delay-p5">
+                <h3 class=""><a href="#">Our Club</a></h3>
+                <div class="anchors">
+                  <a href="#" class="">Forums</a>
+    
+                  <a href="#" class="">Blogs</a>
+    
+                  <a href="#" class="">Help</a>
+                </div>
               </li>
             </ul>
-            <span class="parrentOrg">since 2001</span>
+          </div>
+    
+          <!--<div class="fs-whatelse-wrap animated fadeInRight faster delay-p3 col-sm-pull-3" style="display:none;">
+              <div class="fs-whatelse">
+                  <h4>WAT ELSE?</h4>
+                  <ul>
+                                  </ul>
+              </div>
+          </div>-->
+    
+          <div
+            class="fs-address-wrap animated fadeInRight faster delay-p4 col-sm-pull-1"
+          >
+            <div class="fs-addresses">
+              <h4>OUR OFFICES</h4>
+    
+              <div class="fs-addres fs-mumbai">
+                <!--
+                      <h5>Mumbai</h5>
+                      <p>
+                          5th Floor, Parijat House, Manjrekar Lane,<br>
+                          1076, off Dr. E. Moses Road, Worli Naka<br>
+                          Mumbai-400 018<br>
+                          Maharashtra 
+                      </p>
+    -->
+                <!--<p>5th Floor, Parijat House,<br>Manjrekar Lane, 1076,<br>off Dr. E. Moses Road, Worli Naka,<br>Mumbai-400 018</p>-->
+    
+                <div itemscope="" itemtype="http://schema.org/Organization">
+                  <h5 itemprop="name">Mumbai</h5>
+                  <div
+                    itemprop="address"
+                    itemscope=""
+                    itemtype="http://schema.org/PostalAddress"
+                  >
+                    <p itemprop="streetAddress" style="margin-bottom: 0px">
+                      B202,Pallavi,
+                      <br />
+                      Veera Desai Road,
+                    </p>
+                    <p itemprop="addressLocality" style="margin-bottom: 0px">
+                      Andheri West
+                    </p>
+                    <p itemprop="addressRegion" style="margin-bottom: 0px">
+                      Mumbai, Maharashtra
+                    </p>
+                    <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p>
+                  </div>
+                  <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
+                </div>
+              </div>
+              <div class="fs-addres fs-mumbai">
+               
+                <div itemscope="" itemtype="http://schema.org/Organization">
+                  <h5 itemprop="name">Bengaluru</h5>
+                  <div
+                    itemprop="address"
+                    itemscope=""
+                    itemtype="http://schema.org/PostalAddress"
+                  >
+                    <p itemprop="streetAddress" style="margin-bottom: 0px">
+                      Rajaji Nagar,
+                      <br />
+                      <!-- Veera Desai Road,
+                    </p>
+                    <p itemprop="addressLocality" style="margin-bottom: 0px">
+                      Andheri West
+                    </p> -->
+                    <p itemprop="addressRegion" style="margin-bottom: 0px">
+                      Karnataka
+                    </p>
+                    <!-- <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p> -->
+                  </div>
+                  <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
+                </div>
+              </div>
+              <div class="fs-addres fs-mumbai">
+            
+                <div itemscope="" itemtype="http://schema.org/Organization">
+                  <h5 itemprop="name">Bahrain</h5>
+                  <div
+                    itemprop="address"
+                    itemscope=""
+                    itemtype="http://schema.org/PostalAddress"
+                  >
+                    <p itemprop="streetAddress" style="margin-bottom: 0px">
+                      Jasra,
+                      <br />
+                      1003,
+                    </p>
+                    <!-- <p itemprop="addressLocality" style="margin-bottom: 0px">
+                      Andheri West
+                    </p>
+                    <p itemprop="addressRegion" style="margin-bottom: 0px">
+                      Mumbai, Maharashtra
+                    </p> -->
+                    <!-- <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p> -->
+                  </div>
+                  <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
+                </div>
+              </div>
+            </div>
+    
+            <div class="fs-social">
+              <h4>FOLLOW US ON</h4>
+    
+              <ul class="fs-social-nav">
+                <li>
+                  <a href="" style="text-transform: uppercase" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" style="text-transform: uppercase" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" style="text-transform: uppercase" target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" style="text-transform: uppercase" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" style="text-transform: uppercase" target="_blank"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" style="text-transform: uppercase" target="_blank"
+                    ><i class="fab fa-vimeo"></i
+                  ></a>
+                </li>
+                <!--
+                      <li>
+                          <a href="https://www.facebook.com/watconsult" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://twitter.com/watconsult" target="_blank"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://in.linkedin.com/company/watconsult---social-media-agency" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://www.instagram.com/watconsult/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      </li>
+    -->
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- menu starts herer -->
-    <div class="fs-navigation" id="menuContainer" style="display: none">
-      <img
-        src="/public/images/blob3.svg"
-        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm blob3"
-        id="fs-menu-char"
-        alt="Oursys"
-      />
-      <img
-        src="/public/images/drone.svg"
-        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
-        id="fs-menu-svg"
-        style="position: absolute; width: 5vw; top: 60%; left: 42rem"
-      />
-
-      <img
-        src="/public/images/helicopter.svg"
-        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
-        id="fs-menu-svg"
-        style="position: absolute; width: 5vw; top: 50%; left: 10rem"
-      />
-
-      <img
-        src="/public/images/slide-plane.svg"
-        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
-        id="fs-menu-svg"
-        style="position: absolute; width: 7vw; top: 35%; left: 18%"
-      />
-
-      <img
-        src="/public/images/tank.svg"
-        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
-        id="fs-menu-svg"
-        style="position: absolute; width: 4vw; top: 80%; left: 30rem"
-      />
-
-      <!-- <img src="https://www.watconsult.com/wp-content/themes/watconsult/images/fs-menu-charcters-newest-mob.png"
-            class="fs-menu-character animated fadeInUp faster delay-p3 visible-xs visible-sm" id="fs-menu-char"
-            alt="Work Culture Background Mobile Version- WATConsult"> -->
-
-      <div class="fs-nav-wrap" id="fs-menu-center">
-        <ul class="menu__box">
-          <li class="animated fadeInDown faster delay-p1">
-            <h3 class=" "><a href="momenta.html">Momenta</a></h3>
-            <div class="anchors">
-              <a href="./momenta.html#OurStory" class="menu__item">Our Story</a>
-              <a href="./momenta.html#Customers" class="menu__item">Our Customers</a>
-              <a href="./momenta.html#Presence" class="menu__item">Our Presence</a>
-            </div>
-          </li>
-          <li class="animated fadeInDown faster delay-p2">
-            <h3 class=" "><a href="/index.html">OurSys ERP</a></h3>
-            <div class="anchors">
-              <a href="/index.html#our-inspiration" class="">Our Inspiration</a>
-
-              <a href="/index.html#our-specialization" class=""
-                >Our Specalisation</a
-              >
-
-              <a href="#" class="">Our Products</a>
-            </div>
-          </li>
-          <li class="animated fadeInDown faster delay-p3">
-            <h3 class=" "><a href="#">Team</a></h3>
-            <div class="anchors">
-              <a href="#" class="">Our Culture</a>
-
-              <a href="#" class="">Our People</a>
-
-              <a href="#" class="">Current Openings</a>
-            </div>
-          </li>
-          <li class="animated fadeInDown faster delay-p4">
-            <h3 class=" "><a href="#">Contact Us</a></h3>
-            <div class="anchors">
-              <a href="#" class=""> Enquiry</a>
-
-              <a href="#" class="">Join Us</a>
-            </div>
-          </li>
-          <li class="animated fadeInDown faster delay-p5">
-            <h3 class=""><a href="#">Our Club</a></h3>
-            <div class="anchors">
-              <a href="#" class="">Forums</a>
-
-              <a href="#" class="">Blogs</a>
-
-              <a href="#" class="">Help</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!--<div class="fs-whatelse-wrap animated fadeInRight faster delay-p3 col-sm-pull-3" style="display:none;">
-            <div class="fs-whatelse">
-                <h4>WAT ELSE?</h4>
-                <ul>
-                                </ul>
-            </div>
-        </div>-->
-
-      <div
-        class="fs-address-wrap animated fadeInRight faster delay-p4 col-sm-pull-1"
-      >
-      <div class="fs-addresses">
-        <h4>OUR OFFICES</h4>
-
-        <div class="fs-addres fs-mumbai">
-          <!--
-                <h5>Mumbai</h5>
-                <p>
-                    5th Floor, Parijat House, Manjrekar Lane,<br>
-                    1076, off Dr. E. Moses Road, Worli Naka<br>
-                    Mumbai-400 018<br>
-                    Maharashtra 
-                </p>
--->
-          <!--<p>5th Floor, Parijat House,<br>Manjrekar Lane, 1076,<br>off Dr. E. Moses Road, Worli Naka,<br>Mumbai-400 018</p>-->
-
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <h5 itemprop="name">Mumbai</h5>
-            <div
-              itemprop="address"
-              itemscope=""
-              itemtype="http://schema.org/PostalAddress"
-            >
-              <p itemprop="streetAddress" style="margin-bottom: 0px">
-                B202,Pallavi,
-                <br />
-                Veera Desai Road,
-              </p>
-              <p itemprop="addressLocality" style="margin-bottom: 0px">
-                Andheri West
-              </p>
-              <p itemprop="addressRegion" style="margin-bottom: 0px">
-                Mumbai, Maharashtra
-              </p>
-              <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p>
-            </div>
-            <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
-          </div>
-        </div>
-        <div class="fs-addres fs-mumbai">
-         
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <h5 itemprop="name">Bengaluru</h5>
-            <div
-              itemprop="address"
-              itemscope=""
-              itemtype="http://schema.org/PostalAddress"
-            >
-              <p itemprop="streetAddress" style="margin-bottom: 0px">
-                Rajaji Nagar,
-                <br />
-                <!-- Veera Desai Road,
-              </p>
-              <p itemprop="addressLocality" style="margin-bottom: 0px">
-                Andheri West
-              </p> -->
-              <p itemprop="addressRegion" style="margin-bottom: 0px">
-                Karnataka
-              </p>
-              <!-- <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p> -->
-            </div>
-            <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
-          </div>
-        </div>
-        <div class="fs-addres fs-mumbai">
-      
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <h5 itemprop="name">Bahrain</h5>
-            <div
-              itemprop="address"
-              itemscope=""
-              itemtype="http://schema.org/PostalAddress"
-            >
-              <p itemprop="streetAddress" style="margin-bottom: 0px">
-                Jasra,
-                <br />
-                1003,
-              </p>
-              <!-- <p itemprop="addressLocality" style="margin-bottom: 0px">
-                Andheri West
-              </p>
-              <p itemprop="addressRegion" style="margin-bottom: 0px">
-                Mumbai, Maharashtra
-              </p> -->
-              <!-- <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p> -->
-            </div>
-            <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
-          </div>
-        </div>
-      </div>
-
-        <div class="fs-social">
-          <h4>FOLLOW US ON</h4>
-
-          <ul class="fs-social-nav">
-            <li>
-              <a href="" style="text-transform: uppercase" target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" style="text-transform: uppercase" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" style="text-transform: uppercase" target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" style="text-transform: uppercase" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" style="text-transform: uppercase" target="_blank"
-                ><i class="fab fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" style="text-transform: uppercase" target="_blank"
-                ><i class="fab fa-vimeo"></i
-              ></a>
-            </li>
-            <!--
-                    <li>
-                        <a href="https://www.facebook.com/watconsult" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/watconsult" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://in.linkedin.com/company/watconsult---social-media-agency" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/watconsult/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </li>
--->
-          </ul>
-        </div>
-      </div>
-    </div>
+        <!-- full-screen menu ends -->
 
     <script>
       function getCookie(cname) {
