@@ -121,12 +121,10 @@ transition: 0.5s ease-in;
   display: grid;
   grid-template-columns: repeat(35,1fr);
   gap: 3.2rem;
-  /* mix-blend-mode: color-burn; */
   /* height: 2px; */
-  animation: move 15s linear infinite;
+  animation: move 30s linear infinite;
   margin: 1rem;
   margin-top: 5rem;
- 
 }
 
 
@@ -134,8 +132,7 @@ transition: 0.5s ease-in;
 .Customers-logo{
   filter: grayscale(100%);
   max-width: 50vw;
-     
-
+  mix-blend-mode: color-burn;
 }
 
 
