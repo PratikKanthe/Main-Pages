@@ -2016,7 +2016,7 @@ a.scroll-down img {
       transform: translateY(-20px) rotate(30deg);
     }
     100% {
-      transform: translateX(-350px);
+      transform: translateX(-230px);
     }
   }
   .scooter {
