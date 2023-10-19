@@ -1351,8 +1351,8 @@ span.parrentOrg {
 /* slide 3 */
 .fan {
   position: absolute;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   bottom: 10%;
   left: 43%;
   transform: rotateY(-30deg);
@@ -1362,16 +1362,16 @@ span.parrentOrg {
   position: absolute;
   top: 23%;
   left: 45%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
 }
 
 .machine2 {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   animation: machine2 3s infinite alternate;
 }
 
@@ -1396,16 +1396,16 @@ span.parrentOrg {
   position: absolute;
   top: 23%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   animation: machine 3s infinite alternate;
 }
 
 /* slide 4 */
 .pip-meter {
   position: absolute;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   bottom: 10%;
   left: 43%;
   animation: machine 3s alternate infinite;
@@ -1415,8 +1415,8 @@ span.parrentOrg {
   position: absolute;
   top: 23%;
   left: 45%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   animation: machine2 3s alternate infinite;
 }
 
@@ -1424,8 +1424,8 @@ span.parrentOrg {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   animation: rotate-pipe 5s alternate infinite;
 }
 
@@ -1450,8 +1450,8 @@ span.parrentOrg {
   position: absolute;
   top: 23%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   animation: rotate-pipe-rev 5s alternate infinite;
 }
 
@@ -1474,13 +1474,13 @@ span.parrentOrg {
   position: absolute;
   top: 23%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
 }
 .tool {
   position: absolute;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
   bottom: 10%;
   left: 43%;
 }
@@ -1489,8 +1489,8 @@ span.parrentOrg {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
 }
 
 /* slide 6 */
@@ -1498,15 +1498,15 @@ span.parrentOrg {
   position: absolute;
   top: 35%;
   left: 30%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
 }
 .bolt2 {
   position: absolute;
   top: 50%;
   left: 5%;
-  width: 5em;
-  height: 5em;
+  width: 75px;
+  height: 75px;
 }
 
 /* part 2 */
