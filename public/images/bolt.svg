@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Screw_x5F_bolts" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">
+		.rotate {
+        transform-origin: center;
+        transform-box: fill-box;
+		animation: rotate 5s linear infinite;
+		}
+		@keyframes rotate {
+		0% {
+		transform: rotate(0deg);
+		}
+		100% {
+		transform: rotate(360deg);
+		}
+		}
+
+        .half-rotate{
+            transform-origin: center;
+        transform-box: fill-box;
+		animation: half-rotate 2s alternate infinite;
+        }
+        @keyframes half-rotate {
+		0% {
+		transform: rotate(0deg);
+		}
+		100% {
+		transform: rotate(40deg);
+		}
+		}
+        .rev-rotate{
+            transform-origin: center;
+        transform-box: fill-box;
+		animation: rev-rotate 2s alternate infinite;
+        }
+        @keyframes rev-rotate {
+		0% {
+		transform: rotate(0deg);
+		}
+		100% {
+		transform: rotate(-40deg);
+		}
+		}
+	</style>
+
+<g id="Screw_x5F_bolts_1_">
+
+<g>
+
+
+<path class="half-rotate" d="M281.482,268.558l7.862-2.325l-3.401-11.507l-4.461,1.318v-14.176l7.862-2.325l-3.401-11.508l-4.461,1.319v-14.177    l7.862-2.325l-3.401-11.508l-4.461,1.319v-13.994l8.482-2.508l-3.401-11.508l-5.081,1.502v-14.177l8.482-2.508l-3.401-11.508    l-5.081,1.502v-14.177l8.482-2.508l-3.401-11.508l-5.081,1.502v-9.413h34.34V45.949H171.045v67.411h34.339v31.911l-8.483,2.508    l3.402,11.508l5.081-1.502v14.177l-8.483,2.508l3.402,11.508l5.081-1.502v14.177l-8.483,2.508l3.402,11.508l5.081-1.502v13.994    l-9.103,2.691l3.402,11.508l5.7-1.686v14.177l-9.103,2.691l3.402,11.508l5.7-1.686v14.178l-9.103,2.691l3.402,11.508l5.7-1.686    v17.129h76.099V268.558z M183.045,101.36V57.949h120.777v43.411h-22.34h-76.099H183.045z M217.384,113.36h52.099v12.96    l-52.099,15.403V113.36z M217.384,154.238l52.099-15.403v14.177l-52.099,15.403V154.238z M217.384,180.929l52.099-15.403v14.177    l-52.099,15.403V180.929z M217.384,207.62l52.099-15.403v13.994l-52.099,15.404V207.62z M217.384,234.127l52.099-15.403V232.9    l-52.099,15.403V234.127z M217.384,260.817l52.099-15.403v14.178l-52.099,15.402V260.817z M217.384,296.186v-8.677l52.099-15.403    v24.08H217.384z"/>
+
+</g>
+
+</g>
+
+</svg>

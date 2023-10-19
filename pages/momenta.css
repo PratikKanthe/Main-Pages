@@ -69,7 +69,7 @@ max-width: 60rem;
 }
 .content .article p{
   text-align: left;
-  font-size: 3rem;
+  font-size: 2.2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
