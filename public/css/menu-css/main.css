@@ -1296,6 +1296,10 @@ span.parrentOrg {
   color: var(--clr-on-body);
 }
 
+.slide-info{
+  display: none;
+}
+
 /* slide 2 */
 .car {
   position: absolute;

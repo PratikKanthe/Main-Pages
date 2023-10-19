@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oursys</title>
+    <link rel="stylesheet" href="/public/css/landing.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta
+      http-equiv="origin-trial"
+      content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="5iqmcifklGb0OOtSTOP2vGJm_KikUwlijkHBoV3TPSY"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.gstatic.com/recaptcha/releases/lLirU0na9roYU3wDDisGJEVT/recaptcha__en.js"
+      crossorigin="anonymous"
+      integrity="sha384-lwJiw+OT2isqLl772nPjNV34ltQfNiSOLIjtbaIB6FcFv8R12U/NaJ6yYpei3RPl"
+    ></script>
+    <script
+      async=""
+      src="//web.archive.org/web/20180518053535/https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script>
+      (function (html) {
+        html.className = html.className.replace(/\bno-js\b/, "js");
+      })(document.documentElement);
+    </script>
+    <meta
+      name="robots"
+      content="index, follow, max-video-preview:-1, max-snippet:-1, max-image-preview:large"
+    />
+
+    <!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+
+    <link rel="dns-prefetch" href="//use.fontawesome.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link
+      rel="stylesheet"
+      id="bootstrap-css"
+      href="/public/css/menu-css/bootstrap.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      id="animate-css"
+      href="/public/css/menu-css/animate.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      id="main-css"
+      href="/public/css/menu-css/main.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="main-css"
+      href="/pages/momenta.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="responsive-css"
+      href="/public/css/menu-css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.watconsult.com/wp-content/themes/watconsult/js/jquery-3.6.0.min.js"
+      id="jquery-js"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QSLRPH6V4C");
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+<body onload="DrawCaptcha();">
+        <!-- header -->
+        <div class="header">
+            <div class="col-md-10 myContainer">
+              <div class="header-nav-wrap">
+                <a class="logo" href="/index.html">
+                  <img src="/public/images/Oursys_logo_new_black.svg" alt="Oursys" />
+                </a>
+                <div class="hidden-xs1">
+                  <ul class="header-nav" id="headNav" style="margin-right: 3rem">
+                    <!--<li class="ssh"><a href="#" class="dmsearch">Search</a></li>-->
+                    <li class="ssh">
+                      <a class="dmshow" id="dmshow"
+                        ><i class="fas fa-bars1"></i> <span>Menu</span></a
+                      >
+                    </li>
+                    <li class="sss">
+                      <a class="searchClose" style="display: none"
+                        ><i class="fas fa-times"></i> <span>Close</span></a
+                      >
+                    </li>
+                  </ul>
+                  <span class="parrentOrg">since 2001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- search panel starts -->
+          <div class="fs-searchpanel" style="display: none">
+            <div class="col-md-10 myContainer">
+              <form class="searchField">
+                <input type="search" placeholder="SEARCH" class="inputField" />
+                <input type="submit" class="searchBtn" />
+              </form>
+            </div>
+          </div>
+          <!-- search panel ends -->
+      
+          <!-- full-screen menu starts -->
+          <div class="fs-navigation" id="menuContainer" style="display: none">
+            <img
+              src="/public/images/blob3.svg"
+              class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm blob3"
+              id="fs-menu-char"
+              alt="Oursys"
+            />
+            <img
+              src="/public/images/drone.svg"
+              class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+              id="fs-menu-svg"
+              style="position: absolute; width: 5vw; top: 60%; left: 42rem"
+            />
+      
+            <img
+              src="/public/images/helicopter.svg"
+              class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+              id="fs-menu-svg"
+              style="position: absolute; width: 5vw; top: 50%; left: 10rem"
+            />
+      
+            <img
+              src="/public/images/slide-plane.svg"
+              class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+              id="fs-menu-svg"
+              style="position: absolute; width: 7vw; top: 35%; left: 18%"
+            />
+      
+            <img
+              src="/public/images/tank.svg"
+              class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+              id="fs-menu-svg"
+              style="position: absolute; width: 4vw; top: 80%; left: 30rem"
+            />
+      
+            <!-- <img src="https://www.watconsult.com/wp-content/themes/watconsult/images/fs-menu-charcters-newest-mob.png"
+                class="fs-menu-character animated fadeInUp faster delay-p3 visible-xs visible-sm" id="fs-menu-char"
+                alt="Work Culture Background Mobile Version- WATConsult"> -->
+      
+            <div class="fs-nav-wrap" id="fs-menu-center">
+              <ul class="menu__box">
+                <li class="animated fadeInDown faster delay-p1">
+                  <h3 class=" "><a href="./momenta.html">Momenta</a></h3>
+                  <div class="anchors">
+                    <a href="./momenta.html#OurStory" class="menu__item"
+                      >Our Story</a
+                    >
+                    <a href="./momenta.html#Customers" class="menu__item"
+                      >Our Customers</a
+                    >
+      
+                    <a href="./momenta.html#Presence" class="menu__item"
+                      >Our Presence</a
+                    >
+                  </div>
+                </li>
+                <li class="animated fadeInDown faster delay-p2">
+                  <h3 class=" "><a href="../index.html">OurSys ERP</a></h3>
+                  <div class="anchors">
+                    <a href="../index.html#our-inspiration" class="menu__item">Our Inspiration</a>
+      
+                    <a href="../index.html#our-specialization" class="menu__item">Our Specalisation</a>
+      
+                    <a href="#" class="menu__item">Our Products</a>
+                  </div>
+                </li>
+                <li class="animated fadeInDown faster delay-p3">
+                    <h3 class=" "><a href="./Team.html">Team</a></h3>
+                    <div class="anchors">
+                      <a href="./Team.html#Ourculture" class="menu__item">Our Culture</a>
+        
+                      <a href="./Team.html#people" class="menu__item">Our People</a>
+        
+                      <a href="./Team.html#Joinus" class="menu__item">Current Openings</a>
+                </li>
+                <li class="animated fadeInDown faster delay-p4">
+                  <h3 class=" "><a href="#">Contact Us</a></h3>
+                  <div class="anchors">
+                    <a href="#" class=""> Enquiry</a>
+      
+                    <a href="#" class="">Join Us</a>
+                  </div>
+                </li>
+                <li class="animated fadeInDown faster delay-p5">
+                  <h3 class=""><a href="#">Our Club</a></h3>
+                  <div class="anchors">
+                    <a href="#" class="">Forums</a>
+      
+                    <a href="#" class="">Blogs</a>
+      
+                    <a href="#" class="">Help</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+      
+            <!--<div class="fs-whatelse-wrap animated fadeInRight faster delay-p3 col-sm-pull-3" style="display:none;">
+                <div class="fs-whatelse">
+                    <h4>WAT ELSE?</h4>
+                    <ul>
+                                    </ul>
+                </div>
+            </div>-->
+      
+            <div
+              class="fs-address-wrap animated fadeInRight faster delay-p4 col-sm-pull-1"
+            >
+              <div class="fs-addresses">
+                <h4>OUR OFFICES</h4>
+      
+                <div class="fs-addres fs-mumbai">
+                  <!--
+                        <h5>Mumbai</h5>
+                        <p>
+                            5th Floor, Parijat House, Manjrekar Lane,<br>
+                            1076, off Dr. E. Moses Road, Worli Naka<br>
+                            Mumbai-400 018<br>
+                            Maharashtra 
+                        </p>
+      -->
+                  <!--<p>5th Floor, Parijat House,<br>Manjrekar Lane, 1076,<br>off Dr. E. Moses Road, Worli Naka,<br>Mumbai-400 018</p>-->
+      
+                  <div itemscope="" itemtype="http://schema.org/Organization">
+                    <h5 itemprop="name">Mumbai</h5>
+                    <div
+                      itemprop="address"
+                      itemscope=""
+                      itemtype="http://schema.org/PostalAddress"
+                    >
+                      <p itemprop="streetAddress" style="margin-bottom: 0px">
+                        B202,Pallavi,
+                        <br />
+                        Veera Desai Road,
+                      </p>
+                      <p itemprop="addressLocality" style="margin-bottom: 0px">
+                        Andheri West
+                      </p>
+                      <p itemprop="addressRegion" style="margin-bottom: 0px">
+                        Mumbai, Maharashtra
+                      </p>
+                      <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p>
+                    </div>
+                    <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
+                  </div>
+                </div>
+                <div class="fs-addres fs-mumbai">
+                 
+                  <div itemscope="" itemtype="http://schema.org/Organization">
+                    <h5 itemprop="name">Bengaluru</h5>
+                    <div
+                      itemprop="address"
+                      itemscope=""
+                      itemtype="http://schema.org/PostalAddress"
+                    >
+                      <p itemprop="streetAddress" style="margin-bottom: 0px">
+                        Rajaji Nagar,
+                        <br />
+                        <!-- Veera Desai Road,
+                      </p>
+                      <p itemprop="addressLocality" style="margin-bottom: 0px">
+                        Andheri West
+                      </p> -->
+                      <p itemprop="addressRegion" style="margin-bottom: 0px">
+                        Karnataka
+                      </p>
+                      <!-- <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p> -->
+                    </div>
+                    <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
+                  </div>
+                </div>
+                <div class="fs-addres fs-mumbai">
+              
+                  <div itemscope="" itemtype="http://schema.org/Organization">
+                    <h5 itemprop="name">Bahrain</h5>
+                    <div
+                      itemprop="address"
+                      itemscope=""
+                      itemtype="http://schema.org/PostalAddress"
+                    >
+                      <p itemprop="streetAddress" style="margin-bottom: 0px">
+                        Jasra,
+                        <br />
+                        1003,
+                      </p>
+                      <!-- <p itemprop="addressLocality" style="margin-bottom: 0px">
+                        Andheri West
+                      </p>
+                      <p itemprop="addressRegion" style="margin-bottom: 0px">
+                        Mumbai, Maharashtra
+                      </p> -->
+                      <!-- <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p> -->
+                    </div>
+                    <!--                      <p itemprop="telephone">Phone: 022 – 67099200</p>-->
+                  </div>
+                </div>
+              </div>
+      
+              <div class="fs-social">
+                <h4>FOLLOW US ON</h4>
+      
+                <ul class="fs-social-nav">
+                  <li>
+                    <a href="" style="text-transform: uppercase" target="_blank"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" style="text-transform: uppercase" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" style="text-transform: uppercase" target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" style="text-transform: uppercase" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" style="text-transform: uppercase" target="_blank"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" style="text-transform: uppercase" target="_blank"
+                      ><i class="fab fa-vimeo"></i
+                    ></a>
+                  </li>
+                  <!--
+                        <li>
+                            <a href="https://www.facebook.com/watconsult" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/watconsult" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://in.linkedin.com/company/watconsult---social-media-agency" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/watconsult/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+      -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- full-screen menu ends -->
+    <section class="cols2" id="Ourculture">
+        <div class="part1">
+          <div class="blob-Story">
+            <img src="/public/images/blob-culture.svg" alt="" />
+          </div>
+        </div>
+        <div class="part2">
+          <div class="content">
+            <h1>Our Culture</h1>
+            <div class="article">
+              <p>
+                In the year 2001, the corporate engineering companies had shifted
+                from legacy software to a fully integrated ERP system. While the
+                MSME industry had, at max, an accounting software.
+              </p>
+              <p>
+                We started our journey to fill this void in the market. To provide
+                an end to end ERP which was way beyond typical software.
+              </p>
+  
+              <p>
+                Our goal was to help MSMEs to comply with the best standards such
+                as ISO, TS, AS, API etc. and at the same time keep the software
+                extremely simple to use.
+              </p>
+  
+              <p>
+                Since then OurSys has come a long way, evolving solutions for a
+                wide range of industries and their complexities and yet managing
+                to stay simple in it’s usage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section>
+        <div class="people" id="people">
+
+
+            <h1 class="text">Our People</h1>
+
+            <div class="ourpeople">
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg "></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg"></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg"></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg"></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg"></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg"></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg""></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg""></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg""></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg""></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg""></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+                <!--  -->
+                <div>
+                    <div class="Our-people"><img src="/public/images/Demo Images.jpg""></div>
+                    <p>Pratik Jadhav</p>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section>
+  <section class="cols3" id="Joinus">
+    <div class="part1">
+      <div class="blob-Story">
+        <img src="/public/images/blob-contactus.svg" alt="" />
+      </div>
+    </div>
+    <div class="part2">
+                    <div class="contact">
+                        
+                        <h1>Join Us</h1>
+                        <div class="form-container">
+                        <!-- <div class="form-group">
+                            <label for="txtcompname">Company Name:</label>
+                            <input type="text" id="txtcompname" style="width:250px;" class="txtbox cname" />
+                        </div> -->
+                        <div class="form-group">
+                            <label for="txtname">Your Name:</label>
+                            <input type="text" id="txtname"  class="txtbox yname" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtphoneno">Phone / Mobile No.:</label>
+                            <input type="text" id="txtphoneno"  class="txtbox phone" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtemailid">Email ID:</label>
+                            <input type="text" id="txtemailid"  class="txtbox emailo" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtfile">Upload Resume:</label>
+                            <input type="file" id="myFile"  name="filename" class="txtbox file">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDetails">Applying for Position:</label>
+                            <textarea id="txtDetails" cols="40" rows="4" class="txtbox details" ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCaptcha">Captcha Code:</label>
+                            <input type="text" id="txtCaptcha" style="background-image: url(/public/images/captcha-bg.png); text-align: center; border: none; font-weight: bold; font-family: Modern; font-size: 18px; width: 100px; color: #000;" readonly="readonly" />
+                            <img src="/public/images/refresh.svg" alt="" class="refresh" onclick="DrawCaptcha();">
+                            <input type="text" id="txtInput" style="width: 100px;" class="txtbox" />
+                        </div>
+                        <div class="form-group center">
+                            <button type="submit" id="btnsubmit" name="btnsubmit" onclick="validation();" class="btn-load">Submit</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              </section>
+
+              <footer>
+                <div class="footer">
+                  <div class="footer-box">
+                    <h2 class="footer-h2">Enquiry</h2>
+                    <p>Want to transform your company through an ERP?</p>
+            
+                    <p>Just Click <a href="#">here</a></p>
+                  </div>
+                  <!--<div class="col-md-10 myContainer">-->
+                  <div class="container">
+            
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-2">
+                        <div class="footer-content">
+                          <h3>FOLLOW US</h3>
+            
+                          <ul class="footer-social footer-nav">
+                            <li>
+                              <a href="#" style="text-transform: uppercase" target="_blank"
+                                ><i class="fab fa-facebook-f"></i> FACEBOOK</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" style="text-transform: uppercase" target="_blank"
+                                ><i class="fab fa-twitter"></i> TWITTER</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" style="text-transform: uppercase" target="_blank"
+                                ><i class="fab fa-linkedin"></i> LINKEDIN</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" style="text-transform: uppercase" target="_blank"
+                                ><i class="fab fa-instagram"></i> INSTAGRAM</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" style="text-transform: uppercase" target="_blank"
+                                ><i class="fab fa-youtube"></i> YOUTUBE</a
+                              >
+                            </li>
+            
+                            <!--
+                                      <li class="active">
+                                          <a href="https://www.facebook.com/watconsult" target="_blank"><i class="fab fa-facebook-f"></i> FACEBOOK</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://twitter.com/watconsult" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://in.linkedin.com/company/watconsult---social-media-agency" target="_blank"><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
+                                      </li>
+                                      <li>
+                                          <a href="https://www.instagram.com/watconsult/" target="_blank"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                                      </li>
+            -->
+                          </ul>
+                        </div>
+                      </div>
+            
+                      <div class="col-xs-6 col-sm-2">
+                        <div class="footer-content">
+                          <h3>SITEMAP</h3>
+            
+                          <ul class="footer-sitemap footer-nav">
+                            <li class="">
+                              <a href="/pages/momenta.html#OurStory"> our Story</a>
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="./pages/momenta.html#Customers" class=""
+                          >Our Customers</a
+                        >
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="./pages/momenta.html#Presence" class=""
+                          >Our Presence</a
+                        >
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="./index.html#our-inspiration"> Our Inspiration</a>
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="/index.html#our-specialization" onkeypress="" class="">Our Specialisation</a>
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="#"> Our Products</a>
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="./Team.html#Ourculture"> Our Culture</a>
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="./Team.html#people"> Our People</a>
+                              <ul></ul>
+                            </li>
+                            <li class="">
+                              <a href="./Team.html#Joinus"> Our Openings</a>
+                              <ul></ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+            
+                      <div class="col-xs-12 col-sm-8">
+                        <div class="footer-content">
+                          <h3>OFFICE LOCATION</h3>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4 col-xs-12">
+                            <div class="address mum-address">
+                              <div itemscope="" itemtype="http://schema.org/Organization">
+                                <h5 itemprop="name">Mumbai</h5>
+                                <div
+                                  itemprop="address"
+                                  itemscope=""
+                                  itemtype="http://schema.org/PostalAddress"
+                                >
+                                  <p
+                                    itemprop="streetAddress"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    B202,Pallavi<br />
+                                    Veera Desai Road<br />
+                                  </p>
+                                  <p
+                                    itemprop="addressLocality"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Andheri West
+                                  </p>
+                                  <p
+                                    itemprop="addressRegion"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Mumbai
+                                  </p>
+                                  <p
+                                    itemprop="postalCode"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    400 058
+                                  </p>
+                                </div>
+                                <p itemprop="telephone" style="margin-left: -0.1rem">
+                                  Phone: +91 9820859510 <br>+91 9867000586
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-xs-12">
+                            <div class="address dlh-address">
+                              <div itemscope="" itemtype="http://schema.org/Organization">
+                                <h5 itemprop="name">Bengaluru</h5>
+                                <div
+                                  itemprop="address"
+                                  itemscope=""
+                                  itemtype="http://schema.org/PostalAddress"
+                                >
+                                  <p
+                                    itemprop="streetAddress"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Rajaji Nagar
+                                  </p>
+                                  <p
+                                    itemprop="addressLocality"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Karnataka
+                                  </p>
+                                  <!-- <p
+                                    itemprop="addressRegion"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Mumbai
+                                  </p> -->
+                                  <!-- <p
+                                    itemprop="postalCode"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    400 058
+                                  </p> -->
+                                </div>
+                                <p itemprop="telephone" style="margin-left: -0.1rem">
+                                  Phone: +91 9900395265 <br> +91 8310617191
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 col-xs-12">
+                            <div class="address blr-address">
+                              <div itemscope="" itemtype="http://schema.org/Organization">
+                                <h5 itemprop="name">Bahrain</h5>
+                                <div
+                                  itemprop="address"
+                                  itemscope=""
+                                  itemtype="http://schema.org/PostalAddress"
+                                >
+                                  <p
+                                    itemprop="streetAddress"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Jasra<br />
+                                    1003<br />
+                                  </p>
+                                  <!-- <p
+                                    itemprop="addressLocality"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Andheri West
+                                  </p> -->
+                                  <!-- <p
+                                    itemprop="addressRegion"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    Mumbai
+                                  </p> -->
+                                  <!-- <p
+                                    itemprop="postalCode"
+                                    style="margin-bottom: 0px; margin-left: -0.1rem"
+                                  >
+                                    400 058
+                                  </p> -->
+                                </div>
+                                <p itemprop="telephone" style="margin-left: -0.1rem">
+                                  Phone: + 97339850898
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <p class="copyText">
+                          COPYRIGHT @2023 |
+                          <a href="#"
+                            >All Right Reserved</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+              <script src="/public/js/index.js"></script>
+    
+  
+              <script type="text/javascript">
+
+                function DrawCaptcha() {
+                    var a = Math.ceil(Math.random() * 9) + '';
+                    var b = Math.ceil(Math.random() * 9) + '';
+                    var c = Math.ceil(Math.random() * 9) + '';
+        
+                    var code = a + ' ' + b + ' ' + ' ' + c;
+                    document.getElementById("txtCaptcha").value = code;
+                }
+        
+                function removeSpaces(string) {
+                    return string.split(' ').join('');
+                }
+        
+                function clearText() {
+                    $("#txtname").val('');
+                    $("#txtphoneno").val('');
+                    $("#txtemailid").val('');
+                    $("#txtDetails").val('');
+                    $("#txtInput").val('');
+                    $("#txtcompname").val('');
+                    $("#txtfile").val('');
+                }
+        
+                function validation() {
+        
+                    var flag = 0;
+                    var vmsg = "";
+        
+                    if (document.getElementById('txtname').value == '') {
+                        vmsg = 'Please Enter Name';
+                        flag += 1;
+                    }
+        
+                    if (document.getElementById('txtphoneno').value == '') {
+        
+                        if (document.getElementById('txtemailid').value == '') {
+                            if (flag > 0) {
+                                vmsg += ' either Phone No. or Email ID';
+                            }
+                            else {
+                                vmsg += 'Please Enter either Phone No. or Email ID';
+                            }
+                            flag += 1;
+                        }
+                    }
+        
+                    if ($('#txtemailid').val() != '') {
+                        if (!validateEmail($('#txtemailid').val())) {
+                            $("#txtemailid").val('');
+                            if (flag > 0) {
+                                vmsg += ',';
+                                vmsg += ' And valid Email ID';
+                            }
+                            else {
+                                vmsg += 'Please Enter valid EmailID';
+                            }
+                            flag += 1;
+                        }
+                    }
+        
+                    var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+                    var str2 = removeSpaces(document.getElementById('txtInput').value);
+                    if (str1 != str2) {
+                        if (flag > 0) {
+                            vmsg += ' and valid Captcha Code';
+                        }
+                        else {
+                            vmsg += 'You have not entered the Captcha Code Correctly!';
+                        }
+                        flag += 1;
+                    }
+        
+                    if (flag > 0) {
+                        alert(vmsg);
+                    }
+                    else if (flag == 0) {   
+        
+                        $.ajax({
+                            type: 'POST',
+                            url: 'https://momenta.oursyserp.com/WebService.asmx/SendEmail',
+                            data: "{'vname':'" + $("#txtname").val() + "','vphoneno':'" + $("#txtphoneno").val() + "','vemailid':'" + $("#txtemailid").val() + "','vfile':'" + $("#txtfile").val() + "','vdetails':'" + $("#txtDetails").val() + "','vaddparam':'Inno@22$56','vcompname':'" + $("#txtcompname").val() + "'}",
+                            contentType: 'application/json; charset=utf-8',
+                            dataType: 'json',
+                            success: function (r) {
+                                alert(r.d);
+                                clearText();
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                //alert(textStatus);
+                            }
+                        });
+        
+                    }
+                }
+        
+            </script>
+            <script type="text/javascript">
+                function validateEmail(sEmail) {
+                    var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+                    if (filter.test(sEmail)) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+        
+        
+            </script>
+</section>
+
+</body>
+
+</html>

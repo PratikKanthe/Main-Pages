@@ -302,43 +302,6 @@ transition: 0.5s ease-in;
 
 
 
-/* TEAMS */
-
-.people{
-height: 110vh;
-margin: 1rem;
-overflow-x: hidden;
-overflow-y: hidden;
-}
-
-.ourpeople{
-display: grid;
-grid-template-columns: repeat(6,1fr);
-gap: 2.1rem;
-margin: 3rem;
-
-
-}
-
-.Our-people{
- height: 40vh;
- width: 15vw;
- 
-}
-
-.Our-people img{
-height: 40vh;
-width: 15.1vw;
-background: red;
-
-}
-
-
-
-.ourpeople p{
-font-size: 2rem;
-}
-/* openings */
 
 
 
@@ -500,4 +463,218 @@ font-size: 2rem;
     display: none;
   }
   
+}
+
+
+/* Teams */
+
+.people{
+  min-height: 100vh;
+  margin: 1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+ 
+  }
+  
+  .ourpeople{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  /* animation: move 15s linear infinite; */
+  column-gap: 5rem;
+  margin: 3rem;
+  
+  
+  }
+  
+  .Our-people{
+   height: 40vh;
+   width: 15vw;
+     /* mix-blend-mode: color-burn; */
+   
+  }
+  
+  .Our-people img{
+  height: 40vh;
+  width: 15vw;
+  object-fit: contain;
+   
+  }
+
+  .ourpeople:hover{
+      animation-play-state: paused;
+      cursor: pointer; 
+  }       
+  
+  
+  
+  .ourpeople p{
+  font-size: 2rem;
+  }
+  /* openings */
+
+
+
+
+/* opening and contact us pages */
+.refresh {
+  background: url("/public/images/refresh.svg");
+  width: 23px;
+  height: 23px;
+  z-index: 10;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-h1{
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  gap: 1rem;
+}
+
+/* .parentbox{min-height:600px; margin-top: 25px; 
+ display:flex; flex-wrap: wrap; justify-content: space-around; } */
+
+.form-container{
+  align-items: left;
+  justify-content: left;
+  margin-top: 8rem;
+
+}
+
+.form-group{
+  margin-top: 3rem;
+}
+
+.txtbox{
+  height: 4vh;    
+}
+
+.contact h1{
+  display: flex;
+  font-size: 7rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group .cname{
+  margin-left: 5rem;
+  width:250px;
+  font-size: 2rem;
+}
+
+.form-group .yname{
+  margin-left: 11.5rem;
+  font-size: 2rem;
+  width:250px;
+}
+.form-group .phone{
+  margin-left: 1.5rem;
+  font-size: 2rem;
+  width:250px;
+}
+
+.form-group .emailo{
+  margin-left: 16rem;
+  font-size: 2rem;
+  width:250px;
+}
+
+.form-group label{
+  font-size: 2.8rem;
+}
+
+.btn-load{
+ border: none;
+ text-align: center;
+}
+
+@media only screen and (max-width: 530px) {
+  .form-group label{
+      font-size: 2.3rem;
+  }
+
+  .txtbox{
+      height: 3.5vh;   
+      
+  }
+
+  .form-group .cname{
+      margin-left: 5rem;
+      font-size: 2rem;
+      width: 180px;
+
+  }
+  
+  .form-group .yname{
+      margin-left: 10rem;
+      font-size: 2rem;
+      width: 180px;
+  }
+  .form-group .phone{
+      margin-left: 1.5rem;
+      font-size: 2rem;
+      width: 180px;
+
+  }
+  
+  .form-group .emailo{
+      margin-left: 13.4rem;
+      font-size: 2rem;
+      width: 180px;
+
+  }
+  .form-group .file{
+      margin-left: 1rem;
+      font-size: 2rem;
+      width: 180px;
+
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .form-group label{
+      font-size: 2rem;
+  }
+
+  .txtbox{
+      height: 3.5vh;    
+  }
+
+  .form-group .cname{
+      margin-left: 3rem;
+      font-size: 2rem;
+      width: 170px;
+
+  }
+  
+  .form-group .yname{
+      margin-left: 7.4rem;
+      font-size: 2rem;
+      width: 170px;
+  }
+  .form-group .phone{
+      margin-left: 0rem;
+      font-size: 2rem;
+      width: 170px;
+
+  }
+  
+  .form-group .emailo{
+      margin-left: 10.5rem;
+      font-size: 2rem;
+      width: 170px;
+
+  }
+  .form-group .file{
+      margin-left: 1rem;
+      font-size: 2rem;
+      width: 170px;
+
+  }
+ 
 }
