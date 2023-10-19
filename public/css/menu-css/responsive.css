@@ -607,9 +607,14 @@
          left: 50%;
      }
 
-     .content p {
+     /* .content p {
          max-width: 90%;
-     }
+     } */
+     .sec-2 .article{
+        display: flex;
+        flex-direction: column;
+        gap: 0.05rem;
+      }
 
      .uvcv-content p {
          margin-left: 0;
