@@ -1032,8 +1032,10 @@
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
+        initialSlide: 0, // Start on the first slide
+        loop: true,      // Enable infinite loop
         autoplay: {
-          delay: 3000,
+          delay: 300000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1044,6 +1046,20 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+      // Add custom logic to handle first and last slide navigation
+      swiper.on('slideChange', function () {
+        if (swiper.isBeginning) {
+          document.querySelector(".swiper-button-next").removeAttribute('disabled');
+          document.querySelector(".swiper-button-prev").setAttribute('disabled', 'disabled');
+        } else if (swiper.isEnd) {
+          document.querySelector(".swiper-button-prev").removeAttribute('disabled');
+          document.querySelector(".swiper-button-next").setAttribute('disabled', 'disabled');
+        } else {
+          document.querySelector(".swiper-button-prev").removeAttribute('disabled');
+          document.querySelector(".swiper-button-next").removeAttribute('disabled');
+        }
       });
 
       // intersection observer
