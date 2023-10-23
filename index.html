@@ -13,6 +13,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Link Swiper's -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <meta
       http-equiv="origin-trial"
       content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="
@@ -489,10 +495,19 @@
 
     <p class="tagline">A product of Momenta Informatics LLP</p>
 
-    <!-- slide 1 -->
-    <section class="col-2 clr1">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+            <!-- slide 1 -->
+    <section class="col-2 clr1 swiper-slide">
       <p class="tagline2">ERP for engineering & manufacturing companies</p>
       <div class="part-1">
+        <div class="bar-hide">
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
         <div class="landing-icons">
           <img
             src="/public/images/helicopter.svg"
@@ -561,9 +576,14 @@
       </div>
     </section>
     <!-- slide 2 -->
-    <section class="col-2 clr2">
+    <section class="col-2 clr2 swiper-slide">
       <p class="tagline2">ERP for engineering & manufacturing companies</p>
       <div class="part-1 slide-2">
+        <div class="bar-hide">
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
         <div class="landing-icons">
           <img
             src="/public/images/car-right.svg"
@@ -607,9 +627,14 @@
       </div>
     </section>
     <!-- slide 3 -->
-    <section class="col-2 clr3">
+    <section class="col-2 clr3 swiper-slide">
       <p class="tagline2">ERP for engineering & manufacturing companies</p>
       <div class="part-1 slide-3">
+        <div class="bar-hide">
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
         <div class="landing-icons">
           <img
             src="/public/images/machine-press.svg"
@@ -659,9 +684,14 @@
     </section>
 
     <!-- slide 4 -->
-    <section class="col-2 clr3">
+    <section class="col-2 clr3 swiper-slide">
       <p class="tagline2">ERP for engineering & manufacturing companies</p>
       <div class="part-1 slide-3">
+        <div class="bar-hide">
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
         <div class="landing-icons">
           <img
             src="/public/images/pipe.svg"
@@ -710,9 +740,14 @@
     </section>
 
     <!-- slide 5 -->
-    <section class="col-2 clr3">
+    <section class="col-2 clr3 swiper-slide">
       <p class="tagline2">ERP for engineering & manufacturing companies</p>
       <div class="part-1 slide-3">
+        <div class="bar-hide">
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
         <div class="landing-icons">
           <img
             src="/public/images/icons8-extrusion-50.png"
@@ -765,9 +800,14 @@
     </section>
 
     <!-- slide 6 -->
-    <section class="col-2 clr3">
+    <section class="col-2 clr3 swiper-slide">
       <p class="tagline2">ERP for engineering & manufacturing companies</p>
       <div class="part-1 slide-3">
+        <div class="bar-hide">
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="yellow"></div>
+        </div>
         <div class="landing-icons">
           <img
             src="/public/images/nut.svg"
@@ -824,6 +864,12 @@
         </div>
       </div>
     </section>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
     <!-- our inspiration -->
     <section class="our-inspiration">
@@ -960,6 +1006,71 @@
       </div>
     </section>
     <script src="/public/js/index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // intersection observer
+      function observeElements(elements, className) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              entry.target.classList.toggle(className, entry.isIntersecting);
+              //   if(entry.isIntersecting) observer.unobserve(entry.target)
+            });
+          },
+          {
+            // Add your options here if needed
+            // threshold: 0.1,
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      }
+
+      // heading
+      const heading = document.querySelectorAll(".heading-hide");
+      observeElements(heading, "heading-show");
+      // box
+      const box = document.querySelectorAll(".box-hide");
+      observeElements(box, "box-show");
+
+      // bar
+      const bar = document.querySelectorAll(".bar-hide");
+      observeElements(bar, "bar-show");
+      // bar
+      const helicopter = document.querySelectorAll(".helicopter-hide");
+      observeElements(helicopter, "helicopter-show");
+      // drone
+      const drone = document.querySelectorAll(".drone-hide");
+      observeElements(drone, "drone-show");
+      // tank
+      const tank = document.querySelectorAll(".tank-hide");
+      observeElements(tank, "tank-show");
+      // plane
+      const plane = document.querySelectorAll(".slide-plane-hide");
+      observeElements(plane, "slide-plane-show");
+    </script>
 
     <!-- Media Boxes JS files -->
 
@@ -1219,5 +1330,7 @@
         </div>
       </div>
     </footer>
+     
+
   </body>
 </html>

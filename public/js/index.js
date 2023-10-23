@@ -12,6 +12,17 @@ function observeElements(elements, className) {
       observer.observe(element);
     });
   }
+
+  // // heading
+  // const heading = document.querySelectorAll(".heading-hide");
+  // observeElements(heading, "heading-show");
+  // // box
+  // const box = document.querySelectorAll(".box-hide");
+  // observeElements(box, "box-show");
+
+  // // bar
+  // const bar = document.querySelectorAll(".bar-hide");
+  // observeElements(bar, "bar-show");
   
   // // Helicopters
   // const helicopter1 = document.querySelectorAll(".helicopter");
