@@ -547,6 +547,9 @@
         <div class="slide-sub">
           <p class="change"></p>
         </div>
+        <div class="slide-subtitle">
+          <p>ERP for Aerospace & Defence</p>
+        </div>
       </div>
       <div class="part-2">
         <div class="main-box box-hide">
@@ -596,6 +599,9 @@
         <div class="slide-title">
           <p class="slide-change-2"></p>
         </div>
+        <div class="slide-subtitle">
+          <p>ERP for Automotive, Electrical & Electronics Industry</p>
+        </div>
       </div>
       <div class="part-2">
         <div class="main-box box-hide mb2">
@@ -639,18 +645,21 @@
           <img
             src="/public/images/machine-press.svg"
             alt="machine"
-            class="machine"
+            class="machine heading-hide"
           />
-          <img src="/public/images/cooling-engine-fan.svg" alt="fan" class="fan" width="150" height="150" />
-          <img src="/public/images/meter-svgrepo-com.svg" alt="nut" class="nut" />
+          <img src="/public/images/cooling-engine-fan.svg" alt="fan" class="fan heading-hide2" width="150" height="150" />
+          <img src="/public/images/meter-svgrepo-com.svg" alt="nut" class="nut heading-hide" />
           <img
             src="/public/images/machine-press-2.svg"
             alt="machine2"
-            class="machine2"
+            class="machine2 heading-hide2"
           />
         </div>
         <div class="slide-title">
           <p class="change-slide-3"></p>
+        </div>
+        <div class="slide-subtitle">
+          <p>ERP for Machine, Equipment & Instrument Manufacturers</p>
         </div>
       </div>
       <div class="part-2">
@@ -696,25 +705,28 @@
           <img
             src="/public/images/pipe.svg"
             alt="pipe"
-            class="pipe"
+            class="pipe heading-hide"
           />
-          <img src="/public/images/valve.svg" alt="valve" class="valve" />
-          <img src="/public/images/pip-meter.svg" alt="pip-meter" class="pip-meter" />
+          <img src="/public/images/valve.svg" alt="valve" class="valve heading-hide" />
+          <img src="/public/images/pip-meter.svg" alt="pip-meter" class="pip-meter heading-hide2" />
           <img
             src="/public/images/pipe-2.svg"
-            alt="plane"
-            class="pipe-2"
+            alt=""
+            class="pipe-2 heading-hide2"
           />
         </div>
         <div class="slide-title">
           <p class="change-slide-4"></p>
+        </div>
+        <div class="slide-subtitle">
+          <p>ERP for Valves, Fittings & Flanges</p>
         </div>
       </div>
       <div class="part-2">
         <div class="main-box box-hide mb4">
           <div class="box-tpbar">
             <h1>OurSys FlowCon</h1>
-            <p class="small">EERP for Valves, Fittings & Flanges</p>
+            <p class="small">ERP for Valves, Fittings & Flanges</p>
           </div>
           <div class="list-box">
             <div class="list list1 center">
@@ -752,23 +764,26 @@
           <img
             src="/public/images/icons8-extrusion-50.png"
             alt=""
-            class="machine2"
+            class="machine2 heading-hide2"
           />
-          <img src="/public/images/rim-tyre-svgrepo-com.svg" alt="" class="fan tyre" />
+          <img src="/public/images/rim-tyre-svgrepo-com.svg" alt="" class="fan tyre heading-hide2" />
 
           <img
             src="/public/images/rubber-bands-stationery-svgrepo-com.svg"
             alt=""
-            class="nut"
+            class="nut heading-hide"
           />
           <img
             src="/public/images/rubber2.svg"
             alt=""
-            class="rubber2"
+            class="rubber2 heading-hide"
           />
         </div>
         <div class="slide-title">
           <p class="change-slide-5"></p>
+        </div>
+        <div class="slide-subtitle">
+          <p>ERP for Rubber & Plastic manufacturers</p>
         </div>
       </div>
       <div class="part-2">
@@ -812,28 +827,31 @@
           <img
             src="/public/images/nut.svg"
             alt="nut"
-            class="nut"
+            class="nut heading-hide"
           />
-          <img src="/public/images/nut-and-bolt-svgrepo-com.svg" alt="" class="machine" />
-          <img src="/public/images/nut-and-bolt-tools-couple-svgrepo-com.svg" alt="" class="tool" />
+          <img src="/public/images/nut-and-bolt-svgrepo-com.svg" alt="" class="machine heading-hide" />
+          <img src="/public/images/nut-and-bolt-tools-couple-svgrepo-com.svg" alt="" class="tool heading-hide2" />
           <img
             src="/public/images/bolt-bolts-construction-svgrepo-com.svg"
             alt=""
-            class="cons-tool"
+            class="cons-tool heading-hide2"
           />
           <img
             src="/public/images/bolt.svg"
             alt=""
-            class="bolt"
+            class="bolt heading-hide"
           />
           <img
             src="/public/images/bolt2.svg"
             alt=""
-            class="bolt2"
+            class="bolt2 heading-hide"
           />
         </div>
         <div class="slide-title">
           <p class="change-slide-6"></p>
+        </div>
+        <div class="slide-subtitle">
+          <p>ERP for Fastener Manufacturers</p>
         </div>
       </div>
       <div class="part-2">
@@ -1015,7 +1033,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 3000,
+          delay: 300000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1051,6 +1069,8 @@
       // heading
       const heading = document.querySelectorAll(".heading-hide");
       observeElements(heading, "heading-show");
+      const heading2 = document.querySelectorAll(".heading-hide2");
+      observeElements(heading2, "heading-show2");
       // box
       const box = document.querySelectorAll(".box-hide");
       observeElements(box, "box-show");

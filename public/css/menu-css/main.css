@@ -939,6 +939,10 @@ span.parrentOrg {
   line-height: 150%;
 }
 
+.slide-subtitle p{
+  display: none;
+}
+
 .change::before {
   font-size: 3rem;
   content: "Material Traceability";
@@ -1832,6 +1836,22 @@ a.scroll-down img {
     line-height: 150%;
     width: 70vw;
   }
+  .slide-subtitle p{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    width: 60vw;
+    display: block;
+  }
+  .tool {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 15%;
+    left: 90%;
+  }
 
   .drone {
     position: absolute;
@@ -1965,6 +1985,14 @@ a.scroll-down img {
   .swiper-button-next{
     display: none;
   }
+  .slide-subtitle p{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    display: block;
+  }
   .swiper-button-prev{
     display: none;
   }
@@ -2010,6 +2038,15 @@ a.scroll-down img {
 @media only screen and (max-width: 480px) {
   .tagline2{
     font-size: 1.5rem;
+  }
+  .slide-subtitle p{
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    width: 90vw;
+    bottom: 3%;
+    left: 5%;
+    display: block;
   }
   .tagline{
     left: 3%;
@@ -2128,6 +2165,9 @@ a.scroll-down img {
   .pip-meter {
     left: 70%;
   }
+  .tool{
+    left: 70%;
+  }
 }
 
 .blob {
@@ -2199,5 +2239,35 @@ a.scroll-down img {
   opacity: 1;
   transform: translateY(-25px);
 }
+.heading-hide{
+  font-size: 3rem; 
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(-200px) translateX(-100px) rotate(-30deg);
+  /* animation: rotateIn 1s linear forwards; */
+}
 
+
+.heading-show{
+  font-size: 3rem;
+  /* animation: rotateIn 1s linear forwards; */ 
+  transform: translateX(0px) translateY(0) rotate(0);
+  opacity: 1;
+}
+
+.heading-hide2{
+  font-size: 3rem; 
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(100px) translateX(-50px) rotate(30deg);
+  /* animation: rotateIn 1s linear forwards; */
+}
+
+
+.heading-show2{
+  font-size: 3rem;
+  /* animation: rotateIn 1s linear forwards; */ 
+  transform: translateX(0px) translateY(0) rotate(0);
+  opacity: 1;
+}
 /* pages css  */

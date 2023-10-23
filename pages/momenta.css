@@ -614,10 +614,10 @@ transition: 0.5s ease-in;
       font-size: 2.3rem;
   }
 
-  .txtbox{
+  /* .txtbox{
     width:25vw;
     height: 5vh;  
-  }
+  } */
 
   .form-group .cname{
       margin-left: 5rem;
@@ -658,9 +658,10 @@ transition: 0.5s ease-in;
       font-size: 2rem;
   }
 
-  .txtbox{
-      height: 3.5vh;    
-  }
+  /* .txtbox{
+    width:25vw;
+    height: 5vh;   
+  } */
 
   .form-group .cname{
       margin-left: 3rem;
