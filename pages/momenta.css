@@ -119,8 +119,9 @@ transition: 0.5s ease-in;
 
 .logos{
   display: grid;
-  grid-template-columns: repeat(35,1fr);
-  gap: 3.2rem;
+  grid-template-columns: repeat(35,100px);
+  row-gap: 3.2rem;
+  column-gap: 4rem;
   /* height: 2px; */
   animation: move 30s linear infinite;
   margin: 1rem;

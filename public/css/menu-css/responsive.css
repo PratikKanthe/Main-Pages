@@ -138,9 +138,9 @@
  /* Large Devices, Wide Screens */
 
  @media only screen and (max-width: 1600px) {
-     html {
+     /* html {
          font-size: 48.5%;
-     }
+     } */
 
      .award-logo {
          /*bottom: -15rem;*/
@@ -187,22 +187,22 @@
          margin-top: 5rem;
      }
 
-     img.letterImg {
-         height: 45rem; /*56rem*/
-     }
+     /* img.letterImg {
+         height: 45rem; 
+     } */
 
-     .lettersInner img.wLetterN {
+     /* .lettersInner img.wLetterN {
          height: 45rem;
-     }
+     } */
      
      .bannerText h1 {
         font-size: 6.2rem;
     }
      
-     .animatedSvg img {
+     /* .animatedSvg img {
         position: relative;
         top: 3rem;
-    }
+    } */
     .map2 h1{
         margin-top: 4rem;
     }
@@ -212,9 +212,9 @@
 
  @media only screen and (max-width: 1366px) {
      
-     .animatedSvg img {
+     /* .animatedSvg img {
         position: static;
-    }
+    } */
 
      /*html {
          font-size: 34.5%;
@@ -223,13 +223,13 @@
          font-size: 45.5%;
      }
 
-     .animatedSvg {
+     /* .animatedSvg {
          margin: 0 0 5rem 0;
-     }
+     } */
 
-     p.copyText {
+     /* p.copyText {
          font-size: 1.7rem;
-     }
+     } */
 
      .fs-nav-wrap ul li h3 {
          font-size: 3rem;
@@ -250,15 +250,15 @@
          margin: 0;
      }
 
-     .explorer {
+     /* .explorer {
          width: 202px;
          height: 50px;
-     }
+     } */
 
-     .watRow > div:first-child {
+     /* .watRow > div:first-child {
          height: 30rem;
-     }
-
+     } */
+/* 
      .explorer.explorer-loading rect,
      .explorer:hover rect {
          stroke-dasharray: 25, 344;
@@ -278,23 +278,23 @@
          max-width: 3rem;
      }
 
-     a.logo img {
-         height: 7rem;
-     }
-
+     
      .watRow > div:first-child {
          height: 52rem;
-     }
- }
+        } */
+        a.logo img {
+            height: 7rem;
+        }
+    }
 
  @media only screen and (max-width: 1200px) {
      .service {
          padding: 15px;
      }
 
-     .explorer {
+     /* .explorer {
          font-size: 16px;
-     }
+     } */
      .list {
         color: var(--clr-on-body);
         height: 16vh;
@@ -334,28 +334,28 @@
      .award-home {
          margin: 0 0 4rem;
      }
-
+/* 
      .work-case-study-content {
          padding: 0 0 2.5rem 0;
-     }
+     } */
 
      .fs-nav-wrap {
          max-width: 64rem;
      }
-
+/* 
      .watRow > div:first-child {
          height: 40rem;
      }
-     
+      */
      .bannerText h1 {
          font-size: 5rem;
      }
  }
 
  @media only screen and (max-width: 1024px) and (orientation: portrait) {
-     .lettersInner {
+     /* .lettersInner {
          max-width: 90%;
-     }
+     } */
 
      .lettersInner img.wLetterN {
          /*height: 50rem;*/
@@ -423,9 +423,9 @@
  /* Medium Devices, Desktops */
 
  @media only screen and (max-width: 992px) {
-     .animatedSvg svg {
+     /* .animatedSvg svg {
          max-height: 40vh;
-     }
+     } */
      .fs-nav-wrap{
         margin-left: 0;
      }
@@ -676,31 +676,31 @@
          right: 2%;
      }
 
-     .lettersInner {
+     /* .lettersInner {
          max-width: 90%;
-     }
+     } */
 
-     .lettersInner img.wLetterN {
+     /* .lettersInner img.wLetterN {
          height: auto;
-     }
+     } */
 
-     .watRow > div:first-child {
+     /* .watRow > div:first-child {
          height: 30rem;
-     }
+     } */
 
-     .case-study-gallery .ih-item.square.effect13 a .info {
+     /* .case-study-gallery .ih-item.square.effect13 a .info {
          visibility: visible;
          opacity: 1;
-     }
+     } */
 
-     .case-study-wrap .ih-item.square.effect13 a .info {
+     /* .case-study-wrap .ih-item.square.effect13 a .info {
          visibility: visible;
          opacity: 1;
-     }
+     } */
 
-     .thumb-address {
+     /* .thumb-address {
          margin: 2rem 0 6rem;
-     }
+     } */
 
      .our-office-container .address h5 {
          font-size: 3rem;
@@ -713,17 +713,17 @@
      .our-office-container a.hvr-know-more {
          font-size: 2.8rem;
      }
-
+/* 
      img.careersArtwork {
          max-width: 90%;
          margin: 0 auto;
-     }
+     } */
  }
 
  @media only screen and (max-width: 768px) {
-     img.letterImg {
+     /* img.letterImg {
          height: 30vh;
-     }
+     } */
      .sec-2 h1{
         font-size: 4rem;
       }
@@ -856,7 +856,7 @@
      .content p {
          font-size: 2.2rem;
      }
-
+/* 
      .content-core-member h2 {
          font-size: 3rem;
      }
@@ -892,7 +892,7 @@
 
      .cs-info h2 {
          font-size: 3rem;
-     }
+     } */
 
      /*img.letterImg {
          height: 36vh;
@@ -903,7 +903,7 @@
          transform: translateY(-50%) translateX(-50%);
          left: 50%;
      }*/
-     .award-logo img {
+     /* .award-logo img {
          max-height: 7rem;
      }
 
@@ -941,7 +941,7 @@
 
      .digital-experience img:first-child {
          margin-bottom: 4rem;
-     }
+     } */
 
      .nFeed {
          flex-direction: column;
@@ -1004,7 +1004,7 @@
          flex-direction: column;
      }
 
-     .watRow > div {
+     /* .watRow > div {
          width: 100% !important;
          height: 40rem !important;
      }
@@ -1015,7 +1015,7 @@
 
      .watRow > div.box7 {
          height: 28rem !important;
-     }
+     } */
 
      .contact-us-container {
          background-image: none;
