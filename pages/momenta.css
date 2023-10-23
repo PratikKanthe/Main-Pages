@@ -545,13 +545,25 @@ transition: 0.5s ease-in;
 
 }
 
+@media only screen and (max-width: 1150px) {
+  .cols4{
+      display: none;
+  }
+}
+
+.enquiry-map{
+  position: relative;
+  left: 25%;
+}
+
 .form-group{
   margin-top: 3rem;
 }
 
-.txtbox{
-  height: 4vh;    
-}
+/* .txtbox{
+  width:25vw;
+  height: 5vh; 
+} */
 
 .contact h1{
   display: flex;
@@ -563,29 +575,33 @@ transition: 0.5s ease-in;
 
 .form-group .cname{
   margin-left: 5rem;
-  width:250px;
+  width:25vw;
+  height: 5vh;
   font-size: 2rem;
 }
 
 .form-group .yname{
-  margin-left: 11.5rem;
+  margin-left: 10rem;
   font-size: 2rem;
-  width:250px;
+  width:25vw;
+  height: 5vh;
 }
 .form-group .phone{
   margin-left: 1.5rem;
   font-size: 2rem;
-  width:250px;
+  width:25vw;
+  height: 5vh;
 }
 
 .form-group .emailo{
-  margin-left: 16rem;
+  margin-left: 13.5rem;
   font-size: 2rem;
-  width:250px;
+  width:25vw;
+  height: 5vh;
 }
 
 .form-group label{
-  font-size: 2.8rem;
+  font-size: 2.3rem;
 }
 
 .btn-load{
@@ -599,8 +615,8 @@ transition: 0.5s ease-in;
   }
 
   .txtbox{
-      height: 3.5vh;   
-      
+    width:25vw;
+    height: 5vh;  
   }
 
   .form-group .cname{
@@ -618,7 +634,8 @@ transition: 0.5s ease-in;
   .form-group .phone{
       margin-left: 1.5rem;
       font-size: 2rem;
-      width: 180px;
+      width:25vw;
+  height: 5vh;
 
   }
   
