@@ -637,7 +637,7 @@ ul.fs-social-nav li a {
 
 .container h1 {
   font-size: 7rem;
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 /* .text{
   display: flex;
