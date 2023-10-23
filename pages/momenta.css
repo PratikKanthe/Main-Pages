@@ -539,9 +539,11 @@ transition: 0.5s ease-in;
  display:flex; flex-wrap: wrap; justify-content: space-around; } */
 
 .form-container{
+  display: flex;
+  flex-direction: column;
   align-items: left;
   justify-content: left;
-  margin-top: 8rem;
+  margin-top: 5rem;
 
 }
 
