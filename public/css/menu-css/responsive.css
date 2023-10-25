@@ -725,7 +725,7 @@
          height: 30vh;
      }
      .sec-2 h1{
-        font-size: 4rem;
+        font-size: 6rem;
       }
      .our-socials{
         margin-top: 20rem;
@@ -1162,6 +1162,15 @@
         margin-top: 30%; 
     } */
 
+    .sub{
+        font-size: 2rem;
+         font-weight: 700;
+    }
+    .flex h1 {
+        text-align: center;
+        font-size: 6rem;
+        font-weight: bold;
+    }
 
     .Customers-container{
         margin-top: 20%;
@@ -1179,7 +1188,7 @@
         margin-top: 35rem;
      }
      .container h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         text-align: left;
       }
      .footer {
@@ -1190,7 +1199,7 @@
          background-image: none !important;
      }
      .article-content h1{
-        font-size: 4rem;
+        font-size: 6rem;
      }
      .headline h1{
         font-size: 2rem;
