@@ -231,3 +231,6 @@ const autoPlaySlide = () =>{
 window.onload=()=>{
   setInterval(autoPlaySlide,6000);
 }
+
+
+// star user gallery
