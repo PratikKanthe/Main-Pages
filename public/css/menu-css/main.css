@@ -2478,7 +2478,7 @@ a.scroll-down img {
     margin-top: 30rem;
   }
   .productcards{
-    top: 95%;
+    top: 30%;
   }
 }
 @media screen and (max-width:380px) {
