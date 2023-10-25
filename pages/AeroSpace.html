@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AeroSpace</title>
+    <link rel="stylesheet" href="/public/css/landing.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Swiper's -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="dns-prefetch" href="//use.fontawesome.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link rel="stylesheet" href="momenta.css">
+    <link
+      rel="stylesheet"
+      id="bootstrap-css"
+      href="/public/css/menu-css/bootstrap.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      id="animate-css"
+      href="/public/css/menu-css/animate.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      id="main-css"
+      href="/public/css/menu-css/main.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="responsive-css"
+      href="/public/css/menu-css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="/public/js/jquery.js"
+      id="jquery-js"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="col-md-10 myContainer">
+        <div class="header-nav-wrap">
+          <a class="logo" href="/index.html">
+            <img src="/public/images/Oursys_logo_new_black.svg" alt="Oursys" />
+          </a>
+          <div class="hidden-xs1">
+            <ul class="header-nav" id="headNav" style="margin-right: 3rem">
+              <li class="ssh">
+                <a class="dmshow" id="dmshow"
+                  ><i class="fas fa-bars1"></i> <span>Menu</span></a
+                >
+              </li>
+              <li class="sss">
+                <a class="searchClose" style="display: none"
+                  ><i class="fas fa-times"></i> <span>Close</span></a
+                >
+              </li>
+            </ul>
+            <span class="parrentOrg">since 2001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- search panel starts -->
+    <div class="fs-searchpanel" style="display: none">
+      <div class="col-md-10 myContainer">
+        <form class="searchField">
+          <input type="search" placeholder="SEARCH" class="inputField" />
+          <input type="submit" class="searchBtn" />
+        </form>
+      </div>
+    </div>
+    <!-- search panel ends -->
+
+    <!-- full-screen menu starts -->
+    <div class="fs-navigation" id="menuContainer" style="display: none">
+      <img
+        src="/public/images/blob3.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm blob3"
+        id="fs-menu-char"
+        alt="Oursys"
+      />
+      <img
+        src="/public/images/drone.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 5vw; top: 60%; left: 42rem"
+      />
+
+      <img
+        src="/public/images/helicopter.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 5vw; top: 50%; left: 10rem"
+      />
+
+      <img
+        src="/public/images/slide-plane.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 7vw; top: 35%; left: 18%"
+      />
+
+      <img
+        src="/public/images/tank.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 4vw; top: 80%; left: 30rem"
+      />
+
+      <div class="fs-nav-wrap" id="fs-menu-center">
+        <ul class="menu__box">
+          <li class="animated fadeInDown faster delay-p1">
+            <h3 class=" "><a href="./pages/momenta.html">Momenta</a></h3>
+            <div class="anchors">
+              <a href="./pages/momenta.html#OurStory" class="menu__item"
+                >Our Story</a
+              >
+              <a href="./pages/momenta.html#Customers" class="menu__item"
+                >Our Customers</a
+              >
+
+              <a href="./pages/momenta.html#Presence" class="menu__item"
+                >Our Presence</a
+              >
+            </div>
+          </li>
+          <li class="animated fadeInDown faster delay-p2">
+            <h3 class=" "><a href="./index.html">OurSys ERP</a></h3>
+            <div class="anchors">
+              <a href="./index.html#our-inspiration" class="menu__item">Our Inspiration</a>
+
+              <a href="./index.html#our-specialization" class="menu__item">Our Specalisation</a>
+
+              <a href="./index.html#products" class="menu__item">Our Products</a>
+            </div>
+          </li>
+          <li class="animated fadeInDown faster delay-p3">
+            <h3 class=" "><a href="pages/Team.html">Team</a></h3>
+            <div class="anchors">
+              <a href="/pages/Team.html#Ourculture" class="">Our Culture</a>
+
+              <a href="/pages/Team.html#people" class="">Our People</a>
+
+              <a href="/pages/Team.html#Joinus" class="">Current Openings</a>
+            </div>
+          </li>
+          <li class="animated fadeInDown faster delay-p4">
+            <h3 class=" "><a href="./pages/ContactUs.html">Contact Us</a></h3>
+            <div class="anchors">
+              <a href="./pages/ContactUs.html#ContactUs" class=""> Enquiry</a>
+
+              <a href="./pages/Team.html#Joinus" class="">Join Us</a>
+            </div>
+          </li>
+          <li class="animated fadeInDown faster delay-p5">
+            <h3 class=""><a href="#">Our Club</a></h3>
+            <div class="anchors">
+              <a href="#" class="">Forums</a>
+
+              <a href="#" class="">Blogs</a>
+
+              <a href="#" class="">Help</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="fs-address-wrap animated fadeInRight faster delay-p4 col-sm-pull-1"
+      >
+        <div class="fs-addresses">
+          <h4>OUR OFFICES</h4>
+
+          <div class="fs-addres fs-mumbai">
+
+            <div itemscope="" itemtype="http://schema.org/Organization">
+              <h5 itemprop="name">Mumbai</h5>
+              <div
+                itemprop="address"
+                itemscope=""
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p itemprop="streetAddress" style="margin-bottom: 0px">
+                  B202,Pallavi,
+                  <br />
+                  Veera Desai Road,
+                </p>
+                <p itemprop="addressLocality" style="margin-bottom: 0px">
+                  Andheri West
+                </p>
+                <p itemprop="addressRegion" style="margin-bottom: 0px">
+                  Mumbai, Maharashtra
+                </p>
+                <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p>
+              </div>
+            </div>
+          </div>
+          <div class="fs-addres fs-mumbai">
+           
+            <div itemscope="" itemtype="http://schema.org/Organization">
+              <h5 itemprop="name">Bengaluru</h5>
+              <div
+                itemprop="address"
+                itemscope=""
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p itemprop="streetAddress" style="margin-bottom: 0px">
+                  Rajaji Nagar,
+                  <br />
+                <p itemprop="addressRegion" style="margin-bottom: 0px">
+                  Karnataka
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fs-addres fs-mumbai">
+        
+            <div itemscope="" itemtype="http://schema.org/Organization">
+              <h5 itemprop="name">Bahrain</h5>
+              <div
+                itemprop="address"
+                itemscope=""
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p itemprop="streetAddress" style="margin-bottom: 0px">
+                  Jasra,
+                  <br />
+                  1003,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fs-social">
+          <h4>FOLLOW US ON</h4>
+
+          <ul class="fs-social-nav">
+            <li>
+              <a href="" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-vimeo"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- full-screen menu ends -->
+
+    <p class="tagline">A product of Momenta Informatics LLP</p>
+    <section class="col-2 clr1 swiper-slide">
+        <p class="tagline2">ERP for engineering & manufacturing companies</p>
+        <div class="part-1">
+          <div class="bar-hide">
+            <div class="blue"></div>
+            <div class="green"></div>
+            <div class="yellow"></div>
+          </div>
+          <div class="landing-icons">
+            <img
+              src="/public/images/helicopter.svg"
+              alt="helicopter"
+              class="helicopter"
+            />
+            <img src="/public/images/tank.svg" alt="tank" class="tank" />
+            <img src="/public/images/drone.svg" alt="drone" class="drone" />
+            <img
+              src="/public/images/atomic.svg"
+              alt="atomic"
+              class="atomic1 atomic"
+            />
+            <img
+              src="/public/images/atomic.svg"
+              alt="atomic"
+              class="atomic2 atomic"
+            />
+            <img
+              src="/public/images/atomic.svg"
+              alt="atomic"
+              class="atomic3 atomic"
+            />
+            <img
+              src="/public/images/atomic.svg"
+              alt="atomic"
+              class="atomic4 atomic"
+            />
+            <img
+              src="/public/images/slide-plane.svg"
+              alt="plane"
+              class="slide-plane"
+            />
+          </div>
+          <div class="slide-sub">
+            <p class="change"></p>
+          </div>
+          <div class="slide-subtitle">
+            <p>ERP for Aerospace & Defence</p>
+          </div>
+        </div>
+        <div class="part-2">
+          <div class="main-box box-hide">
+            <div class="box-tpbar">
+              <h1>OurSys Aero</h1>
+              <p class="small">ERP for Aerospace & Defence</p>
+            </div>
+            <div class="list-box">
+              <div class="list list1 center">
+                <p>Precision Machined Components</p>
+              </div>
+              <div class="list list2 center">
+                <p>Rubber Components</p>
+              </div>
+            </div>
+            <p class="load-more"><a href="#AeroSpace">Load all industries</a></p>
+            <div class="button">
+              <button class="btn-load">SEE OURSYS IN ACTION</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <span id="AeroSpace"></span>
+<section >
+<div class="industries-products" >
+<h1>AeroSpace </h1>
+<p>ERP for Aerospace & Defence Components Manufacturers
+</p>
+
+<div class="industries-prod ">
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Rubber Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>
+    <div class="prod center"><p>Precision Machined Components</p></div>   
+</div>
+</div>
+</section>
+
+
+    <footer>
+        <div class="footer">
+          <div class="footer-box">
+            <h2 class="footer-h2">Enquiry</h2>
+            <p>Want to transform your company through an ERP?</p>
+    
+            <p>Just Click <a href="#">here</a></p>
+          </div>
+          <!--<div class="col-md-10 myContainer">-->
+          <div class="container">
+    
+            <div class="row">
+              <div class="col-xs-6 col-sm-2">
+                <div class="footer-content">
+                  <h3>FOLLOW US</h3>
+    
+                  <ul class="footer-social footer-nav">
+                    <li>
+                      <a href="#" style="text-transform: uppercase" target="_blank"
+                        ><i class="fab fa-facebook-f"></i> FACEBOOK</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" style="text-transform: uppercase" target="_blank"
+                        ><i class="fab fa-twitter"></i> TWITTER</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" style="text-transform: uppercase" target="_blank"
+                        ><i class="fab fa-linkedin"></i> LINKEDIN</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" style="text-transform: uppercase" target="_blank"
+                        ><i class="fab fa-instagram"></i> INSTAGRAM</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" style="text-transform: uppercase" target="_blank"
+                        ><i class="fab fa-youtube"></i> YOUTUBE</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="col-xs-6 col-sm-2">
+                <div class="footer-content">
+                  <h3>SITEMAP</h3>
+    
+                  <ul class="footer-sitemap footer-nav">
+                    <li class="">
+                      <a href="./momenta.html#OurStory"> our Story</a>
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="./momenta.html#Customers" class=""
+                  >Our Customers</a
+                >
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="./momenta.html#Presence" class=""
+                  >Our Presence</a
+                >
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="../index.html#our-inspiration"> Our Inspiration</a>
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="../index.html#our-inspiration" class="">Our Specialisation</a>
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="../index.html#products"> Our Products</a>
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="./Team.html#Ourculture"> Our Culture</a>
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="./Team.html#people"> Our People</a>
+                      <ul></ul>
+                    </li>
+                    <li class="">
+                      <a href="./Team.html#Joinus"> Our Openings</a>
+                      <ul></ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="col-xs-12 col-sm-8">
+                <div class="footer-content">
+                  <h3>OFFICE LOCATION</h3>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="address mum-address">
+                      <div itemscope="" itemtype="http://schema.org/Organization">
+                        <h5 itemprop="name">Mumbai</h5>
+                        <div
+                          itemprop="address"
+                          itemscope=""
+                          itemtype="http://schema.org/PostalAddress"
+                        >
+                          <p
+                            itemprop="streetAddress"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            B202,Pallavi<br />
+                            Veera Desai Road<br />
+                          </p>
+                          <p
+                            itemprop="addressLocality"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            Andheri West
+                          </p>
+                          <p
+                            itemprop="addressRegion"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            Mumbai
+                          </p>
+                          <p
+                            itemprop="postalCode"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            400 058
+                          </p>
+                        </div>
+                        <p itemprop="telephone" style="margin-left: -0.1rem">
+                          Phone: +91 9820859510 <br> +91 9867000586
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="address dlh-address">
+                      <div itemscope="" itemtype="http://schema.org/Organization">
+                        <h5 itemprop="name">Bengaluru</h5>
+                        <div
+                          itemprop="address"
+                          itemscope=""
+                          itemtype="http://schema.org/PostalAddress"
+                        >
+                          <p
+                            itemprop="streetAddress"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            Rajaji Nagar
+                          </p>
+                          <p
+                            itemprop="addressLocality"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            Karnataka
+                          </p>
+                        </div>
+                        <p itemprop="telephone" style="margin-left: -0.1rem">
+                          Phone: +91 9900395265 <br> +91 8310617191
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="address blr-address">
+                      <div itemscope="" itemtype="http://schema.org/Organization">
+                        <h5 itemprop="name">Bahrain</h5>
+                        <div
+                          itemprop="address"
+                          itemscope=""
+                          itemtype="http://schema.org/PostalAddress"
+                        >
+                          <p
+                            itemprop="streetAddress"
+                            style="margin-bottom: 0px; margin-left: -0.1rem"
+                          >
+                            Jasra<br />
+                            1003<br />
+                          </p>
+                        </div>
+                        <p itemprop="telephone" style="margin-left: -0.1rem">
+                          Phone: + 97339850898
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <p class="copyText">
+                  COPYRIGHT @2023 |
+                  <a href="#"
+                    >All Right Reserved</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+              // intersection observer
+      function observeElements(elements, className) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              entry.target.classList.toggle(className, entry.isIntersecting);
+              //   if(entry.isIntersecting) observer.unobserve(entry.target)
+            });
+          },
+          {
+            // Add your options here if needed
+            // threshold: 0.1,
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      }
+
+      // heading
+      const heading = document.querySelectorAll(".heading-hide");
+      observeElements(heading, "heading-show");
+      const heading2 = document.querySelectorAll(".heading-hide2");
+      observeElements(heading2, "heading-show2");
+      // box
+      const box = document.querySelectorAll(".box-hide");
+      observeElements(box, "box-show");
+
+      // bar
+      const bar = document.querySelectorAll(".bar-hide");
+      observeElements(bar, "bar-show");
+      </script>
+       <script src="/public/js/index.js"></script>  
+  </body>
+</html>
