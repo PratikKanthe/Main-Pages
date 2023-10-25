@@ -2302,7 +2302,7 @@ a.scroll-down img {
 }
 
 .slider-wrapper{
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
   display: flex;
