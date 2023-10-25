@@ -1641,6 +1641,8 @@ span.parrentOrg {
   margin-bottom: 3rem;
 }
 .load-more a {
+  display: flex;
+  justify-self: flex-start;
   font-size: 2rem;
   color: #1f1f1f;
   font-weight: 300;
