@@ -2300,7 +2300,7 @@ a.scroll-down img {
 }
 
 .slider-wrapper{
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -2425,7 +2425,7 @@ a.scroll-down img {
     z-index: 1;
   }
   .productcards .productdot{
-    display: none;
+    /* display: none; */
     border: 1px solid black;
     width: 10px;
     height: 10px;
@@ -2491,12 +2491,13 @@ a.scroll-down img {
     top: 100%;
   }
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:400px) {
   .products{
     margin-top: 50rem;
   }
+ 
   .productcards{
-    top: 110%;
+    top: 78%;
   }
 }
 /* pages css  */
