@@ -2300,6 +2300,7 @@ a.scroll-down img {
 }
 
 .slider-wrapper{
+  overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -2424,6 +2425,7 @@ a.scroll-down img {
     z-index: 1;
   }
   .productcards .productdot{
+    display: none;
     border: 1px solid black;
     width: 10px;
     height: 10px;
