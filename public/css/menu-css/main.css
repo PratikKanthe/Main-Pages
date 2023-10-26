@@ -1642,7 +1642,7 @@ span.parrentOrg {
 }
 .load-more a {
   display: flex;
-  justify-self: flex-start;
+  justify-self: flex-end;
   font-size: 2rem;
   color: #1f1f1f;
   font-weight: 300;
@@ -2662,9 +2662,7 @@ a.scroll-down img {
      column-gap: 4rem;
      /* align-items: center; */
      justify-content: center;
-     /*row-gap: 5rem; */
-     
-      
+     /*row-gap: 5rem; */ 
   }
   .prod{
       height: 20vh;
