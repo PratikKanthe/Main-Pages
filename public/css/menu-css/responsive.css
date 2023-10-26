@@ -1162,7 +1162,12 @@
     /* .cols2 .content{
         margin-top: 30%; 
     } */
-
+    .text{
+        font-size: 5rem;
+    }
+    .content h1{
+        font-size: 5rem;
+    }
     .sec-2 h1{
         font-size: 5rem;
       }
