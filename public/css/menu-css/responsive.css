@@ -1162,6 +1162,9 @@
     /* .cols2 .content{
         margin-top: 30%; 
     } */
+    .content .article p{
+        width: 77vw;
+     }
     .text{
         font-size: 5rem;
     }
