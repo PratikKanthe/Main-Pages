@@ -2299,7 +2299,6 @@ a.scroll-down img {
 
 /* our product */
 .main-wrapper{
-  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
