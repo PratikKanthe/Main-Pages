@@ -2478,7 +2478,10 @@ a.scroll-down img {
 }
 @media screen and (max-width:480px) {
   .product-heading{
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  .slide h1{
+    font-size: 5rem;
   }
   .products{
     margin-top: 30rem;
