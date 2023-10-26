@@ -204,7 +204,7 @@
         top: 3rem;
     }
     .map2 h1{
-        margin-top: 4rem;
+        /* margin-top: 4rem; */
     }
     
     
@@ -462,6 +462,7 @@
     }
     .headline h1{
         font-size: 2rem;
+        text-align: left;
     }
     .cols2 .content h1{
         margin-top: 10%;
@@ -1162,9 +1163,12 @@
         margin-top: 30%; 
     } */
 
+    .map1{
+       height: 70vh;
+    }
     .sub{
         font-size: 2rem;
-         font-weight: 700;
+         font-weight: normal;
     }
     .flex h1 {
         text-align: center;
@@ -1177,7 +1181,12 @@
     }
 
     .map2{
-        margin-top: 6%;
+        /* margin-top: 6%; */
+        height: 70vh;
+    }
+
+    .part2{
+        align-items: flex-start;
     }
      .sub-containers {
          /* padding: 14rem 0 4rem;
@@ -1199,10 +1208,12 @@
          background-image: none !important;
      }
      .article-content h1{
+        text-align: center;
         font-size: 6rem;
      }
      .headline h1{
         font-size: 2rem;
+        text-align: left;
      }
 
      .footer a#gotop {
@@ -1306,7 +1317,7 @@
      }
      .cols2 .content h1{
         flex-direction: column;
-        margin-top: 40rem;
+        /* margin-top: 40rem; */
         font-size: 4rem;
       }
       .text{

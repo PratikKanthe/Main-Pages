@@ -1817,6 +1817,7 @@ a.scroll-down img {
 
 .headline h1 {
   font-size: 2rem;
+  text-align: left;
 }
 
 .sub {
@@ -2679,5 +2680,45 @@ a.scroll-down img {
     }
 }
 
+@media only screen and (max-width: 470px) {
+
+  .industries-products{
+     
+      margin-bottom: 27rem;
+  }
+
+  .industries-products p{
+      display: flex;
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+
+  .industries-prod{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+     column-gap: 4rem;
+     /* align-items: center; */
+     justify-content: center;
+     /*row-gap: 5rem; */
+     
+      
+  }
+
+  .prod{
+      height: 20vh;
+      width: 35vw;
+      background: #94a3b8;
+      border-radius: 5rem;
+      /* margin-left: 5rem; */
+    }
+
+    .industries-prod p{
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+}
 
 
