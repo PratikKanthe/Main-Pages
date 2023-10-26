@@ -318,7 +318,7 @@ transition: 0.5s ease-in;
 
 @media only screen and (max-width: 767px){
   .cols2{
-    height: 80vh;
+    /* height: 80vh; */
     flex-direction: column;
   }
 
