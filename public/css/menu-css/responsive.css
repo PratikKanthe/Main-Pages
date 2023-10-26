@@ -729,7 +729,7 @@
         font-size: 7rem;
       }
      .our-socials{
-        margin-top: 20rem;
+        /* margin-top: 20rem; */
      }
      .footer {
         margin-top: 50rem;
@@ -1211,7 +1211,7 @@
          padding: 5rem 0 5rem;
      }
      .our-socials{
-        margin-top: 35rem;
+        /* margin-top: 35rem; */
      }
      .container h1 {
         font-size: 5rem;
@@ -1296,7 +1296,7 @@
 
  @media only screen and (max-width: 302px){
     .our-socials{
-        margin-top: 100rem;
+        /* margin-top: 100rem; */
      }
  }
 
@@ -1348,7 +1348,7 @@
     }
 
      .our-socials{
-        margin-top: 55rem;
+        /* margin-top: 55rem; */
      }
 
      .fs-nav-wrap ul li:not(:last-child) {

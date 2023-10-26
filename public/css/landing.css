@@ -562,7 +562,7 @@ a.scroll-down img {
 }
 
 .page {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .article-content {
