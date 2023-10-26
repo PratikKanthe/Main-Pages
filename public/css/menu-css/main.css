@@ -588,6 +588,10 @@ ul.fs-social-nav li a {
   color: #000;
 }
 
+.swiper-button-next{
+  width: 2rem;
+}
+
 /* our inspiration */
 .our-inspiration {
   display: flex;
