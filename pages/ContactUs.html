@@ -328,13 +328,13 @@
                           
                             <div class="form-group">
                                 <label for="txtDetails">Your Requirements:</label>
-                                <textarea id="txtDetails" cols="40" rows="2" class="txtbox details"></textarea>
+                                <textarea id="txtDetails" cols="40" rows="4" class="txtbox area"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="txtCaptcha">Captcha Code:</label>
                                 <input type="text" id="txtCaptcha" style="background-image: url(/public/images/captcha-bg.png); text-align: center; border: none; font-weight: bold; font-family: Modern; font-size: 18px; width: 100px; color: #000;" readonly="readonly" />
                                 <img src="/public/images/refresh.svg" alt="" class="refresh" onclick="DrawCaptcha();">
-                                <input type="text" id="txtInput" style="width: 100px;" class="txtbox" />
+                                <input type="text" id="txtInput" style="width: 100px;" class="txtbox captcha" />
                             </div>
                             <div class="form-group center">
                                 <button type="submit" id="btnsubmit" name="btnsubmit" onclick="validation();" class="btn-load">Submit</button>
