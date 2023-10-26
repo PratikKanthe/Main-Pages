@@ -1,6 +1,6 @@
 .cols2{
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .cols3{
@@ -318,6 +318,7 @@ transition: 0.5s ease-in;
 
 @media only screen and (max-width: 767px){
   .cols2{
+    height: 80vh;
     flex-direction: column;
   }
 
@@ -412,10 +413,6 @@ transition: 0.5s ease-in;
     flex-direction: column;
     height: 100vh;
     width: 100%; 
-  }
-  .india{
-    height: 800px;
-    width: 370px;
   }
   .world{
     display: flex;
