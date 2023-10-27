@@ -2092,7 +2092,7 @@ a.scroll-down img {
       transform: translateX(30px) translateY(-20px) rotate(-30deg);
     }
     100% {
-      transform: translateX(0px) translateY(-20px) rotate(25deg);
+      transform: translateX(0px) translateY(0px) rotate(25deg);
     }
   }
   @keyframes bike {
