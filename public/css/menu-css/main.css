@@ -2103,7 +2103,7 @@ a.scroll-down img {
       transform: translateY(-20px) rotate(30deg);
     }
     100% {
-      transform: translateX(-230px);
+      transform: translateX(-220px);
     }
   }
   .scooter {
@@ -2141,7 +2141,7 @@ a.scroll-down img {
       opacity: 1;
     }
     100% {
-      transform: translateX(260px) translateY(100px) rotate(40deg);
+      transform: translateX(230px) translateY(100px) rotate(40deg);
       opacity: 0;
     }
   }
