@@ -1273,7 +1273,7 @@ span.parrentOrg {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-550px);
+    transform: translateX(-500px);
   }
 }
 
