@@ -2087,6 +2087,10 @@ a.scroll-down img {
     animation: bike 3s linear infinite;
     overflow-x: hidden;
   }
+
+  .drone{
+    animation: none;
+  }
   @keyframes drone {
     0% {
       transform: translateX(30px) translateY(-20px) rotate(-30deg);
