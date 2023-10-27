@@ -298,54 +298,147 @@
           </div>
 
 
-    <section class="cols2" id="ContactUS">
-        <div class="part1">
-          <div class="blob-Story">
-            <img src="/public/images/blob-contactus.svg" alt="" />
-          </div>
-        </div>
-        <div class="part2">
-                        <div class="content">
-                            
-                            <h1>Request Call Back / Enquiry</h1>
-                            <div class="form-container">
-                            <div class="form-group">
-                                <label for="txtcompname">Company Name:</label>
-                                <input type="text" id="txtcompname"  class="txtbox cname" />
-                            </div>
-                            <div class="form-group">
-                                <label for="txtname">Your Name:</label>
-                                <input type="text" id="txtname"  class="txtbox yname" />
-                            </div>
-                            <div class="form-group">
-                                <label for="txtphoneno">Phone / Mobile No.:</label>
-                                <input type="text" inputmode="numeric" id="txtphoneno"  class="txtbox phone" />
-                            </div>
-                            <div class="form-group">
-                                <label for="txtemailid">Email ID:</label>
-                                <input type="email" id="txtemailid" inputmode="email" class="txtbox emailo" />
-                            </div>
-                          
-                            <div class="form-group">
-                                <label for="txtDetails">Your Requirements:</label>
-                                <textarea id="txtDetails" cols="40" rows="4" class="txtbox area"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="txtCaptcha">Captcha Code:</label>
-                                <input type="text" id="txtCaptcha" style="background-image: url(/public/images/captcha-bg.png); text-align: center; border: none; font-weight: bold; font-family: Modern; font-size: 18px; width: 100px; color: #000;" readonly="readonly" />
-                                <img src="/public/images/refresh.svg" alt="" class="refresh" onclick="DrawCaptcha();">
-                                <input type="text" id="txtInput" style="width: 100px;" class="txtbox captcha" />
-                            </div>
-                            <div class="form-group center">
-                                <button type="submit" id="btnsubmit" name="btnsubmit" onclick="validation();" class="btn-load">Submit</button>
+          <section class="cols2" id="ContactUS">
+            <div class="part1">
+              <div class="blob-Story">
+                <img src="/public/images/blob-contactus.svg" alt="" />
+              </div>
+            </div>
+            <div class="part2">
+                            <div class="content">
+                                
+                                <h1>Request Call Back / Enquiry</h1>
+                                <div class="formbold-main-wrapper">
+                                
+                                  <div class="formbold-form-wrapper">
+                                    <form >
+                                        <div class="formbold-input-flex">
+                                          <div>
+                                              <input
+                                              type="text"
+                                              name="firstname"
+                                              id="companyname"
+                                              placeholder="Enter first name"
+                                              class="formbold-form-input"
+                                              />
+                                              <label for="firstname" class="formbold-form-label"> Company name </label>
+                                          </div>
+    
+                                          
+                                          <div>
+                                              <input
+                                              type="text"
+                                              name="lastname"
+                                              id="firstname"
+                                              placeholder="Enter last name"
+                                              class="formbold-form-input"
+                                              />
+                                              <label for="lastname" class="formbold-form-label"> Full name </label>
+                                          </div>
+                                        </div>
+                                
+                                        <div class="formbold-input-flex">
+                                          <div>
+                                              <input
+                                              type="email"
+                                              name="email"
+                                              id="email"
+                                              placeholder="Enter email"
+                                              class="formbold-form-input"
+                                              />
+                                              <label for="email" class="formbold-form-label"> Mail </label>
+                                          </div>
+                                          <div>
+                                              <input
+                                              type="text"
+                                              name="phone"
+                                              id="phone"
+                                              placeholder="+91 Enter number"
+                                              class="formbold-form-input"
+                                              />
+                                              <label for="phone" class="formbold-form-label"> Phone </label>
+                                          </div>
+                                        </div>
+                                
+                                        <div class="formbold-textarea">
+                                            <textarea
+                                                rows="4"
+                                                name="message"
+                                                id="message"
+                                                placeholder="Write your requirements..."
+                                                class="formbold-form-input message"
+                                            ></textarea>
+                                            <label for="message" class="formbold-form-label"> Your requirements </label>
+                                        </div>
+                                
+                                        <!-- <div class="formbold-input-file">
+                                          <div class="formbold-filename-wrapper">
+                                            <span class="formbold-filename">
+                                              
+                                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_1670_1541)">
+                                              <path d="M9.00005 7.93906L12.7126 4.22656L13.7731 5.28706L10.0606 8.99956L13.7731 12.7121L12.7126 13.7726L9.00005 10.0601L5.28755 13.7726L4.22705 12.7121L7.93955 8.99956L4.22705 5.28706L5.28755 4.22656L9.00005 7.93906Z" fill="#536387"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_1670_1541">
+                                              <rect width="18" height="18" fill="white"/>
+                                              </clipPath>
+                                              </defs>
+                                              </svg>
+                                            </span>
+                                
+                                            <span class="formbold-filename">
+                                             
+                                
+                                                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_1670_1541)">
+                                              <path d="M9.00005 7.93906L12.7126 4.22656L13.7731 5.28706L10.0606 8.99956L13.7731 12.7121L12.7126 13.7726L9.00005 10.0601L5.28755 13.7726L4.22705 12.7121L7.93955 8.99956L4.22705 5.28706L5.28755 4.22656L9.00005 7.93906Z" fill="#536387"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_1670_1541">
+                                              <rect width="18" height="18" fill="white"/>
+                                              </clipPath>
+                                              </defs>
+                                              </svg>
+                                            </span>
+                                          </div>
+                                          <label for="upload" class="formbold-input-label">
+                                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <g clip-path="url(#clip0_1670_1531)">
+                                              <path d="M12.3568 6.4644L7.64349 11.1786C7.5639 11.2554 7.50041 11.3474 7.45674 11.4491C7.41307 11.5507 7.39008 11.6601 7.38912 11.7707C7.38815 11.8814 7.40924 11.9911 7.45114 12.0935C7.49304 12.1959 7.55492 12.289 7.63316 12.3672C7.71141 12.4455 7.80445 12.5073 7.90686 12.5492C8.00928 12.5912 8.11901 12.6122 8.22966 12.6113C8.34031 12.6103 8.44966 12.5873 8.55133 12.5436C8.653 12.5 8.74495 12.4365 8.82182 12.3569L13.536 7.64356C14.0049 7.17468 14.2683 6.53875 14.2683 5.87565C14.2683 5.21255 14.0049 4.57661 13.536 4.10773C13.0671 3.63885 12.4312 3.37544 11.7681 3.37544C11.105 3.37544 10.469 3.63885 10.0002 4.10773L5.28599 8.8219C4.89105 9.20701 4.57652 9.6667 4.36062 10.1743C4.14473 10.6819 4.03178 11.2274 4.02832 11.779C4.02487 12.3306 4.13097 12.8774 4.34049 13.3877C4.55 13.8979 4.85876 14.3615 5.24884 14.7516C5.63892 15.1416 6.10256 15.4503 6.61287 15.6597C7.12318 15.8692 7.67 15.9752 8.2216 15.9717C8.77321 15.9681 9.31862 15.8551 9.82621 15.6391C10.3338 15.4232 10.7934 15.1086 11.1785 14.7136L15.8927 10.0002L17.071 11.1786L12.3568 15.8927C11.8151 16.4344 11.172 16.8641 10.4643 17.1573C9.75649 17.4505 8.99791 17.6014 8.23182 17.6014C7.46574 17.6014 6.70716 17.4505 5.99939 17.1573C5.29162 16.8641 4.64853 16.4344 4.10682 15.8927C3.56512 15.351 3.13542 14.7079 2.84225 14.0002C2.54908 13.2924 2.39819 12.5338 2.39819 11.7677C2.39819 11.0016 2.54908 10.2431 2.84225 9.5353C3.13542 8.82753 3.56512 8.18443 4.10682 7.64273L8.82182 2.9294C9.60767 2.17041 10.6602 1.75043 11.7527 1.75992C12.8451 1.76942 13.8902 2.20762 14.6627 2.98015C15.4353 3.75269 15.8735 4.79774 15.883 5.89023C15.8925 6.98271 15.4725 8.03522 14.7135 8.82106L10.0002 13.5369C9.76794 13.7691 9.49226 13.9532 9.18887 14.0788C8.88548 14.2045 8.56032 14.2691 8.23195 14.2691C7.90357 14.269 7.57843 14.2043 7.27507 14.0786C6.97171 13.9529 6.69607 13.7687 6.46391 13.5365C6.23174 13.3043 6.04759 13.0286 5.92196 12.7252C5.79633 12.4218 5.7317 12.0966 5.73173 11.7683C5.73177 11.4399 5.79649 11.1148 5.92219 10.8114C6.04788 10.508 6.2321 10.2324 6.46432 10.0002L11.1785 5.28606L12.3568 6.4644Z" fill="#07074D"/>
+                                              </g>
+                                              <defs>
+                                              <clipPath id="clip0_1670_1531">
+                                              <rect width="20" height="20" fill="white"/>
+                                              </clipPath>
+                                              </defs>
+                                              </svg>
+                                              Attach files
+                                              <input type="file" name="upload" id="upload">
+                                          </label>
+                                        </div> -->
+                              
+                                        <div class="form-group captcha-gap">
+                                          <label for="txtCaptcha">Captcha Code:</label>
+                                          <input type="text" id="txtCaptcha"
+                                            style="background-image: url(/public/images/captcha-bg.png); text-align: center; border: none; font-weight: bold; font-family: Modern; font-size: 18px; width: 100px; color: #000;"
+                                            readonly="readonly" />
+                                          <img src="/public/images/refresh.svg" alt="" class="refresh" onclick="DrawCaptcha();">
+                                          <input type="text" id="txtInput" style="width: 100px;" class="txtbox captcha" />
+                                        </div>
+                                
+                                        <button type="submit" id="btnsubmit" name="btnsubmit" onclick="validation();" class="btn-load formbold-btn">
+                                            Send Message
+                                        </button>
+                                    </form>
+                                  </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                  </section>
-                  <section class="cols4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29027.850446899683!2d72.82868069852682!3d19.13037329814117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7e395153f15%3A0x4ee3535d184c6f4!2sMomenta%20Informatics%20LLP!5e0!3m2!1sen!2sin!4v1581691903294!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="enquiry-map"></iframe>
-                  </section>
+                      </section>
+                      <section class="cols4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29027.850446899683!2d72.82868069852682!3d19.13037329814117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7e395153f15%3A0x4ee3535d184c6f4!2sMomenta%20Informatics%20LLP!5e0!3m2!1sen!2sin!4v1581691903294!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="enquiry-map"></iframe>
+                      </section>
 
                   <footer>
                     <div class="footer">
@@ -554,45 +647,45 @@
                     </div>
                   </footer>
         
-      
                   <script type="text/javascript">
 
                     function DrawCaptcha() {
                         var a = Math.ceil(Math.random() * 9) + '';
                         var b = Math.ceil(Math.random() * 9) + '';
                         var c = Math.ceil(Math.random() * 9) + '';
-            
+                
                         var code = a + ' ' + b + ' ' + ' ' + c;
                         document.getElementById("txtCaptcha").value = code;
                     }
-            
+                
                     function removeSpaces(string) {
                         return string.split(' ').join('');
                     }
-            
+                
                     function clearText() {
-                        $("#txtname").val('');
-                        $("#txtphoneno").val('');
-                        $("#txtemailid").val('');
-                        $("#txtDetails").val('');
+                        $("#firstname").val('');
+                        $("#lastnames").val('');
+                        $("#phone").val('');
+                        $("#email").val('');
+                        $("#message").val('');
                         $("#txtInput").val('');
-                        $("#txtcompname").val('');
-                        $("#txtfile").val('');
+                        $("#companyname").val('');
+                        $("#upload").val('');
                     }
-            
+                
                     function validation() {
-            
+                
                         var flag = 0;
                         var vmsg = "";
-            
-                        if (document.getElementById('txtname').value == '') {
+                
+                        if (document.getElementById('firstname').value == '') {
                             vmsg = 'Please Enter Name';
                             flag += 1;
                         }
-            
-                        if (document.getElementById('txtphoneno').value == '') {
-            
-                            if (document.getElementById('txtemailid').value == '') {
+                
+                        if (document.getElementById('phone').value == '') {
+                
+                            if (document.getElementById('email').value == '') {
                                 if (flag > 0) {
                                     vmsg += ' either Phone No. or Email ID';
                                 }
@@ -602,10 +695,10 @@
                                 flag += 1;
                             }
                         }
-            
-                        if ($('#txtemailid').val() != '') {
-                            if (!validateEmail($('#txtemailid').val())) {
-                                $("#txtemailid").val('');
+                
+                        if ($('#email').val() != '') {
+                            if (!validateEmail($('#email').val())) {
+                                $("#email").val('');
                                 if (flag > 0) {
                                     vmsg += ',';
                                     vmsg += ' And valid Email ID';
@@ -616,7 +709,7 @@
                                 flag += 1;
                             }
                         }
-            
+                
                         var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
                         var str2 = removeSpaces(document.getElementById('txtInput').value);
                         if (str1 != str2) {
@@ -628,16 +721,16 @@
                             }
                             flag += 1;
                         }
-            
+                
                         if (flag > 0) {
                             alert(vmsg);
                         }
-                        else if (flag == 0) {   
-            
+                        else if (flag == 0) {
+                
                             $.ajax({
                                 type: 'POST',
                                 url: 'https://momenta.oursyserp.com/WebService.asmx/SendEmail',
-                                data: "{'vname':'" + $("#txtname").val() + "','vphoneno':'" + $("#txtphoneno").val() + "','vemailid':'" + $("#txtemailid").val() + "','vfile':'" + $("#txtfile").val() + "','vdetails':'" + $("#txtDetails").val() + "','vaddparam':'Inno@22$56','vcompname':'" + $("#txtcompname").val() + "'}",
+                                data: "{'vfirstname':'" + $("#firstname").val() + "','vlastnames':'" + $("#lastnames").val() + "', 'vphone':'" + $("#phone").val() + "','vemail':'" + $("#txtemailid").val() + "','vupload':'" + $("#upload").val() + "','vmessage':'" + $("#message").val() + "','vaddparam':'Inno@22$56','companyname':'" + $("#companyname").val() + "'}",
                                 contentType: 'application/json; charset=utf-8',
                                 dataType: 'json',
                                 success: function (r) {
@@ -648,10 +741,10 @@
                                     //alert(textStatus);
                                 }
                             });
-            
+                
                         }
                     }
-            
+                
                 </script>
                 <script type="text/javascript">
                     function validateEmail(sEmail) {
@@ -663,8 +756,8 @@
                             return false;
                         }
                     }
-            
-            
+                
+                
                 </script>
 
 <script src="/public/js/index.js"></script>
