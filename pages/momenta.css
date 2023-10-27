@@ -492,7 +492,7 @@ transition: 0.5s ease-in;
     text-align: center;
     font-size: 5rem;
   }
-  .row{
+  .team-row{
     flex-direction: column;
   }
 }
