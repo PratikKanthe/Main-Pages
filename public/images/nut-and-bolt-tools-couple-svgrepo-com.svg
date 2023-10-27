@@ -18,7 +18,7 @@
 		transform: rotate(360deg);
 		}
 		}
-		.scale {
+		<!-- .scale {
         transform-origin: center;
         transform-box: fill-box;
 		animation: scale 3s linear infinite;
@@ -30,7 +30,7 @@
 		100% {
 		transform: rotateY(360deg);
 		}
-		}
+		} -->
 	</style>
 <g>
 	<g id="iconos_17_">

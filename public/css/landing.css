@@ -426,7 +426,7 @@ img {
 
 .main-box {
   opacity: 0.9;
-  background-color: #EEEEEE;
+  background-color: #93C47D;
   padding: 2rem;
   border-radius: 2rem;
   width: 45vw;
@@ -529,9 +529,9 @@ img {
   color: var(--clr-body);
 }
 .btn-load:hover {
-  background-color: var(--clr-orange-dark);
-  scale: 1.1;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* background-color: var(--clr-orange-dark); */
+  /* scale: 1.1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
 }
 
 a.scroll-down {
