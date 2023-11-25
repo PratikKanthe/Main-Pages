@@ -234,3 +234,97 @@ window.onload=()=>{
 
 
 // star user gallery
+
+
+//tabs
+function changeTab(tab) {
+  // Remove the 'active' class from all dots
+  document.querySelectorAll('.tabs .dot').forEach(function (item) {
+    item.classList.remove('active');
+  });
+
+  // Add the 'active' class to the clicked dot
+  tab.querySelector('.dot').classList.add('active');
+}
+
+
+  // Intersection observer
+  function observeElements(elements, className) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle(className, entry.isIntersecting);
+      });
+    }, {});
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+  }
+
+  // Heading
+  const heading = document.querySelectorAll(".heading-hide");
+  observeElements(heading, "heading-show");
+  const heading2 = document.querySelectorAll(".heading-hide2");
+  observeElements(heading2, "heading-show2");
+
+  // Box
+  const box = document.querySelectorAll(".box-hide");
+  observeElements(box, "box-show");
+
+  // Bar
+  const bar = document.querySelectorAll(".bar-hide");
+  observeElements(bar, "bar-show");
+
+  
+
+  // Tabs and Swiper
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 0,
+      loop: true,
+      autoplay: {
+        delay: 1000000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // Handle tab click
+    var tabs = document.querySelectorAll(".tab");
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener("click", function () {
+        // Activate the clicked tab
+        tabs.forEach(function (t) {
+          t.classList.remove("active");
+        });
+        tab.classList.add("active");
+
+        // Navigate to the corresponding slide
+        swiper.slideTo(index + 1); // Adjust index to match the slide number
+      });
+    });
+
+    // Add custom logic to handle first and last slide navigation
+    swiper.on("slideChange", function () {
+      updateTabActiveClass();
+    });
+
+    // Helper function to update tab active class based on the current slide
+    function updateTabActiveClass() {
+      var activeIndex =
+        ((swiper.realIndex % tabs.length) + tabs.length) % tabs.length;
+      tabs.forEach(function (tab, index) {
+        tab.classList.toggle("active", index === activeIndex);
+      });
+    }
+  });

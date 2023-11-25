@@ -974,3 +974,47 @@ float: left;
 }
 
 }
+
+
+
+/* Aero */
+.aero{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.aero h1{
+  font-weight: normal;
+  font-size: 10rem;
+}
+
+.sub-change{
+  position: absolute;
+  font-size: 3rem;
+  top: 65%;
+}
+
+.sub-bottom{
+  position: absolute;
+  bottom: 15%;
+}
+.scroll-btm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+}
+
+@media only screen and (max-width: 600px){
+  .aero{height: 70vh;}
+  .aero h1{font-size: 6rem;}
+  .sub-change{text-align: center; width: 80vw;}
+  .scroll-btm{display: none;}
+}
