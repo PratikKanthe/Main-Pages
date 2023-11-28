@@ -655,9 +655,9 @@ ul.fs-social-nav li a {
 }
 
 /* our specialization */
-.page {
-  /* min-height: 100vh; */
-}
+/* .page {
+  min-height: 100vh;
+} */
 .our-specialisation{
   margin-bottom: 10rem;
 }
@@ -1612,7 +1612,90 @@ span.parrentOrg {
   position: relative;
 }
 
+.landing-grid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
 
+.main-heading{
+  text-align: right;
+  width: 50%;
+}
+
+.main-heading h1{
+  font-size: 7rem;
+  color: #DAF300;
+  font-weight: bold;
+  margin-right: 4rem;
+}
+
+.main-heading p{
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.btn-primary{
+  position: absolute;
+  bottom: 26%;
+  left: 18%;
+  padding: 0.5em 1em;
+  background-color: #FF9900;
+  border-radius: 1rem;
+}
+
+.btn-primary a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-img{
+  width: 50%;
+  margin-top: 15%;
+}
+
+.main-img img{
+  width: 50vw;
+}
+
+.main-cards ul{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.res-cards, 
+.res-load {
+  display: none;
+}
+.main-cards ul li a{
+  text-decoration: none;
+  /* background-color: #6C63FF; */
+  color: var(--clr-on-body);
+  /* font-weight: bold; */
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 2rem;
+}
+
+.main-cards ul li a:hover{
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+  background-color: #351DDB;
+  border: none;
+  color: #fff;
+}
+
+.main-cards ul p a{
+  font-size: 2rem;
+}
+/* menu */
 .menu-list{
   display: flex;
   flex-direction: column;
@@ -1649,6 +1732,7 @@ span.parrentOrg {
 .fs-social-tab{
   position: absolute;
   bottom: 2%;
+  color: white;
 }
 
 .dots{
@@ -1660,7 +1744,7 @@ span.parrentOrg {
 .dot{
   width: 12px;
   height: 12px;
-  background-color: #D9D9D9;
+  background-color: #94a3b8;
   border-radius: 50%;
   position: absolute;
   top: 48%;
@@ -2009,6 +2093,7 @@ a.scroll-down img {
   .part-2 {
     display: none;
   }
+
   .slide-title h1 {
     font-size: 3rem;
     font-weight: normal;
@@ -2386,16 +2471,19 @@ a.scroll-down img {
   height: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #0061F3;
+  color: #fff;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: conic-gradient(from 45deg at 25% 111%, rgba(246, 245, 245, 1), rgba(27, 0, 215, 1)); 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
 .swiper-pagination{
   display: none;
 }
