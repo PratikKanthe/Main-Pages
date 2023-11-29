@@ -1617,7 +1617,7 @@ span.parrentOrg {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
 }
 
 .main-heading{

@@ -1,856 +1,1052 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oursys</title>
+    <link rel="stylesheet" href="/public/css/landing.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oursys</title>
-  <link rel="stylesheet" href="/public/css/landing.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-  <!-- Link Swiper's -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- link product -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- link product -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="dns-prefetch" href="//use.fontawesome.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <link
+      rel="stylesheet"
+      id="bootstrap-css"
+      href="/public/css/menu-css/bootstrap.css"
+      type="text/css"
+      media="all"
+    />
 
-  <link rel="dns-prefetch" href="//use.fontawesome.com" />
-  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-  <link rel="dns-prefetch" href="//s.w.org" />
-  <link rel="stylesheet" id="bootstrap-css" href="/public/css/menu-css/bootstrap.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      id="animate-css"
+      href="/public/css/menu-css/animate.css"
+      type="text/css"
+      media="all"
+    />
 
-  <link rel="stylesheet" id="animate-css" href="/public/css/menu-css/animate.css" type="text/css" media="all" />
-
-  <link rel="stylesheet" id="main-css" href="/public/css/menu-css/main.css" type="text/css" media="all" />
-  <link rel="stylesheet" id="responsive-css" href="/public/css/menu-css/responsive.css" type="text/css" media="all" />
-  <script type="text/javascript" src="/public/js/jquery.js" id="jquery-js"></script>
-</head>
-
-<body>
-  <!-- header -->
-  <div class="header">
-    <div class="col-md-10 myContainer">
-      <div class="header-nav-wrap">
-        <a class="logo" href="/index.html">
-          <img src="/public/images/Oursys_logo_new_black.svg" alt="Oursys" class="logo-img" />
-        </a>
-        <div class="hidden-xs1">
-          <ul class="header-nav" id="headNav" style="margin-right: 3rem">
-            <li class="ssh">
-              <a class="dmshow" id="dmshow"><i class="fas fa-bars1"></i> <span>Menu</span></a>
-            </li>
-            <li class="sss">
-              <a class="searchClose" style="display: none"><i class="fas fa-times"></i> <span>Close</span></a>
-            </li>
-          </ul>
-          <span class="parrentOrg">since 2001</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- search panel starts -->
-  <div class="fs-searchpanel" style="display: none">
-    <div class="col-md-10 myContainer">
-      <form class="searchField">
-        <input type="search" placeholder="SEARCH" class="inputField" />
-        <input type="submit" class="searchBtn" />
-      </form>
-    </div>
-  </div>
-  <!-- search panel ends -->
-
-  <!-- full-screen menu starts -->
-  <div class="fs-navigation" id="menuContainer" style="display: none">
-    <img src="/public/images/blob3.svg"
-      class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm blob3" id="fs-menu-char"
-      alt="Oursys" />
-    <img src="/public/images/drone.svg"
-      class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm" id="fs-menu-svg"
-      style="position: absolute; width: 5vw; top: 60%; left: 42rem" />
-
-    <img src="/public/images/helicopter.svg"
-      class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm" id="fs-menu-svg"
-      style="position: absolute; width: 5vw; top: 50%; left: 10rem" />
-
-    <img src="/public/images/slide-plane.svg"
-      class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm" id="fs-menu-svg"
-      style="position: absolute; width: 7vw; top: 35%; left: 18%" />
-
-    <img src="/public/images/tank.svg" class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
-      id="fs-menu-svg" style="position: absolute; width: 4vw; top: 80%; left: 30rem" />
-
-    <div class="fs-nav-wrap" id="fs-menu-center">
-      <ul class="menu__box">
-        <li class="animated fadeInDown faster delay-p1">
-          <h3 class=" "><a href="./pages/momenta.html">Momenta</a></h3>
-          <div class="anchors">
-            <a href="./pages/momenta.html#OurStory" class="menu__item">Our Story</a>
-            <a href="./pages/momenta.html#Customers" class="menu__item">Our Customers</a>
-
-            <a href="./pages/momenta.html#Presence" class="menu__item">Our Presence</a>
-          </div>
-        </li>
-        <li class="animated fadeInDown faster delay-p2">
-          <h3 class=" "><a href="./index.html">OurSys ERP</a></h3>
-          <div class="anchors">
-            <a href="./index.html#our-inspiration" class="menu__item">Our Inspiration</a>
-
-            <a href="./index.html#our-specialization" class="menu__item">Our Specalisation</a>
-
-            <a href="/index.html#products" class="menu__item">Our Products</a>
-          </div>
-        </li>
-        <li class="animated fadeInDown faster delay-p3">
-          <h3 class=" "><a href="pages/Team.html">Team</a></h3>
-          <div class="anchors">
-            <a href="/pages/Team.html#Ourculture" class="">Our Culture</a>
-
-            <a href="/pages/Team.html#people" class="">Our People</a>
-
-            <a href="/pages/Team.html#Joinus" class="">Current Openings</a>
-          </div>
-        </li>
-        <li class="animated fadeInDown faster delay-p4">
-          <h3 class=" "><a href="./pages/ContactUs.html">Contact Us</a></h3>
-          <div class="anchors">
-            <a href="./pages/ContactUs.html#ContactUs" class=""> Enquiry</a>
-
-            <a href="./pages/Team.html#Joinus" class="">Join Us</a>
-          </div>
-        </li>
-        <li class="animated fadeInDown faster delay-p5">
-          <h3 class=""><a href="#">Our Club</a></h3>
-          <div class="anchors">
-            <a href="#" class="">Forums</a>
-
-            <a href="#" class="">Blogs</a>
-
-            <a href="#" class="">Help</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="fs-address-wrap animated fadeInRight faster delay-p4 col-sm-pull-1">
-      <div class="fs-addresses">
-        <h4>OUR OFFICES</h4>
-
-        <div class="fs-addres fs-mumbai">
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <h5 itemprop="name">Mumbai</h5>
-            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-              <p itemprop="streetAddress" style="margin-bottom: 0px">
-                B202,Pallavi,
-                <br />
-                Veera Desai Road,
-              </p>
-              <p itemprop="addressLocality" style="margin-bottom: 0px">
-                Andheri West
-              </p>
-              <p itemprop="addressRegion" style="margin-bottom: 0px">
-                Mumbai, Maharashtra
-              </p>
-              <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p>
-            </div>
-          </div>
-        </div>
-        <div class="fs-addres fs-mumbai">
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <h5 itemprop="name">Bengaluru</h5>
-            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-              <p itemprop="streetAddress" style="margin-bottom: 0px">
-                Rajaji Nagar,
-                <br />
-              </p>
-
-              <p itemprop="addressRegion" style="margin-bottom: 0px">
-                Karnataka
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="fs-addres fs-mumbai">
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <h5 itemprop="name">Bahrain</h5>
-            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-              <p itemprop="streetAddress" style="margin-bottom: 0px">
-                Jasra,
-                <br />
-                1003,
-              </p>
-            </div>
+    <link
+      rel="stylesheet"
+      id="main-css"
+      href="/public/css/menu-css/main.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="responsive-css"
+      href="/public/css/menu-css/responsive.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="/public/js/jquery.js"
+      id="jquery-js"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="col-md-10 myContainer">
+        <div class="header-nav-wrap">
+          <a class="logo" href="/index.html">
+            <img
+              src="/public/images/Oursys_logo_new_black.svg"
+              alt="Oursys"
+              class="logo-img"
+            />
+          </a>
+          <div class="hidden-xs1">
+            <ul class="header-nav" id="headNav" style="margin-right: 3rem">
+              <li class="ssh">
+                <a class="dmshow" id="dmshow"
+                  ><i class="fas fa-bars1"></i> <span>Menu</span></a
+                >
+              </li>
+              <li class="sss">
+                <a class="searchClose" style="display: none"
+                  ><i class="fas fa-times"></i> <span>Close</span></a
+                >
+              </li>
+            </ul>
+            <span class="parrentOrg">since 2001</span>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="fs-social">
-        <h4>FOLLOW US ON</h4>
+    <!-- search panel starts -->
+    <div class="fs-searchpanel" style="display: none">
+      <div class="col-md-10 myContainer">
+        <form class="searchField">
+          <input type="search" placeholder="SEARCH" class="inputField" />
+          <input type="submit" class="searchBtn" />
+        </form>
+      </div>
+    </div>
+    <!-- search panel ends -->
 
-        <ul class="fs-social-nav">
-          <li>
-            <a href="" style="text-transform: uppercase" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <!-- full-screen menu starts -->
+    <div class="fs-navigation" id="menuContainer" style="display: none">
+      <img
+        src="/public/images/blob3.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm blob3"
+        id="fs-menu-char"
+        alt="Oursys"
+      />
+      <img
+        src="/public/images/drone.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 5vw; top: 60%; left: 42rem"
+      />
+
+      <img
+        src="/public/images/helicopter.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 5vw; top: 50%; left: 10rem"
+      />
+
+      <img
+        src="/public/images/slide-plane.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 7vw; top: 35%; left: 18%"
+      />
+
+      <img
+        src="/public/images/tank.svg"
+        class="fs-menu-character animated fadeInLeft faster delay-p3 hidden-xs hidden-sm"
+        id="fs-menu-svg"
+        style="position: absolute; width: 4vw; top: 80%; left: 30rem"
+      />
+
+      <div class="fs-nav-wrap" id="fs-menu-center">
+        <ul class="menu__box">
+          <li class="animated fadeInDown faster delay-p1">
+            <h3 class=" "><a href="./pages/momenta.html">Momenta</a></h3>
+            <div class="anchors">
+              <a href="./pages/momenta.html#OurStory" class="menu__item"
+                >Our Story</a
+              >
+              <a href="./pages/momenta.html#Customers" class="menu__item"
+                >Our Customers</a
+              >
+
+              <a href="./pages/momenta.html#Presence" class="menu__item"
+                >Our Presence</a
+              >
+            </div>
           </li>
-          <li>
-            <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-twitter"></i></a>
+          <li class="animated fadeInDown faster delay-p2">
+            <h3 class=" "><a href="./index.html">OurSys ERP</a></h3>
+            <div class="anchors">
+              <a href="./index.html#our-inspiration" class="menu__item"
+                >Our Inspiration</a
+              >
+
+              <a href="./index.html#our-specialization" class="menu__item"
+                >Our Specalisation</a
+              >
+
+              <a href="/index.html#products" class="menu__item">Our Products</a>
+            </div>
           </li>
-          <li>
-            <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <li class="animated fadeInDown faster delay-p3">
+            <h3 class=" "><a href="pages/Team.html">Team</a></h3>
+            <div class="anchors">
+              <a href="/pages/Team.html#Ourculture" class="">Our Culture</a>
+
+              <a href="/pages/Team.html#people" class="">Our People</a>
+
+              <a href="/pages/Team.html#Joinus" class="">Current Openings</a>
+            </div>
           </li>
-          <li>
-            <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-instagram"></i></a>
+          <li class="animated fadeInDown faster delay-p4">
+            <h3 class=" "><a href="./pages/ContactUs.html">Contact Us</a></h3>
+            <div class="anchors">
+              <a href="./pages/ContactUs.html#ContactUs" class=""> Enquiry</a>
+
+              <a href="./pages/Team.html#Joinus" class="">Join Us</a>
+            </div>
           </li>
-          <li>
-            <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-youtube"></i></a>
+          <li class="animated fadeInDown faster delay-p5">
+            <h3 class=""><a href="#">Our Club</a></h3>
+            <div class="anchors">
+              <a href="#" class="">Forums</a>
+
+              <a href="#" class="">Blogs</a>
+
+              <a href="#" class="">Help</a>
+            </div>
           </li>
         </ul>
       </div>
+
+      <div
+        class="fs-address-wrap animated fadeInRight faster delay-p4 col-sm-pull-1"
+      >
+        <div class="fs-addresses">
+          <h4>OUR OFFICES</h4>
+
+          <div class="fs-addres fs-mumbai">
+            <div itemscope="" itemtype="http://schema.org/Organization">
+              <h5 itemprop="name">Mumbai</h5>
+              <div
+                itemprop="address"
+                itemscope=""
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p itemprop="streetAddress" style="margin-bottom: 0px">
+                  B202,Pallavi,
+                  <br />
+                  Veera Desai Road,
+                </p>
+                <p itemprop="addressLocality" style="margin-bottom: 0px">
+                  Andheri West
+                </p>
+                <p itemprop="addressRegion" style="margin-bottom: 0px">
+                  Mumbai, Maharashtra
+                </p>
+                <p itemprop="postalCode" style="margin-bottom: 0px">400 058</p>
+              </div>
+            </div>
+          </div>
+          <div class="fs-addres fs-mumbai">
+            <div itemscope="" itemtype="http://schema.org/Organization">
+              <h5 itemprop="name">Bengaluru</h5>
+              <div
+                itemprop="address"
+                itemscope=""
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p itemprop="streetAddress" style="margin-bottom: 0px">
+                  Rajaji Nagar,
+                  <br />
+                </p>
+
+                <p itemprop="addressRegion" style="margin-bottom: 0px">
+                  Karnataka
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fs-addres fs-mumbai">
+            <div itemscope="" itemtype="http://schema.org/Organization">
+              <h5 itemprop="name">Bahrain</h5>
+              <div
+                itemprop="address"
+                itemscope=""
+                itemtype="http://schema.org/PostalAddress"
+              >
+                <p itemprop="streetAddress" style="margin-bottom: 0px">
+                  Jasra,
+                  <br />
+                  1003,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fs-social">
+          <h4>FOLLOW US ON</h4>
+
+          <ul class="fs-social-nav">
+            <li>
+              <a href="" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" style="text-transform: uppercase" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- full-screen menu ends -->
+    <!-- full-screen menu ends -->
 
-  <p class="tagline" style="color: #fff; margin-left: 1rem; font-size:  1.5rem; position: absolute;">A product of Momenta Informatics LLP</p>
-  <div class="landing-wrapper">
-    <!-- Swiper -->
-    <section id="slide1" class="clr1 swiper-slide">
-      <!-- <p class="tagline2">ERP for engineering & manufacturing companies</p> -->
-      <div class="landing-grid">
-        <div class="main-heading">
-          <h1>ERP SOFTWARE</h1>
-          <p>FOR ENGINEERING & MANUFACTURING</p>
-          <button class="btn-primary"><a href="#">Industry wise Solutions</a></button>
+    <p
+      class="tagline"
+      style="
+        color: #fff;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        position: absolute;
+      "
+    >
+      A product of Momenta Informatics LLP
+    </p>
+    <div class="landing-wrapper">
+      <!-- Swiper -->
+      <section id="slide1" class="clr1 swiper-slide">
+        <!-- <p class="tagline2">ERP for engineering & manufacturing companies</p> -->
+        <div class="landing-grid">
+          <div class="main-heading">
+            <h1>ERP SOFTWARE</h1>
+            <p>FOR ENGINEERING & MANUFACTURING</p>
+            <button class="btn-primary">
+              <a href="#">Industry wise Solutions</a>
+            </button>
+          </div>
+          <div class="main-img">
+            <img src="/public/images/main-bg2.svg" alt="bg" class="main-bg" />
+          </div>
         </div>
-        <div class="main-img">
-          <img src="/public/images/main-bg2.svg" alt="bg" class="main-bg">            
-
+        <div class="main-cards">
+          <ul>
+            <li><a href="#">Aerospace</a></li>
+            <li><a href="#">Ancillary</a></li>
+            <li><a href="#">OEM</a></li>
+            <li><a href="#">FlowCon</a></li>
+            <li><a href="#">Poly</a></li>
+            <li><a href="#">Stud</a></li>
+            <p><a href="#">Load More...</a></p>
+          </ul>
+        </div>
+        <div class="res-cards">
+          <div class="res-card">Aerospace</div>
+          <div class="res-card">Ancillary</div>
+          <div class="res-card">OEM</div>
+          <div class="res-card">FlowCon</div>
+          <div class="res-card">Poly</div>
+          <div class="res-card">Stud</div>
+        </div>
+        <div class="res-load">
+          <a href="#">Load All</a>
+        </div>
+      </section>
+    </div>
+    <!-- <p class="tagline">A product of Momenta Informatics LLP</p> -->
+    <!-- our inspiration -->
+    <section class="our-inspiration">
+      <div class="sec-1">
+        <img src="/public/images/blobanimation.svg" alt="" class="blob-i" />
+      </div>
+      <div class="sec-2">
+        <div class="content">
+          <h1>Our Inspiration</h1>
+          <div class="article">
+            <p>
+              Manufacturing Industry has the power to transform the world. But
+              only few manufacturers attempt to bring about this paradigm shift.
+            </p>
+            <p>
+              These precious few companies are our inspiration. The companies
+              who wish to bring about something extraordinary. Extraordinary in
+              terms of utility, quality or price.
+            </p>
+            <p>
+              OurSys has been designed keeping the requirements of these
+              companies in mind. The ones who desire to be the
+              <b>Best in the World.</b>
+            </p>
+          </div>
+          <span id="our-specialization"></span>
         </div>
       </div>
-      <div class="main-cards">
-        <ul>  
-          <li><a href="#">Aerospace</a></li>
-          <li><a href="#">Ancillary</a></li>
-          <li><a href="#">OEM</a></li>
-          <li><a href="#">FlowCon</a></li>
-          <li><a href="#">Poly</a></li>
-          <li><a href="#">Stud</a></li>
-          <p><a href="#">Load More...</a></p>
-        </ul>      
-      </div>
-
     </section>
-  </div>
-  <!-- <p class="tagline">A product of Momenta Informatics LLP</p> -->
-  <!-- our inspiration -->
-  <section class="our-inspiration">
-    <div class="sec-1">
-      <img src="/public/images/blobanimation.svg" alt="" class="blob-i" />
-    </div>
-    <div class="sec-2">
-      <div class="content">
-        <h1>Our Inspiration</h1>
-        <div class="article">
-          <p>
-            Manufacturing Industry has the power to transform the world. But
-            only few manufacturers attempt to bring about this paradigm shift.
-          </p>
-          <p>
-            These precious few companies are our inspiration. The companies
-            who wish to bring about something extraordinary. Extraordinary in
-            terms of utility, quality or price.
-          </p>
-          <p>
-            OurSys has been designed keeping the requirements of these
-            companies in mind. The ones who desire to be the
-            <b>Best in the World.</b>
-          </p>
-        </div>
-        <span id="our-specialization"></span>
-      </div>
-    </div>
-  </section>
 
-  <!-- our specialization -->
-  <section class="page our-specialisation">
-    <div class="blob">
-      <img src="/public/images/blobanimation (1).svg" alt="" class="blob-ii blob3" height="400" width="350" />
-      <div class="container">
-        <h1 style="text-align: center" class="fadeInUp">
-          Our Specialisation
-        </h1>
+    <!-- our specialization -->
+    <section class="page our-specialisation">
+      <div class="blob">
+        <img
+          src="/public/images/blobanimation (1).svg"
+          alt=""
+          class="blob-ii blob3"
+          height="400"
+          width="350"
+        />
+        <div class="container">
+          <h1 style="text-align: center" class="fadeInUp">
+            Our Specialisation
+          </h1>
 
-        <div class="grid-3 fadeInUp">
-          <div class="reason">
-            <div class="avtar">
-              <p class="circle">1</p>
-            </div>
-            <div class="text">
-              <p class="sub-head">Experience</p>
-              <p>Implementing ERP systems since 2001</p>
-            </div>
-          </div>
-          <div class="reason">
-            <div class="avtar">
-              <p class="circle circle2">2</p>
-            </div>
-            <div class="text">
-              <p class="sub-head">Own Product</p>
-              <p>
-                Full control on the software as OurSys is our Own Product. We
-                are not dependent on any platform or third party software
-                making OurSys dependable.
-              </p>
-            </div>
-          </div>
-          <div class="reason">
-            <div class="avtar">
-              <p class="circle circle3">3</p>
-            </div>
-            <div class="text">
-              <p class="sub-head">100% success rate</p>
-              <p>
-                We do few projects but implement every project effectively
-              </p>
-            </div>
-          </div>
-          <div class="reason">
-            <div class="avtar">
-              <p class="circle circle4">4</p>
-            </div>
-            <div class="text">
-              <p class="sub-head">Domain Expertise</p>
-              <p>
-                We know the challenges and opportunities in Flow Control
-                industry and it reflects in our deeply evolved features for
-                this industry.
-              </p>
-            </div>
-          </div>
-          <div class="reason">
-            <div class="avtar">
-              <p class="circle circle5">5</p>
-            </div>
-            <div class="text">
-              <p class="sub-head">Experience</p>
-              <p>
-                OurSys has a clutter free unique interface and is loved by
-                users for it’s ease of use.
-              </p>
-            </div>
-          </div>
-          <div class="reason">
-            <div class="avtar">
-              <p class="circle circle6">6</p>
-            </div>
-            <div class="text">
-              <p class="sub-head">Stable Customisations</p>
-              <p>
-                Our customisations are guaranteed to work even after major
-                software upgrades
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <span id="products"></span>
-  </section>
-
-  <!-- our products -->
-  <section class="products">
-    <div class="main-wrapper">
-      <div class="slider-btns">
-        <span id="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
-        <span id="next-btn"><i class="fa-solid fa-angle-right"></i></span>
-      </div>
-      <h1 class="product-heading">Our Products</h1>
-      <div class="slider-wrapper">
-        <div class="productcards">
-          <div class="productdot center">
-            <p>OurSys Aero</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys Anci</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys OEM</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys FlowCon</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys Poly</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys Stud</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys MTO</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys Trader</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys CRM</p>
-          </div>
-          <div class="productdot center">
-            <p>OurSys Project</p>
-          </div>
-          <script>
-            document.getElementsByClassName(
-              "productdot"
-            ).style.backgroundColor = "blue";
-          </script>
-        </div>
-        <div class="slides">
-          <div id="Aero" class="silde-content">
-            <h1>OurSys Aero</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="./pages/AeroSpace.html">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div id="Anci" class="slides">
-          <div class="silde-content">
-            <h1>OurSys Anci</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="./pages/Ancillary.html">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div id="OEM" class="slides">
-          <div class="silde-content">
-            <h1>OurSys OEM</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="./pages/OEM.html">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys FlowCon</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="./pages/Flowcon.html">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys Poly</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="./pages/Poly.html">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys Stud</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="./pages/Stud.html">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys MTO</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="#">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys Trader</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="#">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys CRM</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="#">Read More...</a>
-            </p>
-          </div>
-        </div>
-        <div class="slides">
-          <div class="silde-content">
-            <h1>OurSys Project</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequatur voluptates, consequuntur sapiente eius laborum
-              voluptate enim aspernatur architecto sed, delectus corporis
-              dolor! Labore aut voluptates eaque, adipisci explicabo animi
-              quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
-              tempore eius quo molestias facere minus quasi illum repellendus
-              aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
-              officiis praesentium ab repudiandae illum autem cumque aut. Iste
-              cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
-              totam asperiores illo quia iure officia accusantium
-              reprehenderit harum tempore recusandae, unde minima itaque enim
-              dolor nesciunt, quod alias facilis in laudantium eos dolorum?
-              Quasi. <a href="#">Read More...</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- our social media -->
-  <section class="page our-socials" id="#our-social-media">
-    <div class="article-content">
-      <h1>Our Social Media</h1>
-      <p>Stay Connected with Us on LinkedIn for more posts</p>
-      <div class="posts">
-        <div class="post">
-          <a
-            href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7117731448350007296-c6bg?utm_source=share&utm_medium=member_android"><img
-              src="/public/images/post1.jpg" alt="" /></a>
-          <div class="headline">
-            <h1>ERP for Auto Components Manufacturers</h1>
-          </div>
-          <div class="sub">
-            The Indian government aims to double its exports of Auto
-            Components to US$ 30 billion by 2026
-            <a
-              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7117731448350007296-c6bg?utm_source=share&utm_medium=member_android">Read
-              More...</a>
-          </div>
-        </div>
-        <div class="post">
-          <a
-            href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7115202571635453952-BqJC?utm_source=share&utm_medium=member_android"><img
-              src="/public/images/post2.jpg" alt="" /></a>
-          <div class="headline">
-            <h1>ERP for Defence and Aerospace related manufacturing</h1>
-          </div>
-          <div class="sub">
-            As per the union budget 2022-23, 25% of Defence R&D has been
-            eamarked for private industry and start-ups
-            <a
-              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7115202571635453952-BqJC?utm_source=share&utm_medium=member_android">Read
-              More...</a>
-          </div>
-        </div>
-        <div class="post">
-          <a
-            href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7110117504307331072-Dc-u?utm_source=share&utm_medium=member_android"><img
-              src="/public/images/post3.jpg" alt="" /></a>
-          <div class="headline">
-            <h1>You are our inspiration...</h1>
-          </div>
-          <div class="sub">
-            First Indian to win Gold Medal in Javelin throw at world Athletcis
-            Championship
-            <a
-              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7110117504307331072-Dc-u?utm_source=share&utm_medium=member_android">Read
-              More...</a>
-          </div>
-        </div>
-        <div class="post">
-          <a
-            href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7112679261504745474-bCxZ?utm_source=share&utm_medium=member_android"><img
-              src="/public/images/post4.jpg" alt="" /></a>
-          <div class="headline">
-            <h1>You are our inspiration...</h1>
-          </div>
-          <div class="sub">
-            World Boxing Champion 2022 & 2023. Common Wealth Games Champion
-            2022
-            <a
-              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7112679261504745474-bCxZ?utm_source=share&utm_medium=member_android">Read
-              More...</a>
-          </div>
-        </div>
-      </div>
-      <a href="https://www.linkedin.com/company/oursyserp/"><button class="btn-load"
-          style="margin-top: 2rem; padding-left: 4rem; padding-right: 4rem" role="button">
-          Join Us
-        </button></a>
-    </div>
-  </section>
-  <script src="/public/js/index.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <footer>
-    <div class="footer">
-      <div class="footer-box">
-        <h2 class="footer-h2">Enquiry</h2>
-        <p>Want to transform your company through an ERP?</p>
-
-        <p>Just Click <a href="./pages/ContactUs.html#ContactUs">here</a></p>
-      </div>
-      <!--<div class="col-md-10 myContainer">-->
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-sm-2">
-            <div class="footer-content">
-              <h3>FOLLOW US</h3>
-
-              <ul class="footer-social footer-nav">
-                <li>
-                  <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-facebook-f"></i>
-                    FACEBOOK</a>
-                </li>
-                <li>
-                  <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-twitter"></i>
-                    TWITTER</a>
-                </li>
-                <li>
-                  <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-linkedin"></i>
-                    LINKEDIN</a>
-                </li>
-                <li>
-                  <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-instagram"></i>
-                    INSTAGRAM</a>
-                </li>
-                <li>
-                  <a href="#" style="text-transform: uppercase" target="_blank"><i class="fab fa-youtube"></i>
-                    YOUTUBE</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-2">
-            <div class="footer-content">
-              <h3>SITEMAP</h3>
-
-              <ul class="footer-sitemap footer-nav">
-                <li class="">
-                  <a href="/pages/momenta.html#OurStory"> Our Story</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="./pages/momenta.html#Customers" class="">Our Customers</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="./pages/momenta.html#Presence" class="">Our Presence</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="./index.html#our-inspiration"> Our Inspiration</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="/index.html#our-specialization" onkeypress="" class="">Our Specialisation</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="/index.html#products"> Our Products</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="/pages/Team.html#Ourculture"> Our Culture</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="/pages/Team.html#people"> Our People</a>
-                  <ul></ul>
-                </li>
-                <li class="">
-                  <a href="/pages/Team.html#Joinus"> Join Us</a>
-                  <ul></ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-8">
-            <div class="footer-content">
-              <h3>OFFICE LOCATION</h3>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 col-xs-12">
-                <div class="address mum-address">
-                  <div itemscope="" itemtype="http://schema.org/Organization">
-                    <h5 itemprop="name">Mumbai</h5>
-                    <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                      <p itemprop="streetAddress" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        B202,Pallavi<br />
-                        Veera Desai Road<br />
-                      </p>
-                      <p itemprop="addressLocality" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        Andheri West
-                      </p>
-                      <p itemprop="addressRegion" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        Mumbai
-                      </p>
-                      <p itemprop="postalCode" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        400 058
-                      </p>
-                    </div>
-                    <p itemprop="telephone" style="margin-left: -0.1rem">
-                      Phone: +91 9820859510 <br />+91 9867000586
-                    </p>
-                  </div>
-                </div>
+          <div class="grid-3 fadeInUp">
+            <div class="reason">
+              <div class="avtar">
+                <p class="circle">1</p>
               </div>
-              <div class="col-sm-4 col-xs-12">
-                <div class="address dlh-address">
-                  <div itemscope="" itemtype="http://schema.org/Organization">
-                    <h5 itemprop="name">Bengaluru</h5>
-                    <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                      <p itemprop="streetAddress" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        Rajaji Nagar
-                      </p>
-                      <p itemprop="addressLocality" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        Karnataka
-                      </p>
-                    </div>
-                    <p itemprop="telephone" style="margin-left: -0.1rem">
-                      Phone: +91 9900395265 <br />
-                      +91 8310617191
-                    </p>
-                  </div>
-                </div>
+              <div class="text">
+                <p class="sub-head">Experience</p>
+                <p>Implementing ERP systems since 2001</p>
               </div>
-              <div class="col-sm-4 col-xs-12">
-                <div class="address blr-address">
-                  <div itemscope="" itemtype="http://schema.org/Organization">
-                    <h5 itemprop="name">Bahrain</h5>
-                    <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                      <p itemprop="streetAddress" style="margin-bottom: 0px; margin-left: -0.1rem">
-                        Jasra<br />
-                        1003<br />
-                      </p>
-                    </div>
-                    <p itemprop="telephone" style="margin-left: -0.1rem">
-                      Phone: + 97339850898
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div class="reason">
+              <div class="avtar">
+                <p class="circle circle2">2</p>
+              </div>
+              <div class="text">
+                <p class="sub-head">Own Product</p>
+                <p>
+                  Full control on the software as OurSys is our Own Product. We
+                  are not dependent on any platform or third party software
+                  making OurSys dependable.
+                </p>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="avtar">
+                <p class="circle circle3">3</p>
+              </div>
+              <div class="text">
+                <p class="sub-head">100% success rate</p>
+                <p>
+                  We do few projects but implement every project effectively
+                </p>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="avtar">
+                <p class="circle circle4">4</p>
+              </div>
+              <div class="text">
+                <p class="sub-head">Domain Expertise</p>
+                <p>
+                  We know the challenges and opportunities in Flow Control
+                  industry and it reflects in our deeply evolved features for
+                  this industry.
+                </p>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="avtar">
+                <p class="circle circle5">5</p>
+              </div>
+              <div class="text">
+                <p class="sub-head">Experience</p>
+                <p>
+                  OurSys has a clutter free unique interface and is loved by
+                  users for it’s ease of use.
+                </p>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="avtar">
+                <p class="circle circle6">6</p>
+              </div>
+              <div class="text">
+                <p class="sub-head">Stable Customisations</p>
+                <p>
+                  Our customisations are guaranteed to work even after major
+                  software upgrades
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-xs-12">
-            <p class="copyText">
-              COPYRIGHT @2023 |
-              <a href="#">All Right Reserved</a>
-            </p>
+        </div>
+      </div>
+      <span id="products"></span>
+    </section>
+
+    <!-- our products -->
+    <section class="products">
+      <div class="main-wrapper">
+        <div class="slider-btns">
+          <span id="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
+          <span id="next-btn"><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <h1 class="product-heading">Our Products</h1>
+        <div class="slider-wrapper">
+          <div class="productcards">
+            <div class="productdot center">
+              <p>OurSys Aero</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys Anci</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys OEM</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys FlowCon</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys Poly</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys Stud</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys MTO</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys Trader</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys CRM</p>
+            </div>
+            <div class="productdot center">
+              <p>OurSys Project</p>
+            </div>
+            <script>
+              document.getElementsByClassName(
+                "productdot"
+              ).style.backgroundColor = "blue";
+            </script>
+          </div>
+          <div class="slides">
+            <div id="Aero" class="silde-content">
+              <h1>OurSys Aero</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="./pages/AeroSpace.html">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div id="Anci" class="slides">
+            <div class="silde-content">
+              <h1>OurSys Anci</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="./pages/Ancillary.html">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div id="OEM" class="slides">
+            <div class="silde-content">
+              <h1>OurSys OEM</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="./pages/OEM.html">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys FlowCon</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="./pages/Flowcon.html">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys Poly</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="./pages/Poly.html">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys Stud</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="./pages/Stud.html">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys MTO</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="#">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys Trader</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="#">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys CRM</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="#">Read More...</a>
+              </p>
+            </div>
+          </div>
+          <div class="slides">
+            <div class="silde-content">
+              <h1>OurSys Project</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Consequatur voluptates, consequuntur sapiente eius laborum
+                voluptate enim aspernatur architecto sed, delectus corporis
+                dolor! Labore aut voluptates eaque, adipisci explicabo animi
+                quasi hic, suscipit facere necessitatibus laudantium. Quos, enim
+                tempore eius quo molestias facere minus quasi illum repellendus
+                aperiam itaque vel? Quo culpa expedita iste accusamus, quasi
+                officiis praesentium ab repudiandae illum autem cumque aut. Iste
+                cupiditate qui nemo nihil in ea! Nemo repudiandae cum neque rem
+                totam asperiores illo quia iure officia accusantium
+                reprehenderit harum tempore recusandae, unde minima itaque enim
+                dolor nesciunt, quod alias facilis in laudantium eos dolorum?
+                Quasi. <a href="#">Read More...</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </section>
 
+    <!-- our social media -->
+    <section class="page our-socials" id="#our-social-media">
+      <div class="article-content">
+        <h1>Our Social Media</h1>
+        <p>Stay Connected with Us on LinkedIn for more posts</p>
+        <div class="posts">
+          <div class="post">
+            <a
+              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7117731448350007296-c6bg?utm_source=share&utm_medium=member_android"
+              ><img src="/public/images/post1.jpg" alt=""
+            /></a>
+            <div class="headline">
+              <h1>ERP for Auto Components Manufacturers</h1>
+            </div>
+            <div class="sub">
+              The Indian government aims to double its exports of Auto
+              Components to US$ 30 billion by 2026
+              <a
+                href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7117731448350007296-c6bg?utm_source=share&utm_medium=member_android"
+                >Read More...</a
+              >
+            </div>
+          </div>
+          <div class="post">
+            <a
+              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7115202571635453952-BqJC?utm_source=share&utm_medium=member_android"
+              ><img src="/public/images/post2.jpg" alt=""
+            /></a>
+            <div class="headline">
+              <h1>ERP for Defence and Aerospace related manufacturing</h1>
+            </div>
+            <div class="sub">
+              As per the union budget 2022-23, 25% of Defence R&D has been
+              eamarked for private industry and start-ups
+              <a
+                href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7115202571635453952-BqJC?utm_source=share&utm_medium=member_android"
+                >Read More...</a
+              >
+            </div>
+          </div>
+          <div class="post">
+            <a
+              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7110117504307331072-Dc-u?utm_source=share&utm_medium=member_android"
+              ><img src="/public/images/post3.jpg" alt=""
+            /></a>
+            <div class="headline">
+              <h1>You are our inspiration...</h1>
+            </div>
+            <div class="sub">
+              First Indian to win Gold Medal in Javelin throw at world Athletcis
+              Championship
+              <a
+                href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7110117504307331072-Dc-u?utm_source=share&utm_medium=member_android"
+                >Read More...</a
+              >
+            </div>
+          </div>
+          <div class="post">
+            <a
+              href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7112679261504745474-bCxZ?utm_source=share&utm_medium=member_android"
+              ><img src="/public/images/post4.jpg" alt=""
+            /></a>
+            <div class="headline">
+              <h1>You are our inspiration...</h1>
+            </div>
+            <div class="sub">
+              World Boxing Champion 2022 & 2023. Common Wealth Games Champion
+              2022
+              <a
+                href="https://www.linkedin.com/posts/oursyserp_erp-erpsoftware-erpsolutions-activity-7112679261504745474-bCxZ?utm_source=share&utm_medium=member_android"
+                >Read More...</a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/company/oursyserp/"
+          ><button
+            class="btn-load"
+            style="margin-top: 2rem; padding-left: 4rem; padding-right: 4rem"
+            role="button"
+          >
+            Join Us
+          </button></a
+        >
+      </div>
+    </section>
+    <script src="/public/js/index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <footer>
+      <div class="footer">
+        <div class="footer-box">
+          <h2 class="footer-h2">Enquiry</h2>
+          <p>Want to transform your company through an ERP?</p>
+
+          <p>Just Click <a href="./pages/ContactUs.html#ContactUs">here</a></p>
+        </div>
+        <!--<div class="col-md-10 myContainer">-->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-2">
+              <div class="footer-content">
+                <h3>FOLLOW US</h3>
+
+                <ul class="footer-social footer-nav">
+                  <li>
+                    <a
+                      href="#"
+                      style="text-transform: uppercase"
+                      target="_blank"
+                      ><i class="fab fa-facebook-f"></i> FACEBOOK</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      style="text-transform: uppercase"
+                      target="_blank"
+                      ><i class="fab fa-twitter"></i> TWITTER</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      style="text-transform: uppercase"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i> LINKEDIN</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      style="text-transform: uppercase"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i> INSTAGRAM</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      style="text-transform: uppercase"
+                      target="_blank"
+                      ><i class="fab fa-youtube"></i> YOUTUBE</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2">
+              <div class="footer-content">
+                <h3>SITEMAP</h3>
+
+                <ul class="footer-sitemap footer-nav">
+                  <li class="">
+                    <a href="/pages/momenta.html#OurStory"> Our Story</a>
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="./pages/momenta.html#Customers" class=""
+                      >Our Customers</a
+                    >
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="./pages/momenta.html#Presence" class=""
+                      >Our Presence</a
+                    >
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="./index.html#our-inspiration"> Our Inspiration</a>
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a
+                      href="/index.html#our-specialization"
+                      onkeypress=""
+                      class=""
+                      >Our Specialisation</a
+                    >
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="/index.html#products"> Our Products</a>
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="/pages/Team.html#Ourculture"> Our Culture</a>
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="/pages/Team.html#people"> Our People</a>
+                    <ul></ul>
+                  </li>
+                  <li class="">
+                    <a href="/pages/Team.html#Joinus"> Join Us</a>
+                    <ul></ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8">
+              <div class="footer-content">
+                <h3>OFFICE LOCATION</h3>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                  <div class="address mum-address">
+                    <div itemscope="" itemtype="http://schema.org/Organization">
+                      <h5 itemprop="name">Mumbai</h5>
+                      <div
+                        itemprop="address"
+                        itemscope=""
+                        itemtype="http://schema.org/PostalAddress"
+                      >
+                        <p
+                          itemprop="streetAddress"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          B202,Pallavi<br />
+                          Veera Desai Road<br />
+                        </p>
+                        <p
+                          itemprop="addressLocality"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          Andheri West
+                        </p>
+                        <p
+                          itemprop="addressRegion"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          Mumbai
+                        </p>
+                        <p
+                          itemprop="postalCode"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          400 058
+                        </p>
+                      </div>
+                      <p itemprop="telephone" style="margin-left: -0.1rem">
+                        Phone: +91 9820859510 <br />+91 9867000586
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="address dlh-address">
+                    <div itemscope="" itemtype="http://schema.org/Organization">
+                      <h5 itemprop="name">Bengaluru</h5>
+                      <div
+                        itemprop="address"
+                        itemscope=""
+                        itemtype="http://schema.org/PostalAddress"
+                      >
+                        <p
+                          itemprop="streetAddress"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          Rajaji Nagar
+                        </p>
+                        <p
+                          itemprop="addressLocality"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          Karnataka
+                        </p>
+                      </div>
+                      <p itemprop="telephone" style="margin-left: -0.1rem">
+                        Phone: +91 9900395265 <br />
+                        +91 8310617191
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="address blr-address">
+                    <div itemscope="" itemtype="http://schema.org/Organization">
+                      <h5 itemprop="name">Bahrain</h5>
+                      <div
+                        itemprop="address"
+                        itemscope=""
+                        itemtype="http://schema.org/PostalAddress"
+                      >
+                        <p
+                          itemprop="streetAddress"
+                          style="margin-bottom: 0px; margin-left: -0.1rem"
+                        >
+                          Jasra<br />
+                          1003<br />
+                        </p>
+                      </div>
+                      <p itemprop="telephone" style="margin-left: -0.1rem">
+                        Phone: + 97339850898
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <p class="copyText">
+                COPYRIGHT @2023 |
+                <a href="#">All Right Reserved</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
