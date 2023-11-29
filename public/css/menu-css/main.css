@@ -1623,6 +1623,7 @@ span.parrentOrg {
 .main-heading{
   text-align: right;
   width: 50%;
+  margin-top: 10%;
 }
 
 .main-heading h1{
@@ -1638,12 +1639,11 @@ span.parrentOrg {
 }
 
 .btn-primary{
-  position: absolute;
-  bottom: 26%;
-  left: 18%;
   padding: 0.5em 1em;
   background-color: #FF9900;
   border-radius: 1rem;
+  margin-top: 4rem;
+  margin-right: 28%;
 }
 
 .btn-primary a{
