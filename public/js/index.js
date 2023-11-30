@@ -13,6 +13,31 @@ function observeElements(elements, className) {
     });
   }
 
+  // header
+  document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector(".header");
+    var headerHeight = header.offsetHeight;
+
+    function updateHeader() {
+        if (window.scrollY > headerHeight) {
+            header.classList.add("header-solid");
+            header.classList.remove("header-transparent");
+        } else {
+            header.classList.remove("header-solid");
+            header.classList.add("header-transparent");
+        }
+    }
+
+    // Initial check in case the user starts partway down the page
+    updateHeader();
+
+    // Listen for scroll events
+    window.addEventListener("scroll", function () {
+        updateHeader();
+    });
+});
+
+
   // // heading
   // const heading = document.querySelectorAll(".heading-hide");
   // observeElements(heading, "heading-show");

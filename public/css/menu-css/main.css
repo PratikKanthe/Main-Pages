@@ -260,11 +260,16 @@ a.button {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: #fff;
   /* background: black; */
   /* color: #fff; */
 }
 
+.header-solid{
+  background-color: #fff;
+}
+.header-transparent {
+  background-color: transparent;
+}
 .logo-img{
   width: 200px;
   height: 500px;
@@ -887,7 +892,7 @@ span.parrentOrg {
   display: block;
   text-align: justify;
   letter-spacing: 0.1px;
-  margin-left: 0.1rem;
+  margin-left: -1rem;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -1711,6 +1716,8 @@ span.parrentOrg {
   display: flex;
   width: 100%;
   /* height: 100vh; */
+  background: url("/public/images/cccoil.svg") no-repeat;
+  background-position: left;
 }
 
 .left{
