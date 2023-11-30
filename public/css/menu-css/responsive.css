@@ -1339,6 +1339,24 @@
     font-weight: bold;
   }
 
+  .btn-primary{
+    border: none;
+    padding: 0.2em 0.5em;
+    border-radius: 1rem;
+    background-color: #4285F4;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  
+  .btn-secondary{
+    border: 1px solid black;
+    padding: 0.5em 0.5em;
+    border-radius: 1rem;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+
   /* .cols2{
         height: 50vh;
         background-color: aqua;
