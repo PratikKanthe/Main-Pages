@@ -1247,7 +1247,7 @@
 
 .btn-primary{
   border: none;
-  padding: 0.7em 1.5em;
+  padding: 0.2em 0.5em;
   border-radius: 1rem;
   background-color: #4285F4;
   color: #fff;
@@ -1257,7 +1257,7 @@
 
 .btn-secondary{
   border: 1px solid black;
-  padding: 0.7em 2em;
+  padding: 0.5em 0.5em;
   border-radius: 1rem;
   background-color: #fff;
   transition: 0.5s;
