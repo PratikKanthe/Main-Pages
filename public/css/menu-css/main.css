@@ -1716,7 +1716,7 @@ span.parrentOrg {
   height: 20vh;
   width: 2px;
   border: 2px solid gray;
-  animation: line 3s ease-in infinite;
+  /* animation: line 3s ease-in infinite; */
   transition: transform 0.3s ease;
   display: none;
 }
@@ -1782,6 +1782,7 @@ line-dot {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+  display: none;
   /* animation: float 1s linear forwards; */
 }
 
@@ -1802,7 +1803,7 @@ line-dot {
 
 .middle-top-right {
   position: absolute;
-  top: 25%;
+  top: 22%;
   left: 65%;
 }
 

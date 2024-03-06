@@ -1,0 +1,37 @@
+<svg width="11" height="341" viewBox="0 0 11 341" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<!--
+	<style type="text/css">
+	.yellow {
+	transform-origin: center;
+	transform-box: fill-box;
+	animation: yellow 2s linear infinite;
+	}
+	@keyframes yellow {
+	0% {
+	stroke: black;
+	}
+	100% {
+	stroke: yellow;
+	}
+	}
+	</style>
+	-->
+	<!--
+	<defs>
+	<linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:black;stop-opacity:1" />
+	<stop offset="100%" style="stop-color:yellow;stop-opacity:1" />
+	</linearGradient>
+	</defs>
+	-->
+	<line x1="4.49999" y1="4.99704" x2="6.48816" y2="340.997" stroke="url(#grad)" class="yellow">
+		<!-- <animate attributeName="stroke" values="black;url(#grad)" dur="2s" repeatCount="indefinite" /> -->
+	</line>
+	<circle cx="5" cy="5" r="5" fill="black">
+		<!-- <animate attributeName="fill" values="black;yellow" dur="2s" repeatCount="indefinite" /> -->
+	</circle>
+	<circle cx="6" cy="336" r="5" fill="black">
+		<!-- <animate attributeName="fill" values="black;yellow" dur="2s" repeatCount="indefinite" /> -->
+	</circle>
+	<!-- <animate attributeName="stroke" values="black;url(#grad)" dur="2s" repeatCount="indefinite" /> -->
+</svg>
