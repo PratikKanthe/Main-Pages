@@ -1716,67 +1716,144 @@ span.parrentOrg {
   height: 20vh;
   width: 2px;
   border: 2px solid gray;
-  animation: line 2s ease-in infinite;
+  /* animation: line 2s ease-in infinite; */
   transition: transform 0.3s ease;
   /* display: none; */
 }
 
-@keyframes line {
+/* @keyframes line {
   from {
     border: 2px solid gray;
   }
   to {
     border: 2px solid yellow;
   }
-}
+} */
 .line-1 {
   left: 50%;
   top: 15%;
   height: 20vh;
-  animation-delay: 0s;
+  animation: line-1 2s ease-in infinite;
 }
-
+@keyframes line-1 {
+  0%,
+  10% {
+    border: 2px solid yellow;
+  }
+  10%,
+  100% {
+    border: 2px solid gray;
+  }
+}
 .line-2 {
   left: 62%;
   top: 15%;
   transform: rotate(45deg);
-  animation-delay: 3s;
+  animation: line-2 2s ease-in infinite;
+}
+@keyframes line-2 {
+  0%,
+  10% {
+    border: 2px solid gray;
+  }
+  10%,
+  20% {
+    border: 2px solid yellow;
+  }
+  20%,
+  100% {
+    border: 2px solid gray;
+  }
 }
 .line-3 {
   left: 70%;
   top: 35%;
   transform: rotate(90deg);
-  animation-delay: 6s;
+  animation: line-3 2s ease-in infinite;
+}
+@keyframes line-3 {
+  0%,
+  20% {
+    border: 2px solid gray;
+  }
+  20%,
+  30% {
+    border: 2px solid yellow;
+  }
+  30%,
+  100% {
+    border: 2px solid gray;
+  }
 }
 .line-4 {
   left: 65%;
   top: 56%;
   transform: rotate(136deg);
-  animation-delay: 9s;
+  animation: line-4 2s ease-in infinite;
+}
+@keyframes line-4 {
+  0%,
+  30% {
+    border: 2px solid gray;
+  }
+  30%,
+  40% {
+    border: 2px solid yellow;
+  }
+  40%,
+  100% {
+    border: 2px solid gray;
+  }
 }
 .line-5 {
   left: 50%;
   top: 60%;
   transform: rotate(180deg);
-  animation-delay: 12s;
+  animation: line-5 2s ease-in infinite;
+}
+@keyframes line-5 {
+  0%,
+  40% {
+    border: 2px solid gray;
+  }
+  40%,
+  50% {
+    border: 2px solid yellow;
+  }
+  50%,
+  100% {
+    border: 2px solid gray;
+  }
 }
 .line-6 {
   left: 35%;
   top: 57%;
   transform: rotate(216deg);
-  animation-delay: 15s;
+  animation: line-6 2s ease-in infinite;
+}
+@keyframes line-6 {
+  0%,
+  50% {
+    border: 2px solid gray;
+  }
+  50%,
+  60% {
+    border: 2px solid yellow;
+  }
+  60%,
+  100% {
+    border: 2px solid gray;
+  }
 }
 .line-7 {
   left: 32%;
   top: 36%;
   transform: rotate(90deg);
-  animation-delay: 18s;
 }
 .line-8 {
   left: 37%;
   top: 20%;
   transform: rotate(310deg);
-  animation-delay: 21s;
 }
 line-dot {
   border: 2px solid black;
