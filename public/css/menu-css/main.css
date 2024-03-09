@@ -1733,7 +1733,8 @@ span.parrentOrg {
   left: 50%;
   top: 15%;
   height: 20vh;
-  animation: line-1 2s ease-in infinite;
+  animation: line-1 8s ease-in infinite;
+  animation-delay: 0s;
 }
 @keyframes line-1 {
   0%,
@@ -1749,7 +1750,8 @@ span.parrentOrg {
   left: 62%;
   top: 15%;
   transform: rotate(45deg);
-  animation: line-2 2s ease-in infinite;
+  animation: line-2 8s ease-in infinite;
+  animation-delay: 2s; /* Delayed by 2 seconds */
 }
 @keyframes line-2 {
   0%,
@@ -1769,7 +1771,8 @@ span.parrentOrg {
   left: 70%;
   top: 35%;
   transform: rotate(90deg);
-  animation: line-3 2s ease-in infinite;
+  animation: line-3 8s ease-in infinite;
+  animation-delay: 4s; /* Delayed by 4 seconds */
 }
 @keyframes line-3 {
   0%,
@@ -1789,7 +1792,8 @@ span.parrentOrg {
   left: 65%;
   top: 56%;
   transform: rotate(136deg);
-  animation: line-4 5s ease-in infinite;
+  animation: line-4 8s ease-in infinite;
+  animation-delay: 6s; /* Delayed by 6 seconds */
 }
 @keyframes line-4 {
   0%,
@@ -1809,7 +1813,8 @@ span.parrentOrg {
   left: 50%;
   top: 60%;
   transform: rotate(180deg);
-  animation: line-5 2s ease-in infinite;
+  animation: line-5 8s ease-in infinite;
+  animation-delay: 8s; /* Delayed by 8 seconds */
 }
 @keyframes line-5 {
   0%,
@@ -1829,7 +1834,8 @@ span.parrentOrg {
   left: 35%;
   top: 57%;
   transform: rotate(216deg);
-  animation: line-6 2s ease-in infinite;
+  animation: line-6 8s ease-in infinite;
+  animation-delay: 10s; /* Delayed by 10 seconds */
 }
 @keyframes line-6 {
   0%,
@@ -1849,7 +1855,8 @@ span.parrentOrg {
   left: 32%;
   top: 36%;
   transform: rotate(90deg);
-  animation: line-7 2s ease-in infinite;
+  animation: line-7 8s ease-in infinite;
+  animation-delay: 12s; /* Delayed by 12 seconds */
 }
 @keyframes line-7 {
   0%,
@@ -1869,7 +1876,8 @@ span.parrentOrg {
   left: 37%;
   top: 20%;
   transform: rotate(310deg);
-  animation: line-8 2s ease-in infinite;
+  animation: line-8 8s ease-in infinite;
+  animation-delay: 14s; /* Delayed by 14 seconds */
 }
 @keyframes line-8 {
   0%,
